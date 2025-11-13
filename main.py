@@ -378,7 +378,7 @@ def generate_daily_rss_feed():
         with get_db_session() as db_session:
             # 查询今天的漏洞，使用created_at字段
             today_vulnerabilities = db_session.query(CVE).filter(
-                func.date(CVE.created_at) == today
+                CVE.created_at.like(f"{today}%")
             ).all()
         
         # 转换为字典列表
