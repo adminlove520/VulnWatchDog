@@ -1233,44 +1233,42 @@ class CVEChecker:
     
     def _check_cisa(self, cve_id: str) -> bool:
         """
-        检查CISA数据源
+        检查CISA数据源，使用更可靠的API调用方式
         """
         try:
-            url = f"https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-            params = {'search': cve_id}
+            # 使用CISA的JSON格式API，更可靠且响应更快
+            url = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
             
             # 获取CISA已知被利用漏洞目录
-            response = self.session.get(url, params=params, timeout=10)
+            response = self.session.get(url, timeout=15)
             response.raise_for_status()
             
-            # 检查页面是否包含CVE ID
-            if cve_id in response.text:
-                return True
-                
-            # 尝试直接访问CVE详情页
-            cve_url = f"https://nvd.nist.gov/vuln/detail/{cve_id}"
-            response = self.session.head(cve_url, timeout=5, allow_redirects=True)
-            return response.status_code == 200
+            data = response.json()
+            vulnerabilities = data.get('vulnerabilities', [])
             
+            # 检查是否包含该CVE
+            for vuln in vulnerabilities:
+                if vuln.get('cveID') == cve_id:
+                    return True
+                    
         except Exception as e:
             logger.debug(f"CISA检查失败: {e}")
             return False
     
     def _check_oscs(self, cve_id: str) -> bool:
         """
-        检查OSCS数据源
+        检查OSCS数据源，使用正确的API URL格式
         """
         try:
-            # OSCS公开API
-            url = "https://api.oscs1024.com/v1/vuln/detail"
-            params = {'cve': cve_id}
+            # 使用正确的OSCS API URL格式
+            url = f"https://www.oscs1024.com/oscs/v1/vdb/vuln_info/{cve_id}"
             
-            response = self.session.get(url, params=params, timeout=10)
+            response = self.session.get(url, timeout=10)
             response.raise_for_status()
             
             data = response.json()
             # 检查返回状态
-            if data.get('code') == 200 and data.get('data'):
+            if data.get('code') == 0 and data.get('data'):
                 return True
                 
         except Exception as e:
