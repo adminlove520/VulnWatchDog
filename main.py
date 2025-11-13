@@ -10,7 +10,7 @@ from libs.utils import (
     start_scheduler, stop_scheduler, get_cve_checker
 )
 from libs.webhook import send_webhook
-from models.models import get_db, get_db_session, CVE, Repository
+from models.models import get_db, get_db_session, CVE, Repository, func
 import logging
 import sys
 from typing import List, Dict, Optional
@@ -152,21 +152,8 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
         repo_data = db_session.query(Repository).filter(Repository.github_id == repo['id']).order_by(Repository.id.desc()).first()
         if repo_data:
             logger.info(f"仓库已存在: {repo_link}")
-            # 如果仓库已存在,则跳过处理,有的仓库无法判断是否更新
-            # https://github.com/Mukesh-blend/CVE-2025-21333-POC
-            #TODO 每次访问都会给出新的repo_pushed_at，所以无法判断是否更新，先停掉更新判断
-            return result
-            same_repo_data = db_session.query(Repository).filter(
-                Repository.github_id == repo['id'],
-                Repository.repo_pushed_at == repo_pushed_at
-            ).first()
-            
-            if same_repo_data:
-                logger.info(f"仓库数据未更新,跳过处理: {repo_link}")
-                return
-            else:
-                logger.info(f"仓库有更新: {repo_link}")
-                action_log = 'update'
+            # 始终处理仓库以确保markdown文件更新
+            action_log = 'update'
         else:
             logger.info(f"发现新仓库: {repo_link}")
             action_log = 'new'
@@ -210,10 +197,12 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
         gpt_results = None
         if enable_gpt:
             search_result = []
-            if enable_search:
+            if enable_search and get_config('ENABLE_SEARXNG'):
                 logger.info(f"搜索漏洞相关信息: {cve_id}")
                 # 增强搜索查询，添加PoC/EXP关键词
                 search_result = search_searxng(f"{cve_id} Vulnerability Analysis PoC EXP Exploit")
+            elif enable_search and not get_config('ENABLE_SEARXNG'):
+                logger.info(f"SearXNG搜索功能已禁用，跳过搜索: {cve_id}")
 
             logger.info("构建GPT提示文本")
             prompt = build_prompt(cve_info, search_result, code_prompt[:5000])
@@ -387,9 +376,9 @@ def generate_daily_rss_feed():
         
         # 从数据库获取今日漏洞数据
         with get_db_session() as db_session:
-            # 查询今天的漏洞
+            # 查询今天的漏洞，使用created_at字段
             today_vulnerabilities = db_session.query(CVE).filter(
-                CVE.published_date.like(f"{today}%")
+                func.date(CVE.created_at) == today
             ).all()
         
         # 转换为字典列表
@@ -397,24 +386,27 @@ def generate_daily_rss_feed():
         for vuln in today_vulnerabilities:
             vuln_dict = {
                 'cve_id': vuln.cve_id,
-                'title': vuln.title,
-                'description': vuln.description,
-                'severity': vuln.severity,
-                'published_date': vuln.published_date,
-                'reference_url': vuln.reference,
-                'source': vuln.source
+                'title': vuln.title or f"{vuln.cve_id} - 未命名漏洞",
+                'description': vuln.description or "暂无详细描述",
+                'created_at': vuln.created_at.isoformat(),
+                'validation_source': vuln.validation_source or "未知",
+                'is_valid': vuln.is_valid
             }
             
-            # 获取相关的PoC信息
+            # 直接从repositories表查询关联数据
             poc_info = []
-            for repo in vuln.repositories:
-                poc_info.append({
-                    'repo': {
-                        'name': repo.name,
-                        'html_url': repo.url,
-                        'description': repo.description
-                    }
-                })
+            with get_db_session() as db_session_inner:
+                repos = db_session_inner.query(Repository).filter(
+                    Repository.cve_id == vuln.cve_id
+                ).all()
+                for repo in repos:
+                    poc_info.append({
+                        'repo': {
+                            'name': repo.name,
+                            'html_url': repo.url,
+                            'description': repo.description
+                        }
+                    })
             vuln_dict['poc_info'] = poc_info
             vuln_list.append(vuln_dict)
         
