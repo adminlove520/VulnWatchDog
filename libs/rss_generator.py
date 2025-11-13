@@ -3,7 +3,9 @@ import json
 import logging
 from datetime import datetime
 from feedgen.feed import FeedGenerator
-from ..config import get_config
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config import get_config
 
 logger = logging.getLogger(__name__)
 
