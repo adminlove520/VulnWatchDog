@@ -1,10 +1,28 @@
 import os
 import sys
 from fnmatch import fnmatch
+import mimetypes
 
 import click
 
 global_index = 1
+
+def is_binary_file(file_path):
+    # Check if file is likely binary using mimetypes and null byte detection
+    # First try mimetypes
+    mime_type, _ = mimetypes.guess_type(file_path)
+    if mime_type and mime_type.startswith('image/'):
+        return True
+    if mime_type and mime_type.startswith('application/'):
+        return True
+    
+    # Fallback to checking for null bytes
+    try:
+        with open(file_path, 'rb') as f:
+            chunk = f.read(1024)
+            return b'\x00' in chunk
+    except Exception:
+        return False
 
 EXT_TO_LANG = {
     "py": "python",
@@ -117,12 +135,25 @@ def process_path(
 ):
     outputs = []
     if os.path.isfile(path):
-        try:
-            with open(path, "r") as f:
-                outputs.extend(print_path(path, f.read(), claude_xml, markdown, line_numbers))
-        except UnicodeDecodeError:
-            warning_message = f"Warning: Skipping file {path} due to UnicodeDecodeError"
-            click.echo(click.style(warning_message, fg="red"), err=True)
+        # Check if file is binary before attempting to read as text
+        if is_binary_file(path):
+            warning_message = f"Info: Skipping binary file {path}"
+            click.echo(click.style(warning_message, fg="yellow"), err=True)
+        else:
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    outputs.extend(print_path(path, f.read(), claude_xml, markdown, line_numbers))
+            except UnicodeDecodeError:
+                # Try with errors='replace' as fallback
+                try:
+                    with open(path, "r", encoding="utf-8", errors="replace") as f:
+                        outputs.extend(print_path(path, f.read(), claude_xml, markdown, line_numbers))
+                except Exception:
+                    warning_message = f"Warning: Skipping file {path} due to encoding issues"
+                    click.echo(click.style(warning_message, fg="red"), err=True)
+            except Exception as e:
+                warning_message = f"Warning: Error reading file {path}: {str(e)}"
+                click.echo(click.style(warning_message, fg="red"), err=True)
     elif os.path.isdir(path):
         for root, dirs, files in os.walk(path):
             if not include_hidden:
@@ -160,20 +191,37 @@ def process_path(
 
             for file in sorted(files):
                 file_path = os.path.join(root, file)
-                try:
-                    with open(file_path, "r") as f:
-                        outputs.extend(print_path(
-                            file_path,
-                            f.read(),
-                            claude_xml,
-                            markdown,
-                            line_numbers,
-                        ))
-                except UnicodeDecodeError:
-                    warning_message = (
-                        f"Warning: Skipping file {file_path} due to UnicodeDecodeError"
-                    )
-                    click.echo(click.style(warning_message, fg="red"), err=True)
+                # Check if file is binary before attempting to read as text
+                if is_binary_file(file_path):
+                    warning_message = f"Info: Skipping binary file {file_path}"
+                    click.echo(click.style(warning_message, fg="yellow"), err=True)
+                else:
+                    try:
+                        with open(file_path, "r", encoding="utf-8") as f:
+                            outputs.extend(print_path(
+                                file_path,
+                                f.read(),
+                                claude_xml,
+                                markdown,
+                                line_numbers,
+                            ))
+                    except UnicodeDecodeError:
+                        # Try with errors='replace' as fallback
+                        try:
+                            with open(file_path, "r", encoding="utf-8", errors="replace") as f:
+                                outputs.extend(print_path(
+                                    file_path,
+                                    f.read(),
+                                    claude_xml,
+                                    markdown,
+                                    line_numbers,
+                                ))
+                        except Exception:
+                            warning_message = f"Warning: Skipping file {file_path} due to encoding issues"
+                            click.echo(click.style(warning_message, fg="red"), err=True)
+                    except Exception as e:
+                        warning_message = f"Warning: Error reading file {file_path}: {str(e)}"
+                        click.echo(click.style(warning_message, fg="red"), err=True)
     return outputs
 
 
