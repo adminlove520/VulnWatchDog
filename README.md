@@ -9,7 +9,7 @@ VulnWatchdog 是一个强大的自动化漏洞监控与分析平台，集成了�
 - 🤖 **智能风险分析**：利用 GPT/Gemini 进行漏洞严重性评估、POC 代码分析和投毒风险检测
 - 📝 **多格式报告生成**：支持 Markdown、RSS 订阅和周期性周报，满足不同场景需求
 - 🔔 **实时告警通知**：支持飞书、钉钉等多渠道通知，第一时间推送关键漏洞信息
-- � **自动化任务调度**：基于 GitHub Actions 的定时扫描和报告生成机制
+- ⏱️ **自动化任务调度**：基于 GitHub Actions 的定时扫描和报告生成机制
 
 ## 部署说明
 
@@ -30,6 +30,7 @@ GPT_SERVER_URL: "可选的自定义服务器地址"
 
 # 搜索配置
 SEARXNG_URL: "SearXNG搜索服务地址"
+SEARXNG_ENABLED: "false"  # 默认关闭SearXNG搜索功能，需要时设为"true"
 ```
 
 2. 配置环境变量 (使用 `.env` 文件或 GitHub Secrets):
@@ -55,10 +56,11 @@ GPT_MODEL = 'gemini-2.0-flash'  # 使用的模型名称
 # 搜索相关配置
 ENABLE_SEARCH = True  # 是否启用漏洞信息搜索
 ENABLE_EXTENDED = True  # 是否启用扩展搜索
+```
 
-3. Actions 自动化工作流:
+3. **Actions 自动化工作流**
 
-本项目包含多个自动化工作流:
+本项目包含多个自动化工作流：
 - **monitor.yml**: 每小时执行漏洞监控和分析
 - **generate_rss.yml**: 生成漏洞RSS订阅源
 - **generate_weekly_report.yml**: 每周生成漏洞统计报告
@@ -100,12 +102,13 @@ python main.py --rss
 
 # 生成周报
 python generate_weekly_report.py
+```
 
 ## 输出说明
 
 ### 分析报告
 
-分析报告以 Markdown 格式输出,包含漏洞摘要、详细信息、风险评估和缓解建议等完整内容。
+分析报告以 Markdown 格式输出，包含漏洞摘要、详细信息、风险评估和缓解建议等完整内容。
 
 ### 报告存储与访问
 
@@ -183,8 +186,8 @@ MIT License
 
 ## 联系方式
 
-如有问题,请提交 Issue
+如有问题，请提交 Issue
 
-致谢
+## 致谢
 - 感谢 [Poc-Monitor](https://github.com/sari3l/Poc-Monitor) 项目提供的思路
 - 感谢 [SearXNG](https://github.com/searxng/searxng) 项目提供的搜索引擎
