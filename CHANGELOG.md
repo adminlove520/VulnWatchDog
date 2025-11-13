@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+### 变更
+- 默认关闭SearXNG搜索功能，可通过环境变量SEARXNG_ENABLED="true"开启
+- 在GitHub Actions workflow中添加SEARXNG_ENABLED环境变量配置
+
+
 ## [1.0.0] - 2024-07-13
 
 ### 新增功能
