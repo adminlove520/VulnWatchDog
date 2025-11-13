@@ -32,7 +32,7 @@ DB_URL='sqlite:///vulns.db'
 if os.environ.get('DEBUG'):
     DEBUG = os.environ.get('DEBUG')
 
-def get_config():
+def get_config(key=None):
     config = {
         "DEBUG": 'DEBUG' if DEBUG =='true' else 'INFO',
         # 通知配置
@@ -72,4 +72,6 @@ def get_config():
         # RSS配置
         'RSS_OUTPUT_PATH': os.environ.get('RSS_OUTPUT_PATH', './rss.xml'),
     }
+    if key:
+        return config.get(key)
     return config
