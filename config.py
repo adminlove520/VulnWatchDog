@@ -26,6 +26,9 @@ ENABLE_SEARCH=True
 # 是否启用扩展搜索功能
 ENABLE_EXTENDED=True
 
+# 是否启用SearXNG搜索引擎，从环境变量读取
+ENABLE_SEARXNG=os.environ.get('SEARXNG_ENABLED', 'true').lower() == 'true'
+
 # 数据库URL
 DB_URL='sqlite:///vulns.db'
 
@@ -57,6 +60,7 @@ def get_config(key=None):
         },
         # 搜索配置
         'ENABLE_SEARCH': ENABLE_SEARCH,
+        'ENABLE_SEARXNG': ENABLE_SEARXNG,
         'SEARXNG_URL': os.environ.get('SEARXNG_URL'),
         # CVE配置
         'CVE_YEAR_PREFIX': os.environ.get('CVE_YEAR_PREFIX'),
