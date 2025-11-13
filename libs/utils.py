@@ -1267,9 +1267,15 @@ class CVEChecker:
             response.raise_for_status()
             
             data = response.json()
-            # 检查返回状态
-            if data.get('code') == 0 and data.get('data'):
-                return True
+            # 检查返回的漏洞数据是否有效
+            # 根据实际API响应，检查是否包含漏洞信息
+            if data and isinstance(data, dict):
+                # 检查是否包含cve_id字段且匹配
+                if data.get('cve_id') == cve_id:
+                    return True
+                # 或者检查是否包含关键信息字段
+                elif data.get('title') or data.get('description') or data.get('cvss_score') is not None:
+                    return True
                 
         except Exception as e:
             logger.debug(f"OSCS检查失败: {e}")
@@ -1313,6 +1319,58 @@ class CVEChecker:
         """
         self.cache.clear()
         logger.info("CVE验证缓存已清除")
+        
+    def check_cve_validity(self, cve_id: str) -> tuple[bool, str]:
+        """
+        检查CVE有效性，返回有效性状态和来源
+        
+        参数:
+            cve_id: CVE ID
+            
+        返回:
+            (是否有效, 来源)
+        """
+        # 转换为大写格式
+        cve_id = cve_id.upper()
+        
+        # 检查缓存中的原始验证结果
+        if cve_id in self.cache:
+            cached_time, result = self.cache[cve_id]
+            if time.time() - cached_time < self.cache_expiry:
+                source = "缓存"
+                return result, source
+        
+        # 执行实际验证，尝试确定来源
+        try:
+            # 1. 检查CISA数据源
+            if self._check_cisa(cve_id):
+                source = "CISA"
+                # 更新缓存
+                self.cache[cve_id] = (time.time(), True)
+                return True, source
+                
+            # 2. 检查OSCS数据源
+            if self._check_oscs(cve_id):
+                source = "OSCS"
+                # 更新缓存
+                self.cache[cve_id] = (time.time(), True)
+                return True, source
+                
+            # 3. 检查GitHub是否有相关PoC仓库
+            if self._check_github_cve(cve_id):
+                source = "GitHub"
+                # 更新缓存
+                self.cache[cve_id] = (time.time(), True)
+                return True, source
+                
+            source = "未知"
+            # 更新缓存
+            self.cache[cve_id] = (time.time(), False)
+            return False, source
+            
+        except Exception as e:
+            logger.error(f"验证CVE {cve_id} 时发生错误: {e}")
+            return False, "错误"
 
 def get_cve_checker(proxy: Optional[str] = None) -> Any:
     """
