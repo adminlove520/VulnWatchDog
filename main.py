@@ -221,7 +221,9 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
                     logger.warning(f"GPT分析结果表明CVE {cve_id} 无效，跳过后续处理")
                     return result
                 
-                filepath = f"data/markdown/{cve_id}-{repo_full_name.replace('/', '_')}.md"
+                # 从CVE ID中提取年份，格式为CVE-YYYY-XXXX
+                year = cve_id.split('-')[1]
+                filepath = f"data/markdown/{year}/{cve_id}-{repo_full_name.replace('/', '_')}.md"
                 # 添加reference_url字段，包含各数据源的URL
                 reference_urls = []
                 if source:
