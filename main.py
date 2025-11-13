@@ -386,71 +386,67 @@ def generate_daily_rss_feed():
         today = datetime.now(tz).strftime('%Y-%m-%d')
         
         # 从数据库获取今日漏洞数据
-        db_session = get_db_session()
-        try:
+        with get_db_session() as db_session:
             # 查询今天的漏洞
             today_vulnerabilities = db_session.query(CVE).filter(
                 CVE.published_date.like(f"{today}%")
             ).all()
+        
+        # 转换为字典列表
+        vuln_list = []
+        for vuln in today_vulnerabilities:
+            vuln_dict = {
+                'cve_id': vuln.cve_id,
+                'title': vuln.title,
+                'description': vuln.description,
+                'severity': vuln.severity,
+                'published_date': vuln.published_date,
+                'reference_url': vuln.reference,
+                'source': vuln.source
+            }
             
-            # 转换为字典列表
-            vuln_list = []
-            for vuln in today_vulnerabilities:
-                vuln_dict = {
-                    'cve_id': vuln.cve_id,
-                    'title': vuln.title,
-                    'description': vuln.description,
-                    'severity': vuln.severity,
-                    'published_date': vuln.published_date,
-                    'reference_url': vuln.reference,
-                    'source': vuln.source
-                }
-                
-                # 获取相关的PoC信息
-                poc_info = []
-                for repo in vuln.repositories:
-                    poc_info.append({
-                        'repo': {
-                            'name': repo.name,
-                            'html_url': repo.url,
-                            'description': repo.description
-                        }
-                    })
-                vuln_dict['poc_info'] = poc_info
-                vuln_list.append(vuln_dict)
+            # 获取相关的PoC信息
+            poc_info = []
+            for repo in vuln.repositories:
+                poc_info.append({
+                    'repo': {
+                        'name': repo.name,
+                        'html_url': repo.url,
+                        'description': repo.description
+                    }
+                })
+            vuln_dict['poc_info'] = poc_info
+            vuln_list.append(vuln_dict)
+        
+        if vuln_list:
+            # 生成RSS内容
+            rss_content = generate_rss_feed(
+                vuln_list,
+                title="VulnWatchdog每日漏洞订阅",
+                description=f"{today}安全漏洞信息"
+            )
             
-            if vuln_list:
-                # 生成RSS内容
-                rss_content = generate_rss_feed(
-                    vuln_list,
-                    title="VulnWatchdog每日漏洞订阅",
-                    description=f"{today}安全漏洞信息"
-                )
-                
-                # 保存RSS文件
-                rss_dir = "rss_feeds"
-                if not os.path.exists(rss_dir):
-                    os.makedirs(rss_dir)
-                
-                rss_file = os.path.join(rss_dir, f"vuln_feed_{today.replace('-', '')}.xml")
-                with open(rss_file, 'w', encoding='utf-8') as f:
-                    f.write(rss_content)
-                
-                # 同时保存一份最新的RSS文件
-                latest_rss_file = os.path.join(rss_dir, "latest_vuln_feed.xml")
-                with open(latest_rss_file, 'w', encoding='utf-8') as f:
-                    f.write(rss_content)
-                
-                logger.info(f"每日漏洞RSS订阅源生成成功，共包含 {len(vuln_list)} 个漏洞")
-                logger.info(f"RSS文件已保存至: {rss_file}")
-                logger.info(f"最新RSS文件已保存至: {latest_rss_file}")
-                return True
-            else:
-                logger.warning(f"今日({today})未发现新漏洞")
-                return False
-                
-        finally:
-            db_session.close()
+            # 保存RSS文件
+            rss_dir = "rss_feeds"
+            if not os.path.exists(rss_dir):
+                os.makedirs(rss_dir)
+            
+            rss_file = os.path.join(rss_dir, f"vuln_feed_{today.replace('-', '')}.xml")
+            with open(rss_file, 'w', encoding='utf-8') as f:
+                f.write(rss_content)
+            
+            # 同时保存一份最新的RSS文件
+            latest_rss_file = os.path.join(rss_dir, "latest_vuln_feed.xml")
+            with open(latest_rss_file, 'w', encoding='utf-8') as f:
+                f.write(rss_content)
+            
+            logger.info(f"每日漏洞RSS订阅源生成成功，共包含 {len(vuln_list)} 个漏洞")
+            logger.info(f"RSS文件已保存至: {rss_file}")
+            logger.info(f"最新RSS文件已保存至: {latest_rss_file}")
+            return True
+        else:
+            logger.warning(f"今日({today})未发现新漏洞")
+            return False
             
     except Exception as e:
         logger.error(f"生成RSS订阅源时发生错误: {str(e)}")
@@ -488,16 +484,19 @@ def generate_weekly_report():
         week_end = week_start + timedelta(days=6)  # 本周日
         
         # 从数据库获取本周的漏洞数据
-        db_session = get_db_session()
-        try:
+        with get_db_session() as db_session:
             # 查询本周的漏洞
             week_start_str = week_start.strftime('%Y-%m-%d')
             week_end_str = week_end.strftime('%Y-%m-%d')
             
-            # 获取本周新增的CVE记录
-            weekly_vulnerabilities = db_session.query(CVE).join(Repository).filter(
-                Repository.repo_pushed_at >= week_start_str
-            ).distinct(CVE.cve_id).all()
+            # 获取本周新增的CVE记录（修复join查询问题）
+            weekly_vulnerabilities = db_session.query(CVE).filter(
+                CVE.cve_id.in_(
+                    db_session.query(Repository.cve_id).filter(
+                        Repository.repo_pushed_at >= week_start_str
+                    ).distinct()
+                )
+            ).all()
             
             # 生成报告内容
             report_content = []
@@ -544,9 +543,6 @@ def generate_weekly_report():
             
             logger.info(f"每周漏洞报告生成成功: {report_file}")
             return report_file
-            
-        finally:
-            db_session.close()
             
     except Exception as e:
         logger.error(f"生成每周漏洞报告时发生错误: {str(e)}")

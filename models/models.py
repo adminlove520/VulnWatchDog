@@ -64,7 +64,13 @@ def init_db():
 
 @contextmanager
 def get_db_session():
-    """数据库会话上下文管理器，自动处理会话的创建和关闭"""
+    """数据库会话上下文管理器，自动处理会话的创建和关闭，确保表存在"""
+    # 确保表存在
+    inspector = inspect(engine)
+    if not inspector.has_table("cves") or not inspector.has_table("repositories"):
+        logger.info(f"数据库表不存在，正在创建: {db_url}")
+        init_db()
+    
     db = SessionLocal()
     try:
         yield db

@@ -554,13 +554,13 @@ def search_github(query: str, per_page: int = 30, max_retries: int = 3) -> Tuple
     # 增强的CVE正则表达式，支持标准格式和一些常见变体
     re_cve = re.compile(r'(?i)CVE-(\d{4})-(\d{4,7})')
     
-    # 获取代理配置
-    proxy = get_config('PROXY')
+    # 获取代理配置（先尝试不使用代理）
+    proxy = None  # 暂时禁用代理以避免SSL连接问题
     # 获取CVE检查器
     cve_checker = get_cve_checker(proxy)
     
-    # 增强搜索查询，添加PoC/EXP关键词
-    enhanced_query = f"{query}+(poc+OR+exploit+OR+vulnerability+OR+exp+OR+proof+of+concept)+NOT+test+NOT+demo"
+    # 简化搜索查询，减少逻辑运算符数量
+    enhanced_query = f"{query}+(poc+OR+exploit)+NOT+test"
     
     # 生成完整的查询URL，不再限制语言
     url = f"https://api.github.com/search/repositories?q={enhanced_query}&sort=updated&order=desc&per_page={per_page}"
@@ -574,13 +574,8 @@ def search_github(query: str, per_page: int = 30, max_retries: int = 3) -> Tuple
     if github_token:
         headers['Authorization'] = f"token {github_token}"
     
-    # 使用代理（如果配置了）
+    # 暂时不使用代理
     proxies = {}
-    if proxy:
-        proxies = {
-            'http': proxy,
-            'https': proxy
-        }
     
     # 重试机制
     for retry in range(max_retries):
