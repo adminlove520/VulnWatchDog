@@ -268,7 +268,35 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
                     logger.debug(f"GPT结果字段: {list(gpt_results.keys())}")
                     logger.debug(traceback.format_exc())
             else:
-                logger.error(f"GPT分析失败,返回结果为空: {gpt_results}")
+                logger.warning(f"⚠️ GPT分析失败，生成基础报告: {cve_id}")
+                # 即使GPT失败也生成基础markdown
+                gpt_results = {
+                    'name': f'{cve_id} 漏洞分析（GPT暂时失败）',
+                    'type': '待GPT分析',
+                    'app': repo_full_name.split('/')[1] if '/' in repo_full_name else repo_full_name,
+                    'risk': '待评估',
+                    'version': '待确认',
+                    'condition': '待分析',
+                    'poc_available': f'PoC代码: {repo_link}',
+                    'poison': '未评估',
+                    'markdown': f'''## ⚠️ GPT分析暂时失败
+
+Gemini API暂时无法完成分析，可能原因：
+- API速率限制(429)
+- 请求格式问题(400)
+- 其他临时性错误
+
+## 基础信息
+
+**CVE编号**: {cve_id}  
+**GitHub仓库**: [{repo_full_name}]({repo_link})  
+**仓库描述**: {repo_description or "无描述"}
+
+## 下一步
+
+请稍后查看此文件，系统会在后续更新中补充完整的GPT分析结果。''',
+                    'cve_valid': '是'
+                }
 
         # 保存仓库信息
         try:
