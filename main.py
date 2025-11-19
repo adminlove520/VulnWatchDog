@@ -340,7 +340,7 @@ def main():
                     for item in cve_items:
                         if cve_id == item['cve_id']:
                             process_cve(cve_id, item['repo'], db_session)
-                    time.sleep(10)
+                    time.sleep(get_config('SLEEP_INTERVAL'))
             else:
                 # 处理每个仓库
                 for repo in repo_list:
@@ -355,7 +355,7 @@ def main():
                         
                         logger.info(f"处理CVE: {cve_id}")
                         result = process_cve(cve_id, repo['repo'], db_session)
-                        time.sleep(10)
+                        time.sleep(get_config('SLEEP_INTERVAL'))
                     except Exception as e:
                         logger.error(f"处理CVE异常: {str(e)} {repo}")
                         logger.debug(traceback.format_exc())

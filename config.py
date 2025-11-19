@@ -55,7 +55,7 @@ def get_config(key=None):
         'GPT_MODEL': os.environ.get('GPT_MODEL') if os.environ.get('GPT_MODEL') else 'gemini-2.0-flash',
         # Gemini配置
         'gemini': {
-            'api_key': os.environ.get('GEMINI_API_KEY'),
+            'api_key': os.environ.get('GEMINI_API_KEY') if os.environ.get('GEMINI_API_KEY') else os.environ.get('GPT_API_KEY'),
             'model': os.environ.get('GEMINI_MODEL') if os.environ.get('GEMINI_MODEL') else GEMINI_MODEL
         },
         # 搜索配置
@@ -75,6 +75,8 @@ def get_config(key=None):
         'GIT_URL': os.environ.get('GIT_URL', ''),
         # RSS配置
         'RSS_OUTPUT_PATH': os.environ.get('RSS_OUTPUT_PATH', './rss.xml'),
+        # 性能配置
+        'SLEEP_INTERVAL': int(os.environ.get('SLEEP_INTERVAL', 2)),
     }
     if key:
         return config.get(key)

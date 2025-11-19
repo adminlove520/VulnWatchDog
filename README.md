@@ -69,6 +69,8 @@ ENABLE_EXTENDED = True  # 是否启用扩展搜索
 - 分析报告保存至 `data/markdown/` 目录
 - 通过配置的 Webhook 推送实时通知
 - 自动提交更新到仓库中
+- **注意**: `vulns.db` (SQLite数据库) 也会被提交，以在无服务器环境中保持已处理漏洞的状态。
+
 
 ## 本地部署说明
 
