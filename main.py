@@ -406,23 +406,22 @@ def generate_daily_rss_feed():
             today_vulnerabilities = db_session.query(CVE).filter(
                 CVE.created_at.like(f"{today}%")
             ).all()
-        
-        # 转换为字典列表
-        vuln_list = []
-        for vuln in today_vulnerabilities:
-            vuln_dict = {
-                'cve_id': vuln.cve_id,
-                'title': vuln.title or f"{vuln.cve_id} - 未命名漏洞",
-                'description': vuln.description or "暂无详细描述",
-                'created_at': vuln.created_at.isoformat(),
-                'validation_source': vuln.validation_source or "未知",
-                'is_valid': vuln.is_valid
-            }
             
-            # 直接从repositories表查询关联数据
-            poc_info = []
-            with get_db_session() as db_session_inner:
-                repos = db_session_inner.query(Repository).filter(
+            # 转换为字典列表（在session内完成，避免DetachedInstanceError）
+            vuln_list = []
+            for vuln in today_vulnerabilities:
+                vuln_dict = {
+                    'cve_id': vuln.cve_id,
+                    'title': vuln.title or f"{vuln.cve_id} - 未命名漏洞",
+                    'description': vuln.description or "暂无详细描述",
+                    'created_at': vuln.created_at.isoformat() if vuln.created_at else None,
+                    'validation_source': vuln.validation_source or "未知",
+                    'is_valid': vuln.is_valid
+                }
+                
+                # 直接查询关联仓库（在同一个session内）
+                poc_info = []
+                repos = db_session.query(Repository).filter(
                     Repository.cve_id == vuln.cve_id
                 ).all()
                 for repo in repos:
@@ -433,8 +432,8 @@ def generate_daily_rss_feed():
                             'description': repo.description
                         }
                     })
-            vuln_dict['poc_info'] = poc_info
-            vuln_list.append(vuln_dict)
+                vuln_dict['poc_info'] = poc_info
+                vuln_list.append(vuln_dict)
         
         if vuln_list:
             # 生成RSS内容

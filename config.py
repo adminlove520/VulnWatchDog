@@ -17,8 +17,8 @@ ENABLE_NOTIFY=True
 # 是否启用GPT功能进行漏洞分析
 ENABLE_GPT=True
 
-# Gemini模型名称
-GEMINI_MODEL='gemini-1.5-flash'
+# Gemini模型名称（使用models/前缀的最新版本）
+GEMINI_MODEL='models/gemini-1.5-flash-latest'
 
 # 是否启用漏洞信息搜索功能，需启用GPT分析
 ENABLE_SEARCH=True
