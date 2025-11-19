@@ -26,9 +26,6 @@ ENABLE_SEARCH=True
 # 是否启用扩展搜索功能
 ENABLE_EXTENDED=True
 
-# 是否启用SearXNG搜索引擎，从环境变量读取
-ENABLE_SEARXNG=os.environ.get('SEARXNG_ENABLED', 'true').lower() == 'true'
-
 # 数据库URL
 DB_URL='sqlite:///vulns.db'
 
@@ -48,20 +45,14 @@ def get_config(key=None):
         # 飞书通知配置
         'FEISHU_WEBHOOK_URL': os.environ.get('FEISHU_WEBHOOK_URL'),
         'FEISHU_SECRET': os.environ.get('FEISHU_SECRET'),
-        # GPT配置
+        # GPT配置（仅Gemini）
         'ENABLE_GPT': ENABLE_GPT,
-        'GPT_SERVER_URL': os.environ.get('GPT_SERVER_URL'),
-        'GPT_API_KEY': os.environ.get('GPT_API_KEY'),
-        'GPT_MODEL': os.environ.get('GPT_MODEL') if os.environ.get('GPT_MODEL') else 'gemini-2.0-flash',
-        # Gemini配置
         'gemini': {
             'api_key': os.environ.get('GEMINI_API_KEY') if os.environ.get('GEMINI_API_KEY') else os.environ.get('GPT_API_KEY'),
             'model': os.environ.get('GEMINI_MODEL') if os.environ.get('GEMINI_MODEL') else GEMINI_MODEL
         },
         # 搜索配置
         'ENABLE_SEARCH': ENABLE_SEARCH,
-        'ENABLE_SEARXNG': ENABLE_SEARXNG,
-        'SEARXNG_URL': os.environ.get('SEARXNG_URL'),
         # CVE配置
         'CVE_YEAR_PREFIX': os.environ.get('CVE_YEAR_PREFIX'),
         'CVE_YEAR_RANGE': os.environ.get('CVE_YEAR_RANGE', '2020-2025'),

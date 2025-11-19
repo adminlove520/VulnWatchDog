@@ -1,20 +1,3 @@
-from datetime import datetime, timezone, timedelta
-import json
-import time
-import traceback
-import os
-from config import get_config
-from libs.utils import (
-    search_github, get_cve_info, ask_gpt, search_searxng, 
-    get_github_poc, write_to_markdown, generate_rss_feed,
-    start_scheduler, stop_scheduler, get_cve_checker
-)
-from libs.webhook import send_webhook
-from models.models import get_db, get_db_session, CVE, Repository, func
-import logging
-import sys
-from typing import List, Dict, Optional
-
 # 配置日志
 logging.basicConfig(
     level=logging.DEBUG if get_config('DEBUG') else logging.INFO,
@@ -197,12 +180,12 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
         gpt_results = None
         if enable_gpt:
             search_result = []
-            if enable_search and get_config('ENABLE_SEARXNG'):
+            if enable_search:
                 logger.info(f"搜索漏洞相关信息: {cve_id}")
                 # 增强搜索查询，添加PoC/EXP关键词
-                search_result = search_searxng(f"{cve_id} Vulnerability Analysis PoC EXP Exploit")
-            elif enable_search and not get_config('ENABLE_SEARXNG'):
-                logger.info(f"SearXNG搜索功能已禁用，跳过搜索: {cve_id}")
+                search_result = search_duckduckgo(f"{cve_id} Vulnerability Analysis PoC EXP Exploit")
+            else:
+                logger.info(f"搜索功能已禁用，跳过搜索: {cve_id}")
 
             logger.info("构建GPT提示文本")
             prompt = build_prompt(cve_info, search_result, code_prompt[:5000])
@@ -212,7 +195,7 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
                 
             logger.info("请求GPT分析")
             gpt_results = ask_gpt(prompt)
-            logger.info(f"GPT 分析结果长度: {len(gpt_results)}")
+            logger.info(f"GPT 分析结果长度: {len(gpt_results) if gpt_results else 0}")
 
             if gpt_results:
                 # 检查GPT分析结果中的CVE有效性
