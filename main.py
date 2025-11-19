@@ -299,8 +299,20 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
         
         if enable_notify and push_today:
             logger.info("发送通知")
-            # 使用统一的通知发送函数，内部会根据配置决定发送哪种类型的通知
-            send_webhook(result)
+            # 重新组织数据结构以匹配webhook模板
+            webhook_data = {
+                'cve': {
+                    'id': cve_id,
+                },
+                'repo': {
+                    'full_name': repo_full_name,
+                    'html_url': repo_link,
+                    'description': repo_description or '无描述'
+                },
+                'gpt': gpt_results if gpt_results else {}
+            }
+            # 使用统一的通知发送函数
+            send_webhook(webhook_data)
         
         return result
 

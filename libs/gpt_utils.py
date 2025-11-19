@@ -178,24 +178,6 @@ def ask_gpt(prompt: str) -> Optional[Dict[str, Any]]:
         }
         
         response = requests.post(
-            url,
-            headers=headers,
-            json=data,
-            timeout=60
-        )
-        
-        # 处理429速率限制
-        if response.status_code == 429:
-            logger.warning("Gemini API速率限制(429)，等待10秒后重试...")
-            time.sleep(10)
-            response = requests.post(url, headers=headers, json=data, timeout=60)
-        
-        response.raise_for_status()
-        result = response.json()
-        
-        # 解析Gemini响应格式
-        if ("candidates" in result and result["candidates"] and 
-            "content" in result["candidates"][0] and 
             "parts" in result["candidates"][0]["content"] and 
             result["candidates"][0]["content"]["parts"]):
             
