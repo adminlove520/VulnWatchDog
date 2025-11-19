@@ -7,6 +7,9 @@ on:
   workflow_dispatch:
     # 允许手动触发
 
+permissions:
+  contents: write
+
 jobs:
   generate-report:
     runs-on: ubuntu-latest
@@ -24,33 +27,33 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install -r requirements.txt
       
       - name: Generate weekly report
-        run: python -c "from main import generate_weekly_report; generate_weekly_report()"
+        env:
+          DB_URL: sqlite:///vulns.db
+        run: |
+          python -c "from main import generate_weekly_report; generate_weekly_report()"
+      
+      - name: Upload report as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-vulnerability-report
+          path: data/WeeklyReport/**/*.md
+          if-no-files-found: warn
       
       - name: Commit and push report
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "VulnWatchdog[bot]"
           
-          # 查找最近生成的周报文件
-          REPORT_FILE=$(find data/WeeklyReport -name "Weekly_*.md" -type f -mtime -1 | sort | tail -1)
+          # 添加周报目录
+          git add data/WeeklyReport/
           
-          if [ -n "$REPORT_FILE" ]; then
-            echo "Found report file: $REPORT_FILE"
-            git add "$REPORT_FILE"
-            
-            # 检查是否有更改
-            if git diff --quiet --staged; then
-              echo "No changes to commit"
-            else
-              git commit -m "Add weekly vulnerability report $(date +'%Y-%m-%d')"
-              git push
-            fi
+          # 检查是否有更改
+          if git diff --quiet --staged; then
+            echo "No changes to commit"
           else
-            echo "No report file found"
-            exit 1
+            git commit -m "添加每周漏洞报告 $(date +'%Y-%m-%d')"
+            git push
           fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
