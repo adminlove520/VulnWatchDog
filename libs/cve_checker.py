@@ -80,6 +80,21 @@ class CVEChecker:
         
         return result
         
+    def check_cve_validity(self, cve_id: str) -> tuple[bool, Optional[str]]:
+        """
+        检查CVE有效性（兼容方法）
+        
+        参数:
+            cve_id: CVE ID
+            
+        返回:
+            (是否有效, 数据源)的元组
+        """
+        is_valid = self.verify_cve_availability(cve_id)
+        # 简单返回，不追踪具体来源（为了兼容性）
+        source = "CISA/OSCS/GitHub" if is_valid else None
+        return is_valid, source
+        
     def _verify_cve(self, cve_id: str) -> bool:
         """
         验证CVE的实际逻辑
