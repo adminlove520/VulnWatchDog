@@ -140,7 +140,7 @@ def ask_gpt(prompt: str) -> Optional[Dict[str, Any]]:
     """
     config = get_config()
     api_key = config.get("gemini", {}).get("api_key")
-    model = config.get("gemini", {}).get("model", "gemini-2.0-flash")
+    model = config.get("gemini", {}).get("model", "gemini-1.5-flash")
     
     if not api_key:
         logger.warning("未配置Gemini API密钥，无法使用Gemini分析功能")
