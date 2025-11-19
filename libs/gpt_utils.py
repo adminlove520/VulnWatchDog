@@ -1,6 +1,7 @@
 import logging
 import json
 import requests
+import time
 import traceback
 from typing import Dict, Any, Optional
 from config import get_config
@@ -182,6 +183,12 @@ def ask_gpt(prompt: str) -> Optional[Dict[str, Any]]:
             json=data,
             timeout=60
         )
+        
+        # 处理429速率限制
+        if response.status_code == 429:
+            logger.warning("Gemini API速率限制(429)，等待10秒后重试...")
+            time.sleep(10)
+            response = requests.post(url, headers=headers, json=data, timeout=60)
         
         response.raise_for_status()
         result = response.json()
