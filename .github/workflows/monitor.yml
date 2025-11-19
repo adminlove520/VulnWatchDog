@@ -32,7 +32,7 @@ jobs:
           NOTIFY_TYPE: ${{ secrets.NOTIFY_TYPE }}
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY || secrets.GPT_API_KEY }}
-          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-1.5-flash' }}
           CVE_YEAR_RANGE: ${{ secrets.CVE_YEAR_RANGE || '2020-2025' }}
           GIT_URL: https://github.com/${{ github.repository }}
           # 钉钉通知配置

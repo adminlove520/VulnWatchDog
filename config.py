@@ -18,7 +18,7 @@ ENABLE_NOTIFY=True
 ENABLE_GPT=True
 
 # Gemini模型名称
-GEMINI_MODEL='gemini-2.0-flash'
+GEMINI_MODEL='gemini-1.5-flash'
 
 # 是否启用漏洞信息搜索功能，需启用GPT分析
 ENABLE_SEARCH=True
@@ -49,7 +49,7 @@ def get_config(key=None):
         'ENABLE_GPT': ENABLE_GPT,
         'gemini': {
             'api_key': os.environ.get('GEMINI_API_KEY') if os.environ.get('GEMINI_API_KEY') else os.environ.get('GPT_API_KEY'),
-            'model': os.environ.get('GEMINI_MODEL') if os.environ.get('GEMINI_MODEL') else GEMINI_MODEL
+            'model': os.environ.get('GEMINI_MODEL') if os.environ.get('GEMINI_MODEL') else GEMINI_MODEL  # gemini-1.5-flash
         },
         # 搜索配置
         'ENABLE_SEARCH': ENABLE_SEARCH,

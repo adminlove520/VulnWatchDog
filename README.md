@@ -26,7 +26,7 @@ WEBHOOK_SECRET: "可选的webhook密钥"
 
 # Gemini AI配置
 GEMINI_API_KEY: "你的Gemini API密钥"  # 或使用GPT_API_KEY
-GEMINI_MODEL: "gemini-2.0-flash"  # 可选，默认为gemini-2.0-flash
+GEMINI_MODEL: "gemini-1.5-flash"  # 可选，默认为gemini-1.5-flash
 ```
 
 2. 配置环境变量 (使用 `.env` 文件或 GitHub Secrets):
@@ -47,7 +47,7 @@ NOTIFY_TYPE = 'feishu'  # 通知类型: feishu, dingtalk
 
 # AI分析相关配置
 ENABLE_GPT = True  # 是否启用AI分析功能（仅支持Gemini）
-GEMINI_MODEL = 'gemini-2.0-flash'  # 使用的Gemini模型名称
+GEMINI_MODEL = 'gemini-1.5-flash'  # 使用的Gemini模型名称
 
 # 搜索相关配置
 ENABLE_SEARCH = True  # 是否启用漏洞信息搜索（使用DuckDuckGo）
