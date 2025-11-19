@@ -6,7 +6,7 @@ VulnWatchdog 是一个强大的自动化漏洞监控与分析平台，集成了�
 
 - 🔍 **多源数据采集**：自动监控 GitHub 上的 CVE 相关仓库、CISA KEV 目录和 OSCS 漏洞平台
 - 📊 **漏洞情报整合**：统一获取并解析 CVE 漏洞详情、影响范围和技术细节
-- 🤖 **智能风险分析**：利用 GPT/Gemini 进行漏洞严重性评估、POC 代码分析和投毒风险检测
+- 🤖 **智能风险分析**：利用 Gemini AI 进行漏洞严重性评估、POC 代码分析和投毒风险检测
 - 📝 **多格式报告生成**：支持 Markdown、RSS 订阅和周期性周报，满足不同场景需求
 - 🔔 **实时告警通知**：支持飞书、钉钉等多渠道通知，第一时间推送关键漏洞信息
 - ⏱️ **自动化任务调度**：基于 GitHub Actions 的定时扫描和报告生成机制
@@ -24,13 +24,9 @@ VulnWatchdog 是一个强大的自动化漏洞监控与分析平台，集成了�
 WEBHOOK_URL: "你的webhook地址"
 WEBHOOK_SECRET: "可选的webhook密钥"
 
-# GPT/Gemini配置
-GPT_API_KEY: "你的API密钥"
-GPT_SERVER_URL: "可选的自定义服务器地址"
-
-# 搜索配置
-SEARXNG_URL: "SearXNG搜索服务地址"
-SEARXNG_ENABLED: "false"  # 默认关闭SearXNG搜索功能，需要时设为"true"
+# Gemini AI配置
+GEMINI_API_KEY: "你的Gemini API密钥"  # 或使用GPT_API_KEY
+GEMINI_MODEL: "gemini-2.0-flash"  # 可选，默认为gemini-2.0-flash
 ```
 
 2. 配置环境变量 (使用 `.env` 文件或 GitHub Secrets):
@@ -50,11 +46,11 @@ ENABLE_NOTIFY = True  # 是否启用通知功能
 NOTIFY_TYPE = 'feishu'  # 通知类型: feishu, dingtalk
 
 # AI分析相关配置
-ENABLE_GPT = True  # 是否启用AI分析功能
-GPT_MODEL = 'gemini-2.0-flash'  # 使用的模型名称
+ENABLE_GPT = True  # 是否启用AI分析功能（仅支持Gemini）
+GEMINI_MODEL = 'gemini-2.0-flash'  # 使用的Gemini模型名称
 
 # 搜索相关配置
-ENABLE_SEARCH = True  # 是否启用漏洞信息搜索
+ENABLE_SEARCH = True  # 是否启用漏洞信息搜索（使用DuckDuckGo）
 ENABLE_EXTENDED = True  # 是否启用扩展搜索
 ```
 
@@ -192,4 +188,4 @@ MIT License
 
 ## 致谢
 - 感谢 [Poc-Monitor](https://github.com/sari3l/Poc-Monitor) 项目提供的思路
-- 感谢 [SearXNG](https://github.com/searxng/searxng) 项目提供的搜索引擎
+- 感谢 [DuckDuckGo](https://duckduckgo.com/) 提供免费可靠的搜索服务
