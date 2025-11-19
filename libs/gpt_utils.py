@@ -169,15 +169,35 @@ def ask_gpt(prompt: str) -> Optional[Dict[str, Any]]:
                         {
                             "text": prompt
                         }
-import logging
-import json
-import requests
-import time
-import traceback
-from typing import Dict, Any, Optional
-from config import get_config
-
-logger = logging.getLogger(__name__)
+                    ]
+                }
+            ]
+        }
+        
+        # 发送请求
+        response = requests.post(url, headers=headers, json=data, timeout=60)
+        response.raise_for_status()
+        
+        # 处理响应
+        result = response.json()
+        
+        # 提取文本响应
+        if "candidates" in result and result["candidates"]:
+            content = result["candidates"][0].get("content", {})
+            if "parts" in content and content["parts"]:
+                text = content["parts"][0].get("text", "")
+                # 尝试解析JSON
+                try:
+                    return json.loads(text)
+                except json.JSONDecodeError:
+                    logger.error("Gemini返回的结果不是有效的JSON格式")
+                    return None
+                    
+    except Exception as e:
+        logger.error(f"调用Gemini API失败: {str(e)}")
+        logger.debug(traceback.format_exc())
+    
+    return None
 
 
 def get_cve_info(cve_id: str) -> Dict[str, Any]:
