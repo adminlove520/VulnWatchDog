@@ -199,12 +199,18 @@ def send_dingtalk_webhook(data, webhook_url, secret) -> bool:
             "charset": "utf-8"
         }
         
+        # 钉钉签名计算：使用secret作为HMAC key
         timestamp = str(int(time.time() * 1000))
-        secret = secret if secret else ""
-        string_to_sign = f"{timestamp}\n{secret}"
-        hmac_code = hmac.new(string_to_sign.encode("utf-8"), digestmod=hashlib.sha256).digest()
-        sign = base64.b64encode(hmac_code).decode("utf-8")
-        webhook_url = f"{webhook_url}&timestamp={timestamp}&sign={sign}"
+        if secret:
+            string_to_sign = f"{timestamp}\n{secret}"
+            hmac_code = hmac.new(secret.encode("utf-8"), string_to_sign.encode("utf-8"), digestmod=hashlib.sha256).digest()
+            sign = base64.b64encode(hmac_code).decode("utf-8")
+            # URL编码sign参数
+            import urllib.parse
+            sign = urllib.parse.quote_plus(sign)
+            webhook_url = f"{webhook_url}&timestamp={timestamp}&sign={sign}"
+        else:
+            webhook_url = f"{webhook_url}&timestamp={timestamp}"
         
         response = requests.post(webhook_url, headers=headers, json=msg)
         response_data = response.json()
