@@ -224,6 +224,20 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
                 # 从CVE ID中提取年份，格式为CVE-YYYY-XXXX
                 year = cve_id.split('-')[1]
                 filepath = f"data/markdown/{year}/{cve_id}-{repo_full_name.replace('/', '_')}.md"
+                
+                # 确保所有模板需要的字段都存在（添加默认值）
+                template_fields = {
+                    'name': gpt_results.get('name', f'{cve_id} 漏洞'),
+                    'type': gpt_results.get('type', '未知类型'),
+                    'app': gpt_results.get('app', '未知应用'),
+                    'risk': gpt_results.get('risk', '未评级'),
+                    'version': gpt_results.get('version', '未知版本'),
+                    'condition': gpt_results.get('condition', '未知条件'),
+                    'poc_available': gpt_results.get('poc_available', '未知'),
+                    'poison': gpt_results.get('poison', '未评估'),
+                    'markdown': gpt_results.get('markdown', gpt_results.get('description', '暂无详细分析')),
+                }
+                
                 # 添加reference_url字段，包含各数据源的URL
                 reference_urls = []
                 if source:
@@ -231,6 +245,8 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
                 reference_urls.append(f"https://nvd.nist.gov/vuln/detail/{cve_id}")
                 reference_urls.append(f"https://www.oscs1024.com/oscs/v1/vdb/vuln_info/{cve_id}")
                 
+                # 合并所有字段
+                gpt_results.update(template_fields)
                 gpt_results.update({
                     'cve_id': cve_id,
                     'repo_name': repo_full_name,
@@ -240,11 +256,19 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
                     'action_log': '新增' if action_log == 'new' else '更新',
                     'git_url': f"{get_config('GIT_URL')}/blob/main/{filepath}" if get_config('GIT_URL') else ''
                 })
+                
                 result['gpt'] = gpt_results
-                write_to_markdown(gpt_results, filepath)
-                logger.info(f'生成分析报告: {filepath}')
+                
+                # 写入markdown（添加错误处理）
+                try:
+                    write_to_markdown(gpt_results, filepath)
+                    logger.info(f'✅ 成功生成分析报告: {filepath}')
+                except Exception as e:
+                    logger.error(f"❌ 生成markdown失败: {e}")
+                    logger.debug(f"GPT结果字段: {list(gpt_results.keys())}")
+                    logger.debug(traceback.format_exc())
             else:
-                logger.error(f"GPT分析失败,返回结果: {gpt_results}")
+                logger.error(f"GPT分析失败,返回结果为空: {gpt_results}")
 
         # 保存仓库信息
         try:

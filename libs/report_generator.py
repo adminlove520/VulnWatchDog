@@ -4,6 +4,7 @@ from xml.dom import minidom
 from datetime import datetime
 from typing import List, Dict
 import logging
+import traceback
 
 logger = logging.getLogger(__name__)
 
@@ -15,12 +16,31 @@ def write_to_markdown(data: Dict, filename: str):
     """
     将内容写入markdown文件
     """
-    # 确保目录存在
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
-    template = get_template()
-    content = template.format(**data)
-    with open(filename, 'w', encoding='utf-8') as file:
-        file.write(content)
+    try:
+        # 确保目录存在
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        
+        # 记录写入前的数据
+        logger.info(f"📝 准备写入markdown: {filename}")
+        logger.debug(f"数据字段: {list(data.keys())}")
+        
+        template = get_template()
+        content = template.format(**data)
+        
+        with open(filename, 'w', encoding='utf-8') as file:
+            file.write(content)
+        
+        logger.info(f"✅ Markdown文件已成功写入: {filename}")
+        
+    except KeyError as e:
+        logger.error(f"❌ 模板字段缺失: {e}")
+        logger.error(f"可用字段: {list(data.keys())}")
+        logger.error(f"缺少的字段可能是模板中的: {e}")
+        raise
+    except Exception as e:
+        logger.error(f"❌ 写入markdown失败: {e}")
+        logger.debug(traceback.format_exc())
+        raise
 
 def generate_rss_feed(vulnerabilities: List[Dict], title: str, description: str) -> str:
     """
