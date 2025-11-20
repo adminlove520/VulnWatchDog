@@ -12,6 +12,7 @@ from libs.report_generator import write_to_markdown, generate_rss_feed, get_temp
 from libs.scheduler import start_scheduler, stop_scheduler, get_cve_checker
 from libs.cve_checker import CVEChecker
 from libs.gpt_utils import ask_gpt, get_cve_info
+from libs.gpt_queue import queue_gpt_retry
 from libs.webhook import send_webhook
 from models.models import get_db, get_db_session, CVE, Repository, func
 
@@ -269,6 +270,10 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
                     logger.debug(traceback.format_exc())
             else:
                 logger.warning(f"⚠️ GPT分析失败，生成基础报告: {cve_id}")
+                # 将失败的请求加入重试队列
+                if enable_gpt and prompt:
+                    logger.info(f"将CVE {cve_id} 的GPT请求加入重试队列")
+                    queue_gpt_retry(cve_id, prompt)
                 # 即使GPT失败也生成基础markdown
                 gpt_results = {
                     'name': f'{cve_id} 漏洞分析（GPT暂时失败）',
