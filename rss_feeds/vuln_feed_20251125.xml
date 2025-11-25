@@ -4,21 +4,21 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2025-11-25安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Tue, 25 Nov 2025 06:21:17 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Nov 2025 08:20:02 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
       <title>CVE-2025-13223 - CVE-2025-13223 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Darwin72820/CVE-2025-13223'&gt;CVE-2025-13223&lt;/a&gt;: None</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2025-13223</link>
       <guid isPermaLink="false">CVE-2025-13223</guid>
-      <pubDate>2025-11-25T06:21:17.064889</pubDate>
+      <pubDate>2025-11-25T08:20:02.525099</pubDate>
     </item>
     <item>
       <title>CVE-2024-29943 - CVE-2024-29943 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/seadragnol/CVE-2024-29943'&gt;CVE-2024-29943&lt;/a&gt;: Reproducing CVE-2024-29943 for Windows, based on https://github.com/bjrjk/CVE-2024-29943&lt;br&gt;&lt;a href='https://github.com/bjrjk/CVE-2024-29943'&gt;CVE-2024-29943&lt;/a&gt;: A Pwn2Own 2024 SpiderMonkey JIT Bug: From Integer Range Inconsistency to Bound Check Elimination then RCE</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2024-29943</link>
       <guid isPermaLink="false">CVE-2024-29943</guid>
-      <pubDate>2025-11-25T06:21:17.064902</pubDate>
+      <pubDate>2025-11-25T08:20:02.525110</pubDate>
     </item>
   </channel>
 </rss>
