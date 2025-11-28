@@ -7,7 +7,7 @@ import logging
 import sys
 from typing import List, Dict, Optional
 from config import get_config
-from libs.search_engine import search_github, search_duckduckgo, get_github_poc, SearchError
+from libs.search_engine import search_duckduckgo, search_bing, search_github, get_github_poc, SearchError
 from libs.report_generator import write_to_markdown, generate_rss_feed, get_template
 from libs.scheduler import start_scheduler, stop_scheduler, get_cve_checker
 from libs.cve_checker import CVEChecker
@@ -55,8 +55,9 @@ def build_prompt(cve_info: Dict, search_results: List[Dict], poc_results_str: st
         cve_info = json.dumps(cve_info)
         
         # 构建完整提示文本
+
         prompt = f"""
-      请根据以下漏洞信息、搜索结果和漏洞利用代码，评估漏洞的有效性、POC代码的有效性、是否存在投毒风险，并分析漏洞利用方式。请注意以下几点：
+      请根据以下漏洞信息、搜索结果和漏洞利用代码，生成一份详细的漏洞分析报告，包含有效性分析、投毒风险分析、利用方式、代码分析等内容。请注意以下几点：
 
     **信息来源：**
 
@@ -73,17 +74,23 @@ def build_prompt(cve_info: Dict, search_results: List[Dict], poc_results_str: st
         {poc_results_str}
         ```
 
-    **你的角色：** 你是一名搜索助理和网络漏洞研究员。
+    **你的角色：** 你是一名专业的网络安全分析师，擅长分析CVE漏洞信息。
 
     **任务：**
 
     1.  **CVE有效性：** 分析此CVE是否为真实存在的有效漏洞。请综合考虑CVE编号格式、漏洞描述的完整性、参考链接的存在、漏洞的技术细节等因素。
-    2.  **POC有效性：** 判断提供的POC代码是否有效，是否能实际利用此漏洞。
+    2.  **POC有效性：** 判断提供的POC代码是否有效，是否能实际利用此漏洞，并分析其有效性。
     3.  **投毒风险：** 分析POC代码内容,判断此仓库中是否存在作者隐藏的投毒代码,分析结果使用百分比。务必不要把POC验证的后门代码判定为投毒代码。
-    4.  **利用方式：** 分析并总结漏洞的利用方式。
-    5.  **排序优先级:** 搜索引擎结果 >  漏洞利用代码 > 漏洞库信息
-    6.  **输出内容:** 务必使用中文
-    7.  **markdown内容:** 务必使用markdown格式对提供的内容,围绕本次任务要求进行详细描述.
+    4.  **利用方式：** 详细分析并总结漏洞的利用方式，包括攻击步骤、所需条件等。
+    5.  **代码分析：** 详细分析POC代码的工作原理、关键组件和执行流程。
+    6.  **排序优先级:** 搜索引擎结果 >  漏洞利用代码 > 漏洞库信息
+    7.  **输出内容:** 务必使用中文
+    8.  **markdown内容:** 务必使用markdown格式，包含以下部分：
+        - 漏洞概述
+        - 有效性分析
+        - 投毒风险分析
+        - 利用方式
+        - 代码分析
     **输出格式：**  你**必须**严格按照以下 **JSON** 格式输出，**不要包含任何额外的文字、说明或前缀/后缀**。JSON中的**所有键和字符串类型的值必须使用双引号**。请务必对特殊字符进行转义。
 
     **示例JSON:**```json
@@ -97,7 +104,10 @@ def build_prompt(cve_info: Dict, search_results: List[Dict], poc_results_str: st
         "poc_available": "是",
         "poison": "90%",
         "cve_valid": "是",
-        "markdown": "该漏洞存在于ExampleApp的登录模块,攻击者可以通过构造恶意的SQL语句绕过身份验证..."
+        "markdown": "# 漏洞概述\n\n该漏洞存在于ExampleApp的登录模块,攻击者可以通过构造恶意的SQL语句绕过身份验证...\n\n## 有效性分析\n\n根据CVE编号格式、漏洞描述的完整性、参考链接的存在等因素，该CVE是真实有效的...\n\n## 投毒风险分析\n\n该仓库存在较高的投毒风险，主要原因是...\n\n## 利用方式\n\n1.  攻击者需要网络访问权限\n2.  构造恶意的SQL语句\n3.  发送到目标系统\n4.  绕过身份验证，获取系统访问权限\n\n## 代码分析\n\n主要代码组件包括：\n- `exploit.py`: 主漏洞利用脚本\n- `payloads.py`: 包含各种SQL注入payload\n- `utils.py`: 辅助工具函数\n\n代码执行流程：\n1.  连接到目标数据库\n2.  构造恶意SQL语句\n3.  发送到目标系统\n4.  解析响应，获取敏感信息\n",
+        "repo_name": "example/repo",
+        "repo_url": "https://github.com/example/repo",
+        "cve_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-12345"
     }}
         """
         
@@ -162,9 +172,10 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
         # 获取POC代码
         logger.info(f"获取POC代码: {repo_link}")
         code_prompt = get_github_poc(repo_link)
+        # 如果无法获取POC代码，使用仓库URL作为备选，不跳过处理
         if not code_prompt:
-            logger.error(f"获取POC代码失败")
-            return
+            logger.warning(f"无法获取仓库 {repo_link} 的POC代码，使用仓库URL作为备选")
+            code_prompt = repo_link
 
         # 获取或创建CVE信息
         cve = db_session.query(CVE).filter(CVE.cve_id == cve_id).first()
@@ -196,12 +207,104 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
 
         # GPT分析
         gpt_results = None
+        # 初始化related_articles_str变量
+        related_articles_str = '暂无相关文章'
         if enable_gpt:
             search_result = []
             if enable_search:
                 logger.info(f"搜索漏洞相关信息: {cve_id}")
-                # 增强搜索查询，添加PoC/EXP关键词
-                search_result = search_duckduckgo(f"{cve_id} Vulnerability Analysis PoC EXP Exploit")
+                # 使用更精准的搜索关键词，移除site:语法
+                search_query = f"{cve_id} Vulnerability 漏洞分析 PoC EXP Exploit"
+                
+                # 获取搜索引擎配置
+                search_engine = get_config('SEARCH_ENGINE')
+                search_result = []
+                
+                # 网站优先级列表，使用完整域名和名称
+                priority_sites = [
+                    ('先知社区', 'xz.aliyun.com'),
+                    ('FreeBuf', 'freebuf.com'),
+                    ('securityvulnerability.io', 'securityvulnerability.io')
+                ]
+                
+                # 根据配置选择搜索引擎
+                if search_engine in ['duckduckgo', 'all']:
+                    # 使用DuckDuckGo搜索
+                    duckduckgo_results = search_duckduckgo(search_query)
+                    search_result.extend(duckduckgo_results)
+                    logger.info(f"DuckDuckGo搜索到 {len(duckduckgo_results)} 条结果")
+                
+                if search_engine in ['bing', 'all']:
+                    # 使用Bing搜索
+                    bing_results = search_bing(search_query)
+                    search_result.extend(bing_results)
+                    logger.info(f"Bing搜索到 {len(bing_results)} 条结果")
+                
+                # 去重搜索结果
+                seen_urls = set()
+                unique_results = []
+                for result in search_result:
+                    url = result.get('url')
+                    if url and url not in seen_urls:
+                        seen_urls.add(url)
+                        unique_results.append(result)
+                search_result = unique_results
+                logger.info(f"去重后搜索结果: {len(search_result)} 条")
+                
+                # 将搜索结果转换为相关文章格式
+                if search_result:
+                    # 过滤和排序搜索结果
+                    priority_results = []
+                    normal_results = []
+                    
+                    for result in search_result:
+                        if result.get('title') and result.get('url'):
+                            title = result['title']
+                            url = result['url']
+                            content = result.get('content', '')
+                            
+                            # 过滤掉知乎结果
+                            if 'zhihu.com' in url:
+                                logger.debug(f"跳过知乎结果: {url}")
+                                continue
+                            
+                            # 检查是否为相关结果
+                            is_related = False
+                            # 更严格的相关结果判断，确保只保留与漏洞相关的结果
+                            if cve_id in title or cve_id in content:
+                                is_related = True
+                            elif any(keyword in title.lower() or keyword in content.lower() for keyword in ['漏洞', 'vulnerability', 'exploit', 'poc', 'cve', 'exploitation', 'exploit code']):
+                                is_related = True
+                            
+                            if is_related:
+                                # 检查是否为优先级网站
+                                is_priority = False
+                                for site_name, site_domain in priority_sites:
+                                    # 更严格的域名匹配，确保准确识别优先级网站
+                                    if site_domain.lower() in url.lower():
+                                        is_priority = True
+                                        logger.debug(f"匹配到优先级网站: {site_name}，URL: {url}")
+                                        break
+                                
+                                if is_priority:
+                                    priority_results.append(f"- [{title}]({url})")
+                                else:
+                                    # 只保留与漏洞直接相关的普通结果
+                                    if any(keyword in title.lower() or keyword in content.lower() for keyword in [cve_id.lower(), '漏洞', 'exploit', 'poc']):
+                                        normal_results.append(f"- [{title}]({url})")
+                    
+                    # 合并结果：优先级网站结果在前，普通结果在后
+                    related_articles = priority_results + normal_results
+                    
+                    # 最多保留10条结果
+                    related_articles = related_articles[:10]
+                    
+                    if related_articles:
+                        related_articles_str = '\n'.join(related_articles)
+                        logger.info(f"生成相关文章列表，共 {len(related_articles)} 条")
+                        logger.info(f"优先级网站结果: {len(priority_results)} 条，普通结果: {len(normal_results)} 条")
+                    else:
+                        related_articles_str = '暂无相关文章'
             else:
                 logger.info(f"搜索功能已禁用，跳过搜索: {cve_id}")
 
@@ -255,7 +358,8 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
                     'cve_url': f"https://nvd.nist.gov/vuln/detail/{cve_id}",
                     'reference_url': ' | '.join(reference_urls),
                     'action_log': '新增' if action_log == 'new' else '更新',
-                    'git_url': f"{get_config('GIT_URL')}/blob/main/{filepath}" if get_config('GIT_URL') else ''
+                    'git_url': filepath,
+                    'related_articles': related_articles_str
                 })
                 
                 result['gpt'] = gpt_results
@@ -270,6 +374,8 @@ def process_cve(cve_id: str, repo: Dict, db_session) -> Dict:
                     logger.debug(traceback.format_exc())
             else:
                 logger.warning(f"⚠️ GPT分析失败，生成基础报告: {cve_id}")
+                # 初始化related_articles_str变量
+                related_articles_str = '暂无相关文章'
                 # 将失败的请求加入重试队列
                 if enable_gpt and prompt:
                     logger.info(f"将CVE {cve_id} 的GPT请求加入重试队列")
@@ -333,8 +439,13 @@ Gemini API暂时无法完成分析，可能原因：
         if enable_notify and push_today:
             logger.info("发送通知")
             # 重新组织数据结构以匹配webhook模板
+            # 为gpt_results添加timestamp字段
+            if gpt_results:
+                gpt_results['timestamp'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            
             webhook_data = {
                 'cve': {
+                    'title': cve_id,
                     'id': cve_id,
                 },
                 'repo': {
@@ -360,6 +471,10 @@ def main():
 
     """
     try:
+        # 记录当前使用的GPT服务提供商
+        gpt_provider = get_config('GPT_PROVIDER')
+        logger.info(f"使用GPT服务提供商: {gpt_provider}")
+        
         # 从配置中获取CVE年份范围，默认为"2020-2025"
         year_range = get_config('CVE_YEAR_RANGE')
         if not year_range:
@@ -367,22 +482,8 @@ def main():
         
         logger.info(f"使用CVE年份范围: {year_range}")
         
-        # 向后兼容：如果设置了CVE_YEAR_PREFIX，则优先使用
-        query_prefix = get_config('CVE_YEAR_PREFIX')
-        if query_prefix:
-            query = query_prefix
-            logger.info(f"使用CVE年份前缀: {query}")
-        else:
-            # 解析年份范围
-            try:
-                start_year, end_year = map(int, year_range.split('-'))
-                # 生成查询逻辑（这里使用年份前缀，后续可扩展更精确的查询）
-                # 对于范围查询，使用起始年份的前缀
-                query = f"CVE-{start_year//10}"
-                logger.info(f"基于年份范围生成查询前缀: {query}")
-            except:
-                logger.warning(f"年份范围格式错误，使用默认值: 2020-2025")
-                query = "CVE-2025"
+        # 移除年份范围生成查询前缀的逻辑，直接使用完整的CVE格式进行搜索
+        query = "CVE-"
         
         # 获取CVE检查器实例
         cve_checker = get_cve_checker()
@@ -530,9 +631,21 @@ def generate_weekly_report():
         year = now.year
         month = now.month
         
+        # 计算本周的开始和结束日期
+        # 本周一
+        week_start = now - timedelta(days=now.weekday())
+        # 本周日
+        week_end = week_start + timedelta(days=6)
+        
         # 计算当月第几周
-        # 简单计算：用当前日期是第几天除以7并向上取整
-        week_of_month = (now.day + 6) // 7
+        # 方法：计算本月第一天是星期几，然后计算当前日期是第几周
+        first_day_of_month = datetime(year, month, 1, tzinfo=tz)
+        # 本月第一天是星期几（0=周一，6=周日）
+        first_day_weekday = first_day_of_month.weekday()
+        # 计算当前日期距离本月第一天的天数
+        days_since_first = (now - first_day_of_month).days
+        # 计算当月第几周（向上取整）
+        week_of_month = (days_since_first + first_day_weekday + 1 + 6) // 7
         
         # 创建目录结构
         dir_path = f"data/WeeklyReport/{year}-{month:02d}-W{week_of_month}"
@@ -541,21 +654,19 @@ def generate_weekly_report():
         # 报告文件路径
         report_file = os.path.join(dir_path, f"Weekly_{today_str}.md")
         
-        # 计算本周的开始和结束日期
-        week_start = now - timedelta(days=now.weekday())  # 本周一
-        week_end = week_start + timedelta(days=6)  # 本周日
+        # 格式化日期字符串
+        week_start_str = week_start.strftime('%Y-%m-%d')
+        week_end_str = week_end.strftime('%Y-%m-%d')
         
         # 从数据库获取本周的漏洞数据
         with get_db_session() as db_session:
             # 查询本周的漏洞
-            week_start_str = week_start.strftime('%Y-%m-%d')
-            week_end_str = week_end.strftime('%Y-%m-%d')
-            
-            # 获取本周新增的CVE记录（修复join查询问题）
+            # 获取本周新增的CVE记录，修复查询条件
             weekly_vulnerabilities = db_session.query(CVE).filter(
                 CVE.cve_id.in_(
                     db_session.query(Repository.cve_id).filter(
-                        Repository.repo_pushed_at >= week_start_str
+                        Repository.repo_pushed_at >= week_start_str,
+                        Repository.repo_pushed_at <= week_end_str
                     ).distinct()
                 )
             ).all()
@@ -570,14 +681,13 @@ def generate_weekly_report():
             report_content.append("")
             
             # 按严重程度分类
-            severity_count = {'Critical': 0, 'High': 0, 'Medium': 0, 'Low': 0}
-            vuln_by_severity = {'Critical': [], 'High': [], 'Medium': [], 'Low': []}
+            severity_count = {'Critical': 0, 'High': 0, 'Medium': 0, 'Low': 0, 'Unknown': 0}
+            vuln_by_severity = {'Critical': [], 'High': [], 'Medium': [], 'Low': [], 'Unknown': []}
             
             for vuln in weekly_vulnerabilities:
                 severity = vuln.severity if vuln.severity else 'Unknown'
-                if severity in severity_count:
-                    severity_count[severity] += 1
-                    vuln_by_severity[severity].append(vuln)
+                severity_count[severity] += 1
+                vuln_by_severity[severity].append(vuln)
             
             report_content.append("## 严重程度统计")
             for sev, count in severity_count.items():
@@ -587,16 +697,16 @@ def generate_weekly_report():
             
             # 详细漏洞列表
             report_content.append("## 漏洞详情")
-            for severity in ['Critical', 'High', 'Medium', 'Low']:
+            for severity in ['Critical', 'High', 'Medium', 'Low', 'Unknown']:
                 if vuln_by_severity[severity]:
                     report_content.append(f"### {severity} 级漏洞")
                     report_content.append("")
                     for vuln in vuln_by_severity[severity]:
                         report_content.append(f"#### {vuln.cve_id}")
-                        report_content.append(f"- **标题**: {vuln.title}")
-                        report_content.append(f"- **描述**: {vuln.description[:200]}...")
-                        report_content.append(f"- **发布日期**: {vuln.published_date}")
-                        report_content.append(f"- **参考链接**: {vuln.reference or '暂无'}")
+                        report_content.append(f"- **标题**: {vuln.title or '暂无'}")
+                        report_content.append(f"- **描述**: {vuln.description[:200] if vuln.description else '暂无'}...")
+                        report_content.append(f"- **发布日期**: {vuln.published_date or '暂无'}")
+                        report_content.append(f"- **参考链接**: {' | '.join(vuln.references) if hasattr(vuln, 'references') and vuln.references else '暂无'}")
                         report_content.append("")
             
             # 保存报告
@@ -637,6 +747,7 @@ if __name__ == "__main__":
     logger.info(f"  运行模式: {get_config('DEBUG')}")
     logger.info(f"  GPT 开关: {'启用' if get_config('ENABLE_GPT')==True else '禁用'}")
     logger.info(f"  搜索开关: {'启用' if get_config('ENABLE_SEARCH')==True else '禁用'}")
+    logger.info(f"  搜索引擎: {get_config('SEARCH_ENGINE')}")
     logger.info(f"  扩展搜索开关: {'启用' if get_config('ENABLE_EXTENDED')==True else '禁用'}")
     logger.info(f"  通知开关: {'启用' if get_config('ENABLE_NOTIFY')==True else '禁用'}")
     logger.info(f"  通知类型: {get_config('NOTIFY_TYPE')}")

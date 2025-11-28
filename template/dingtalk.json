@@ -2,7 +2,7 @@
   "msgtype": "markdown",
   "markdown": {
     "title": "【漏洞预警】{gpt.name}",
-    "text": "## 【漏洞预警】{gpt.name}\n\n---\n\n### 🔍 基本信息\n**CVE编号**: [{gpt.cve_id}]({gpt.cve_url})\n**漏洞类型**: {gpt.type}\n**受影响应用**: {gpt.app}\n**风险等级**: {gpt.risk}\n\n### 📊 漏洞详情\n**受影响版本**: {gpt.version}\n**利用条件**: {gpt.condition}\n**POC可用性**: {gpt.poc_available}\n**投毒风险**: {gpt.poison}\n**操作日志**: {gpt.action_log}\n\n---\n\n### 📁 相关资源\n**GitHub仓库**: [{repo.full_name}]({repo.html_url})\n**仓库描述**: {repo.description}\n\n---\n\n### 📑 安全建议\n- 及时更新受影响应用至最新版本\n- 按照官方补丁说明进行修复\n- 加强网络隔离和访问控制\n\n---\n\n**完整分析报告**: [查看详情]({gpt.git_url})\n**发布时间**: {gpt.timestamp}"
+    "text": "# 【漏洞预警】{gpt.name}\n\n**漏洞编号**: {gpt.cve_id}  \n**漏洞类型**: {gpt.type}  \n**受影响应用**: {gpt.app}  \n**危害等级**: {gpt.risk}  \n**影响版本**: {gpt.version}  \n**利用条件**: {gpt.condition}  \n**POC 可用性**: {gpt.poc_available}  \n**投毒风险**: {gpt.poison} \n\n## 概要\n\n{gpt.markdown}\n\n## 参考链接\n\n- 漏洞利用：[{repo.full_name}]({repo.html_url})  \n- 漏洞详情：[{gpt.cve_id}]({gpt.cve_url})\n\n## 相关文章\n\n{gpt.related_articles}\n\n**发布时间**: {gpt.timestamp}"
   },
   "at": {
     "isAtAll": false

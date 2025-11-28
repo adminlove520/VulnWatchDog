@@ -41,6 +41,8 @@ jobs:
           # 飞书通知配置
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
+          # 搜索引擎配置
+          SEARCH_ENGINE: ${{ secrets.SEARCH_ENGINE || 'all' }}
         run: python main.py
         
       - name: Commit changes

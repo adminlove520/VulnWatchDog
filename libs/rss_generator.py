@@ -93,7 +93,7 @@ def generate_daily_rss():
     生成当日漏洞的RSS feed
     """
     try:
-        # 获取当前日期的目录路径
+        # 获取当前日期
         today = datetime.now().strftime('%Y-%m-%d')
         year = today[:4]
         data_dir = f'./data/markdown/{year}'
@@ -104,29 +104,45 @@ def generate_daily_rss():
         # 检查目录是否存在
         if os.path.exists(data_dir):
             for filename in os.listdir(data_dir):
-                if filename.startswith(today):
+                if filename.endswith('.md'):
                     file_path = os.path.join(data_dir, filename)
                     try:
-                        with open(file_path, 'r', encoding='utf-8') as f:
-                            content = f.read()
-                            
-                            # 从Markdown文件中提取信息
-                            cve_id = filename.split('.')[0].split('-')[-1]
-                            title = f"CVE-{cve_id} - 漏洞情报"
-                            
-                            # 提取标题行
-                            for line in content.split('\n'):
-                                if line.startswith('#'):
-                                    title = line.strip('# ')
-                                    break
-                            
-                            today_vulnerabilities.append({
-                                'title': title,
-                                'cve_id': f"CVE-{cve_id}",
-                                'description': content[:200] + '...' if len(content) > 200 else content,
-                                'published_date': today,
-                                'url': f"https://nvd.nist.gov/vuln/detail/CVE-{cve_id}"
-                            })
+                        # 获取文件的修改时间
+                        file_mtime = os.path.getmtime(file_path)
+                        file_date = datetime.fromtimestamp(file_mtime).strftime('%Y-%m-%d')
+                        
+                        # 只处理今日修改的文件
+                        if file_date == today:
+                            with open(file_path, 'r', encoding='utf-8') as f:
+                                content = f.read()
+                                
+                                # 从文件名中提取CVE ID
+                                # 文件名格式：CVE-YYYY-XXXX-repo_name.md
+                                if filename.startswith('CVE-'):
+                                    # 提取CVE ID部分，例如从 "CVE-2025-1234-repo_name.md" 中提取 "CVE-2025-1234"
+                                    cve_id_parts = filename.split('-')
+                                    if len(cve_id_parts) >= 3:
+                                        cve_id = f"{cve_id_parts[0]}-{cve_id_parts[1]}-{cve_id_parts[2]}"
+                                    else:
+                                        cve_id = filename.split('.')[0]
+                                else:
+                                    cve_id = filename.split('.')[0]
+                                
+                                title = f"{cve_id} - 漏洞情报"
+                                
+                                # 提取标题行
+                                for line in content.split('\n'):
+                                    if line.startswith('#'):
+                                        title = line.strip('# ')
+                                        break
+                                
+                                today_vulnerabilities.append({
+                                    'title': title,
+                                    'cve_id': cve_id,
+                                    'description': content[:200] + '...' if len(content) > 200 else content,
+                                    'published_date': today,
+                                    'url': f"https://nvd.nist.gov/vuln/detail/{cve_id}"
+                                })
                     except Exception as e:
                         logger.error(f"读取漏洞文件失败 {file_path}: {str(e)}")
         

@@ -6,12 +6,34 @@ import hmac
 import hashlib
 import base64
 from config import get_config
+from libs.report_generator import fix_markdown_format
 import logging
 
 logger = logging.getLogger(__name__)
 
 
-def parse_webhook_data(webhook_data,data):
+def clean_string(s):
+    """
+    清理字符串，移除无效的控制字符
+    
+    Args:
+        s: 要清理的字符串
+        
+    Returns:
+        清理后的字符串
+    """
+    if not isinstance(s, str):
+        return s
+    
+    import re
+    # 移除所有无效的控制字符，只保留可打印字符和换行符
+    clean_text = re.sub(r'[\x00-\x1f\x7f-\x9f]', '', s)
+    # 移除可能的特殊空白字符
+    clean_text = re.sub(r'[\u200b-\u200f\ufeff]', '', clean_text)
+    return clean_text
+
+
+def parse_webhook_data(webhook_data, data):
     """
     解析webhook数据并替换变量
     
@@ -59,7 +81,14 @@ def parse_webhook_data(webhook_data,data):
             if isinstance(v, dict):
                 flatten_dict(v, new_key)
             else:
-                flat_data[new_key] = v
+                # 处理markdown内容，确保格式正确
+                if new_key == 'gpt.markdown':
+                    # 对markdown内容进行格式化处理
+                    formatted_content = fix_markdown_format(str(v))
+                    flat_data[new_key] = clean_string(formatted_content)
+                else:
+                    # 清理值中的无效控制字符
+                    flat_data[new_key] = clean_string(str(v))
     
     for section in ['cve', 'repo', 'gpt']:
         if section in data:
@@ -67,13 +96,53 @@ def parse_webhook_data(webhook_data,data):
     
     # 替换webhook_data中的变量
     if isinstance(webhook_data, dict):
-        webhook_str = json.dumps(webhook_data)
-        for k, v in flat_data.items():
-            webhook_str = webhook_str.replace(f"{{{k}}}", str(v))
-        return json.loads(webhook_str)
+        # 直接处理字典，避免json.dumps和json.loads导致的转义问题
+        def replace_in_dict(d):
+            if isinstance(d, dict):
+                for k, v in d.items():
+                    if isinstance(v, str):
+                        # 先处理特殊字段
+                        # 处理完整分析报告链接：如果git_url为空，不显示链接
+                        if '{gpt.git_url}' in v:
+                            git_url = flat_data.get('gpt.git_url', '')
+                            if not git_url:
+                                # 如果git_url为空，移除完整分析报告行
+                                v = v.replace('**完整分析报告**: [查看详情]({gpt.git_url})\n', '')
+                        
+                        # 然后处理普通变量替换
+                        for key, value in flat_data.items():
+                            # 支持两种格式：${key} 和 {key}
+                            v = v.replace(f"${{{key}}}", value)
+                            v = v.replace(f"{{{key}}}", value)
+                        # 清理替换后的字符串
+                        d[k] = clean_string(v)
+                    elif isinstance(v, (dict, list)):
+                        replace_in_dict(v)
+            elif isinstance(d, list):
+                for i, item in enumerate(d):
+                    if isinstance(item, (dict, list)):
+                        replace_in_dict(item)
+        
+        # 创建字典副本，避免修改原始数据
+        webhook_data_copy = webhook_data.copy()
+        replace_in_dict(webhook_data_copy)
+        return webhook_data_copy
     elif isinstance(webhook_data, str):
+        # 处理字符串模板
+        # 先处理特殊字段
+        if '{gpt.git_url}' in webhook_data:
+            git_url = flat_data.get('gpt.git_url', '')
+            if not git_url:
+                # 如果git_url为空，移除完整分析报告行
+                webhook_data = webhook_data.replace('**完整分析报告**: [查看详情]({gpt.git_url})\n', '')
+        
+        # 然后处理普通变量替换
         for k, v in flat_data.items():
-            webhook_data = webhook_data.replace(f"{{{k}}}", str(v))
+            # 支持两种格式：${key} 和 {key}
+            webhook_data = webhook_data.replace(f"${{{k}}}", v)
+            webhook_data = webhook_data.replace(f"{{{k}}}", v)
+        # 清理替换后的字符串
+        webhook_data = clean_string(webhook_data)
         return json.loads(webhook_data)
 
 def send_webhook(data) -> bool:
@@ -143,7 +212,8 @@ def send_feishu_webhook(data, webhook_url, secret) -> bool:
         if not os.path.exists(template_path):
             logger.error(f"消息模板文件不存在: {template_path}")
             return False
-        webhook_data = open(template_path, 'r', encoding='utf-8').read()
+        with open(template_path, 'r', encoding='utf-8') as f:
+            webhook_data = f.read()
         msg = parse_webhook_data(webhook_data, data)
         logger.debug(f"解析飞书webhook_data: {msg}")
         
@@ -190,7 +260,8 @@ def send_dingtalk_webhook(data, webhook_url, secret) -> bool:
         if not os.path.exists(template_path):
             logger.error(f"消息模板文件不存在: {template_path}")
             return False
-        webhook_data = open(template_path, 'r', encoding='utf-8').read()
+        with open(template_path, 'r', encoding='utf-8') as f:
+            webhook_data = f.read()
         msg = parse_webhook_data(webhook_data, data)
         logger.debug(f"解析钉钉webhook_data: {msg}")
         

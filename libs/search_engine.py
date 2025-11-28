@@ -17,6 +17,47 @@ class SearchError(Exception):
     """搜索相关错误的自定义异常"""
     pass
 
+def search_bing(query: str, num_results: int = 5) -> List[Dict]:
+    """
+    使用Bing搜索引擎进行搜索
+    
+    参数:
+        query: 搜索查询字符串
+        num_results: 返回结果数量
+        
+    返回:
+        搜索结果列表，每个结果包含 title, url, content
+    """
+    if not isinstance(query, str) or not query.strip():
+        logger.warning("无效的搜索查询: 为空或不是字符串")
+        return []
+    
+    if not get_config('ENABLE_SEARCH'):
+        logger.info(f"搜索功能已禁用，跳过搜索: {query}")
+        return []
+    
+    try:
+        # 使用Bing API进行搜索
+        # 这里使用duckduckgo_search库的Bing后端
+        from duckduckgo_search import DDGS
+        
+        with DDGS() as ddgs:
+            results = []
+            # 使用Bing后端，设置中文语言
+            for r in ddgs.text(query, max_results=num_results, region='cn-zh', safesearch='off', backend='bing'):
+                results.append({
+                    'title': r.get('title', ''),
+                    'url': r.get('href', ''),
+                    'content': r.get('body', '')
+                })
+            logger.info(f"Bing 搜索到 {len(results)} 条结果")
+            return results
+    except Exception as e:
+        logger.error(f"Bing搜索失败: {e}")
+        
+    return []
+
+
 def search_duckduckgo(query: str, num_results: int = 5) -> List[Dict]:
     """
     使用DuckDuckGo搜索引擎进行搜索
@@ -43,7 +84,8 @@ def search_duckduckgo(query: str, num_results: int = 5) -> List[Dict]:
             
             with DDGS() as ddgs:
                 results = []
-                for r in ddgs.text(query, max_results=num_results):
+                # 添加语言参数，确保搜索结果为中文
+                for r in ddgs.text(query, max_results=num_results, region='cn-zh', safesearch='off'):
                     results.append({
                         'title': r.get('title', ''),
                         'url': r.get('href', ''),

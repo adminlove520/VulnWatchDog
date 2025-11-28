@@ -4,6 +4,7 @@ import threading
 import json
 import os
 import random
+import requests
 from enum import Enum
 from dataclasses import dataclass, asdict
 from typing import Dict, List, Any, Optional, Callable, Set
@@ -285,88 +286,6 @@ class GPTQueueManager:
             
         except Exception as e:
             self._handle_failure(task, f"处理异常: {str(e)}", ErrorType.UNKNOWN, start_time)
-            
-        finally:
-            # 从活动任务中移除
-            with self.lock:
-                self.active_tasks.discard(task.task_id)
-    
-    def _handle_success(self, task: RetryTask, result: Dict[str, Any], start_time: float):
-        """处理成功结果"""
-        processing_time = time.time() - start_time
-        
-        with self.lock:
-            # 确保结果包含所有必要字段
-            if isinstance(result, dict) and hasattr(task, 'required_result_fields'):
-                # 设置默认值确保必要字段存在
-                for field in task.required_result_fields:
-                    if field not in result:
-                        if field == "poison":
-                            result[field] = "未知"
-                        elif field == "markdown":
-                            result[field] = f"# CVE-{task.cve_id}\n\n## 漏洞描述\n暂无详细信息\n\n## 漏洞影响\n未知\n\n## 建议修复\n请参考官方安全公告"
-                        elif field == "repo_name":
-                            result[field] = "VulnWatchdog"
-                        elif field == "repo_url":
-                            result[field] = "https://github.com/VulnWatchdog/VulnWatchdog"
-                        elif field == "cve_url":
-                            result[field] = f"https://nvd.nist.gov/vuln/detail/{task.cve_id}"
-                        else:
-                            result[field] = "未知"
-                            logger.warning(f"任务 {task.cve_id} 结果中缺少字段: {field}，已设置为默认值")
-            
-            task.status = RetryStatus.SUCCESS
-            task.last_attempt = time.time()
-            
-            # 更新统计信息
-            self.stats['completed_tasks'] += 1
-            self.stats['processing_time'] += processing_time
-            self.stats['last_processed'] = time.time()
-            
-            # 尝试生成报告
-            try:
-                # 确保结果包含必要的字段
-                if 'cve_id' not in result:
-                    result['cve_id'] = task.cve_id
-                
-                # 生成markdown文件路径（按年份分类）
-                year = task.cve_id.split('-')[1]
-                filepath = f"data/markdown/{year}/{task.cve_id}.md"
-                write_to_markdown(result, filepath)
-                logger.info(f"任务 {task.cve_id} 处理成功，已生成报告: {filepath}")
-            except Exception as e:
-                logger.error(f"任务 {task.cve_id} 虽然API调用成功，但生成报告失败: {str(e)}")
-            
-            # 从任务列表中移除
-            if task.task_id in self.tasks:
-                del self.tasks[task.task_id]
-            
-        # 保存状态
-        self.save_tasks()
-    
-    def _handle_failure(self, task: RetryTask, error_msg: str, error_type: ErrorType, start_time: float):
-        """处理失败结果"""
-        with self.lock:
-            task.retry_count += 1
-            task.last_attempt = time.time()
-            task.last_error = error_msg
-            task.error_type = error_type
-            
-            # 更新统计信息
-            self.stats['processing_time'] += time.time() - start_time
-            
-            if task.retry_count >= task.max_retries:
-                # 达到最大重试次数
-                task.status = RetryStatus.FAILED
-                self.stats['failed_tasks'] += 1
-                logger.error(f"任务 {task.cve_id} 已达到最大重试次数 {task.max_retries}，最终失败: {error_msg}")
-                
-                # 可选：将最终失败的任务移动到失败列表或标记为特殊状态
-            else:
-                # 计算下次尝试时间
-                task.status = RetryStatus.PENDING
-                task.calculate_next_attempt()
-                logger.warning(f"任务 {task.cve_id} 第 {task.retry_count} 次尝试失败，下次尝试时间: {datetime.fromtimestamp(task.next_attempt).strftime('%Y-%m-%d %H:%M:%S')}，错误: {error_msg}")
         
         # 保存状态
         self.save_tasks()
@@ -374,6 +293,103 @@ class GPTQueueManager:
         # 通知等待的工作线程
         with self.task_available:
             self.task_available.notify_all()
+    
+    def _handle_success(self, task: RetryTask, result: Dict[str, Any], start_time: float):
+        """处理任务成功"""
+        logger.info(f"任务 {task.cve_id} 处理成功")
+        
+        # 更新任务状态
+        task.status = RetryStatus.SUCCESS
+        task.last_attempt = time.time()
+        
+        # 更新统计信息
+        self.stats['completed_tasks'] += 1
+        self.stats['processing_time'] += time.time() - start_time
+        self.stats['last_processed'] = time.time()
+        
+        # 从活动任务中移除
+        with self.lock:
+            if task.task_id in self.active_tasks:
+                self.active_tasks.remove(task.task_id)
+        
+        # 写入markdown文件，为缺少的必要字段提供默认值
+        try:
+            # 为缺少的必要字段提供默认值
+            result_with_defaults = result.copy()
+            missing_fields = []
+            
+            # 定义每个必要字段的默认值
+            field_defaults = {
+                "poc_available": False,
+                "condition": "未知",
+                "fix": "暂无修复方案",
+                "risk_level": "未知",
+                "summary": "暂无详细描述",
+                "attack_vector": "未知",
+                "affected_component": "未知",
+                "poison": False,
+                "markdown": f"# {task.cve_id}\n\n暂无详细信息",
+                "repo_name": "unknown",
+                "repo_url": "",
+                "cve_url": f"https://cve.mitre.org/cgi-bin/cvename.cgi?name={task.cve_id}",
+                "cve_id": task.cve_id
+            }
+            
+            # 检查并添加默认值
+            for field in task.required_result_fields:
+                if field not in result_with_defaults:
+                    result_with_defaults[field] = field_defaults[field]
+                    missing_fields.append(field)
+            
+            # 确保cve_id字段存在
+            if 'cve_id' not in result_with_defaults:
+                result_with_defaults['cve_id'] = task.cve_id
+            
+            # 如果有缺少的字段，记录警告
+            if missing_fields:
+                logger.warning(f"任务 {task.cve_id} 缺少必要字段，已使用默认值: {missing_fields}")
+            
+            # 生成文件路径
+            year = task.cve_id.split('-')[1]
+            repo_name = result_with_defaults.get('repo_name', 'unknown').replace('/', '_')
+            filepath = f"data/markdown/{year}/{task.cve_id}-{repo_name}.md"
+            
+            # 写入markdown
+            write_to_markdown(result_with_defaults, filepath)
+            logger.info(f"✅ 成功生成分析报告: {filepath}")
+        except Exception as e:
+            logger.error(f"写入markdown失败: {str(e)}")
+    
+    def _handle_failure(self, task: RetryTask, error_msg: str, error_type: ErrorType, start_time: float):
+        """处理任务失败"""
+        task.retry_count += 1
+        task.last_attempt = time.time()
+        task.last_error = error_msg
+        task.error_type = error_type
+        
+        # 更新统计信息
+        self.stats['processing_time'] += time.time() - start_time
+        
+        if task.retry_count >= task.max_retries:
+            # 达到最大重试次数
+            task.status = RetryStatus.FAILED
+            self.stats['failed_tasks'] += 1
+            logger.error(f"任务 {task.cve_id} 已达到最大重试次数 {task.max_retries}，最终失败: {error_msg}")
+            
+            # 从活动任务中移除
+            with self.lock:
+                if task.task_id in self.active_tasks:
+                    self.active_tasks.remove(task.task_id)
+        else:
+            # 计算下次尝试时间
+            task.status = RetryStatus.PENDING
+            task.calculate_next_attempt()
+            logger.warning(f"任务 {task.cve_id} 第 {task.retry_count} 次尝试失败，下次尝试时间: {datetime.fromtimestamp(task.next_attempt).strftime('%Y-%m-%d %H:%M:%S')}，错误: {error_msg}")
+            
+            # 从活动任务中移除
+            with self.lock:
+                if task.task_id in self.active_tasks:
+                    self.active_tasks.remove(task.task_id)
     
     def add_task(self, 
                 cve_id: str, 
@@ -644,89 +660,6 @@ class GPTQueueManager:
         # 只是为了API兼容性而提供这个方法
         return True
     
-    def get_statistics(self) -> Dict[str, Any]:
-        """获取统计信息，为retry_gpt_requests.py提供兼容接口
-        
-        返回:
-            统计信息字典
-        """
-        stats = self.get_queue_stats()
-        return {
-            'tasks_completed': stats['completed_tasks'],
-            'tasks_failed': stats['failed_tasks'],
-            'tasks_remaining': stats['pending_tasks'] + stats['processing_tasks']
-        }
-    
-    def wait_until_empty(self, timeout: Optional[float] = None) -> bool:
-        """等待队列处理完成
-        
-        参数:
-            timeout: 超时时间（秒），None表示无限等待
-        
-        返回:
-            队列是否已清空
-        """
-        start_time = time.time()
-        
-        while True:
-            # 检查是否超时
-            if timeout is not None and time.time() - start_time > timeout:
-                return False
-            
-            with self.lock:
-                pending = sum(1 for t in self.tasks.values() if t.status == RetryStatus.PENDING)
-                processing = sum(1 for t in self.tasks.values() if t.status == RetryStatus.PROCESSING)
-                
-                # 如果没有待处理和处理中的任务，则队列为空
-                if pending == 0 and processing == 0:
-                    return True
-            
-            # 短暂休眠后再次检查
-            time.sleep(1)
-    
-    def get_queue_size(self) -> int:
-        """获取当前队列中的任务总数
-        
-        返回:
-            队列中的任务数
-        """
-        with self.lock:
-            return len(self.tasks)
-    
-    def import_legacy_requests(self, legacy_file: str = "failed_gpt_requests.json") -> int:
-        """从旧格式文件导入失败请求
-        
-        参数:
-            legacy_file: 旧格式文件路径
-            
-        返回:
-            成功导入的任务数
-        """
-        imported_count = 0
-        try:
-            if not os.path.exists(legacy_file):
-                logger.debug(f"旧格式文件不存在: {legacy_file}")
-                return 0
-            
-            with open(legacy_file, 'r', encoding='utf-8') as f:
-                old_requests = json.load(f)
-                
-            # 导入旧格式的请求
-            for req in old_requests:
-                if 'cve_id' in req and 'prompt' in req:
-                    self.add_task(
-                        cve_id=req['cve_id'],
-                        prompt=req['prompt'],
-                        metadata={"legacy": True, "original_retry_count": req.get('retry_count', 0)}
-                    )
-                    imported_count += 1
-            
-            logger.info(f"从旧格式文件 {legacy_file} 导入了 {imported_count} 个失败请求")
-        except Exception as e:
-            logger.error(f"导入旧格式失败请求时出错: {str(e)}")
-        
-        return imported_count
-    
     def stop(self):
         """停止队列管理器"""
         logger.info("正在停止队列管理器...")
@@ -754,7 +687,7 @@ gpt_queue_manager = GPTQueueManager()
 # 尝试导入旧格式的失败请求
 gpt_queue_manager.import_legacy_requests("failed_gpt_requests.json")
 
-def queue_gpt_retry(cve_id: str, prompt: str, priority: int = 2):
+def queue_gpt_retry(cve_id: str, prompt: str, priority: int = 2, metadata: Optional[Dict[str, Any]] = None):
     """向后兼容的队列GPT请求函数
     
     这是为了保持与旧版代码的兼容性而提供的包装函数。
@@ -763,6 +696,7 @@ def queue_gpt_retry(cve_id: str, prompt: str, priority: int = 2):
         cve_id: CVE编号
         prompt: 提示词
         priority: 优先级（0-3，0为最高）
+        metadata: 附加元数据
     
     返回:
         任务ID
@@ -774,7 +708,7 @@ def queue_gpt_retry(cve_id: str, prompt: str, priority: int = 2):
         logger.warning(f"无效的优先级值: {priority}，使用默认值 MEDIUM")
         priority_enum = Priority.MEDIUM
     
-    return gpt_queue_manager.add_task(cve_id, prompt, priority=priority_enum)
+    return gpt_queue_manager.add_task(cve_id, prompt, priority=priority_enum, metadata=metadata)
 
 # 示例用法
 """

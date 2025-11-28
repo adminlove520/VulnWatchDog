@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.1.0-b] - 2025-11-28
+- 优化钉钉推送内容格式【进行中】
+- 优化相关文章推送内容【先知社区、FreeBuf、securityvulnerability.io】
+- 相关文章改为漏洞复现
+- 优化markdown格式
+- 糟糕的推送内容格式问题
+- 如果fastfpt返回敏感词问题，则认为该漏洞需跳过
 ### 变更
 - 默认关闭SearXNG搜索功能，可通过环境变量SEARXNG_ENABLED="true"开启
 - 在GitHub Actions workflow中添加SEARXNG_ENABLED环境变量配置

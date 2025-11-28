@@ -135,25 +135,21 @@ def process_path(
 ):
     outputs = []
     if os.path.isfile(path):
-        # Check if file is binary before attempting to read as text
-        if is_binary_file(path):
-            warning_message = f"Info: Skipping binary file {path}"
-            click.echo(click.style(warning_message, fg="yellow"), err=True)
-        else:
+        # 不再跳过二进制文件，而是尝试读取
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                outputs.extend(print_path(path, f.read(), claude_xml, markdown, line_numbers))
+        except UnicodeDecodeError:
+            # Try with errors='replace' as fallback
             try:
-                with open(path, "r", encoding="utf-8") as f:
+                with open(path, "r", encoding="utf-8", errors="replace") as f:
                     outputs.extend(print_path(path, f.read(), claude_xml, markdown, line_numbers))
-            except UnicodeDecodeError:
-                # Try with errors='replace' as fallback
-                try:
-                    with open(path, "r", encoding="utf-8", errors="replace") as f:
-                        outputs.extend(print_path(path, f.read(), claude_xml, markdown, line_numbers))
-                except Exception:
-                    warning_message = f"Warning: Skipping file {path} due to encoding issues"
-                    click.echo(click.style(warning_message, fg="red"), err=True)
-            except Exception as e:
-                warning_message = f"Warning: Error reading file {path}: {str(e)}"
+            except Exception:
+                warning_message = f"Warning: Skipping file {path} due to encoding issues"
                 click.echo(click.style(warning_message, fg="red"), err=True)
+        except Exception as e:
+            warning_message = f"Warning: Error reading file {path}: {str(e)}"
+            click.echo(click.style(warning_message, fg="red"), err=True)
     elif os.path.isdir(path):
         for root, dirs, files in os.walk(path):
             if not include_hidden:
@@ -191,13 +187,20 @@ def process_path(
 
             for file in sorted(files):
                 file_path = os.path.join(root, file)
-                # Check if file is binary before attempting to read as text
-                if is_binary_file(file_path):
-                    warning_message = f"Info: Skipping binary file {file_path}"
-                    click.echo(click.style(warning_message, fg="yellow"), err=True)
-                else:
+                # 不再跳过二进制文件，而是尝试读取
+                try:
+                    with open(file_path, "r", encoding="utf-8") as f:
+                        outputs.extend(print_path(
+                            file_path,
+                            f.read(),
+                            claude_xml,
+                            markdown,
+                            line_numbers,
+                        ))
+                except UnicodeDecodeError:
+                    # Try with errors='replace' as fallback
                     try:
-                        with open(file_path, "r", encoding="utf-8") as f:
+                        with open(file_path, "r", encoding="utf-8", errors="replace") as f:
                             outputs.extend(print_path(
                                 file_path,
                                 f.read(),
@@ -205,23 +208,12 @@ def process_path(
                                 markdown,
                                 line_numbers,
                             ))
-                    except UnicodeDecodeError:
-                        # Try with errors='replace' as fallback
-                        try:
-                            with open(file_path, "r", encoding="utf-8", errors="replace") as f:
-                                outputs.extend(print_path(
-                                    file_path,
-                                    f.read(),
-                                    claude_xml,
-                                    markdown,
-                                    line_numbers,
-                                ))
-                        except Exception:
-                            warning_message = f"Warning: Skipping file {file_path} due to encoding issues"
-                            click.echo(click.style(warning_message, fg="red"), err=True)
-                    except Exception as e:
-                        warning_message = f"Warning: Error reading file {file_path}: {str(e)}"
+                    except Exception:
+                        warning_message = f"Warning: Skipping file {file_path} due to encoding issues"
                         click.echo(click.style(warning_message, fg="red"), err=True)
+                except Exception as e:
+                    warning_message = f"Warning: Error reading file {file_path}: {str(e)}"
+                    click.echo(click.style(warning_message, fg="red"), err=True)
     return outputs
 
 
