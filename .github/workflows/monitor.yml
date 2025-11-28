@@ -49,8 +49,11 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "VulnWatchdog[bot]"
-          # 提交代码
-          git add .
+          # 提交代码，排除数据库文件
+          git add . --ignore-errors
+          # 确保数据库文件不会被提交
+          git reset HEAD vulns.db || true
+          git reset HEAD *.db || true
           # 如果没有更改，commit会失败，加上 || exit 0 防止报错
           git commit -m "Update CVE analysis $(date +'%Y-%m-%d %H:%M:%S')" || exit 0
           

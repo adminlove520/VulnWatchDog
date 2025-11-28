@@ -42,3 +42,9 @@ coverage.xml
 .tox/
 .cache/
 *.mo
+
+# Database files
+vulns.db
+*.db
+*.sqlite
+*.sqlite3
