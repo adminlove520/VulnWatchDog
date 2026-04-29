@@ -41,7 +41,7 @@ jobs:
           FASTGPT_API_KEY: ${{ secrets.FASTGPT_API_KEY }}
           FASTGPT_API_URL: ${{ secrets.FASTGPT_API_URL }}
           FASTGPT_MODEL: ${{ secrets.FASTGPT_MODEL || 'gpt-3.5-turbo' }}
-          CVE_YEAR_RANGE: ${{ secrets.CVE_YEAR_RANGE || '2020-2025' }}
+          CVE_YEAR_RANGE: ${{ secrets.CVE_YEAR_RANGE || '2025-2026' }}
           GIT_URL: https://github.com/${{ github.repository }}
           # 钉钉通知配置
           DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
