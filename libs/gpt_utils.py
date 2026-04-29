@@ -145,99 +145,82 @@ def _parse_json_response(text: str) -> Optional[Dict[str, Any]]:
 
 def _call_minimax(prompt: str, config: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     """
-    调用MiniMax API进行分析（使用Anthropic兼容接口）
+    调用MiniMax API进行分析（使用Anthropic官方SDK格式）
     
-    MiniMax Anthropic API: https://api.minimaxi.com/anthropic/v1/messages
+    API地址: https://api.minimaxi.com/anthropic
+    模型: MiniMax-M2.7
     """
     api_key = config.get("api_key")
     model = config.get("model", "MiniMax-M2.7")
-    base_url = config.get("base_url") or os.getenv("ANTHROPIC_BASE_URL") or "https://api.minimaxi.com/anthropic/v1"
+    base_url = config.get("base_url") or os.getenv("ANTHROPIC_BASE_URL") or "https://api.minimaxi.com/anthropic"
     
     if not api_key:
         logger.warning("未配置MiniMax API密钥")
         return None
     
     try:
-        import requests
+        import anthropic
         
-        # 确保URL格式正确
-        url = base_url.rstrip('/')
-        if not url.endswith('/messages'):
-            url = f"{url}/messages"
-        
-        payload = {
-            "model": model,
-            "max_tokens": 2048,
-            "messages": [
-                {
-                    "role": "user",
-                    "content": prompt
-                }
-            ]
-        }
+        # 创建client，base_url不要包含/v1/messages
+        client = anthropic.Anthropic(
+            api_key=api_key,
+            base_url=base_url.rstrip('/')
+        )
         
         max_retries = 3
         for attempt in range(max_retries):
             try:
-                response = requests.post(
-                    url,
-                    headers={
-                        "Content-Type": "application/json",
-                        "Authorization": f"Bearer {api_key}",
-                        "anthropic-version": "2023-06-01"
-                    },
-                    json=payload,
-                    timeout=60
+                response = client.messages.create(
+                    model=model,
+                    max_tokens=2048,
+                    system="你是一个专业的网络安全分析师，擅长分析CVE漏洞信息。请严格按照要求的JSON格式输出结果。",
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": prompt
+                                }
+                            ]
+                        }
+                    ]
                 )
                 
-                if response.status_code == 429:
-                    if attempt < max_retries - 1:
-                        wait_time = (2 ** attempt) * 15
-                        logger.warning(f"MiniMax API速率限制，等待{wait_time}秒后重试...")
-                        time.sleep(wait_time)
-                        continue
-                    else:
-                        logger.error("MiniMax API速率限制：已达最大重试次数")
-                        return None
-                
-                if response.status_code != 200:
-                    logger.error(f"MiniMax API返回错误: {response.status_code} - {response.text[:500]}")
-                    return None
-                
-                response_data = response.json()
-                
-                # Anthropic 返回格式：content[0].text
+                # 解析响应
                 text = ""
-                if response_data.get("content") and isinstance(response_data["content"], list):
-                    for block in response_data["content"]:
-                        if block.get("type") == "text":
-                            text += block.get("text", "")
+                for block in response.content:
+                    if block.type == "text":
+                        text += block.text
                 
                 if not text:
-                    logger.error(f"MiniMax返回的内容为空: {response_data}")
+                    logger.error(f"MiniMax返回的内容为空")
                     return None
                 
                 return _parse_json_response(text)
                 
-            except requests.exceptions.Timeout:
+            except anthropic.RateLimitError:
                 if attempt < max_retries - 1:
-                    wait_time = (2 ** attempt) * 10
-                    logger.warning(f"MiniMax API超时，等待{wait_time}秒后重试...")
+                    wait_time = (2 ** attempt) * 15
+                    logger.warning(f"MiniMax API速率限制，等待{wait_time}秒后重试...")
                     time.sleep(wait_time)
                     continue
                 else:
-                    logger.error("MiniMax API超时：已达最大重试次数")
+                    logger.error("MiniMax API速率限制：已达最大重试次数")
                     return None
-            except requests.exceptions.RequestException as e:
+            except Exception as e:
                 if attempt < max_retries - 1:
                     wait_time = (2 ** attempt) * 10
-                    logger.warning(f"MiniMax API请求失败，等待{wait_time}秒后重试...")
+                    logger.warning(f"MiniMax API请求失败({str(e)})，等待{wait_time}秒后重试...")
                     time.sleep(wait_time)
                     continue
                 else:
                     logger.error(f"MiniMax API调用失败: {str(e)}")
                     return None
     
+    except ImportError:
+        logger.error("请安装 anthropic 库: pip install anthropic")
+        return None
     except Exception as e:
         logger.error(f"调用MiniMax API时出错: {str(e)}")
         logger.debug(traceback.format_exc())
