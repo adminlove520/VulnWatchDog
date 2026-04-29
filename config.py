@@ -50,8 +50,8 @@ def get_config(key=None):
         'GPT_PROVIDER': os.environ.get('GPT_PROVIDER', GPT_PROVIDER),
         # MiniMax配置（使用Anthropic官方SDK）
         'minimax': {
-            'api_key': os.environ.get('ANTHROPIC_API_KEY') or os.environ.get('MINIMAX_API_KEY'),
-            'model': os.environ.get('ANTHROPIC_MODEL') or os.environ.get('MINIMAX_MODEL', 'MiniMax-M2.7'),
+            'api_key': os.environ.get('MINIMAX_API_KEY'),
+            'model': os.environ.get('MINIMAX_MODEL') or 'MiniMax-M2.7',
             'base_url': os.environ.get('ANTHROPIC_BASE_URL') or 'https://api.minimaxi.com/anthropic'
         },
         # OpenAI配置
