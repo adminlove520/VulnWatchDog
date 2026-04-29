@@ -19,7 +19,7 @@ class SearchError(Exception):
 
 def search_bing(query: str, num_results: int = 5) -> List[Dict]:
     """
-    使用Bing搜索引擎进行搜索
+    使用Bing搜索引擎进行搜索（使用ddgs默认搜索）
     """
     if not isinstance(query, str) or not query.strip():
         logger.warning("无效的搜索查询: 为空或不是字符串")
@@ -34,14 +34,14 @@ def search_bing(query: str, num_results: int = 5) -> List[Dict]:
         
         with DDGS() as ddgs:
             results = []
-            # 尝试不同的region设置
-            for r in ddgs.text(query, max_results=num_results, region='wt-wt', safesearch='off', backend='bing'):
+            # 使用默认搜索（与DuckDuckGo相同），设置全球范围
+            for r in ddgs.text(query, max_results=num_results, region='wt-wt', safesearch='off'):
                 results.append({
                     'title': r.get('title', ''),
                     'url': r.get('href', ''),
                     'content': r.get('body', '')
                 })
-            logger.info(f'Bing 搜索 "{query}" 到 {len(results)} 条结果')
+            logger.info(f'Bing/DDG 搜索 "{query}" 到 {len(results)} 条结果')
             return results
     except Exception as e:
         logger.error(f"Bing搜索失败: {e}")
@@ -76,7 +76,7 @@ def search_duckduckgo(query: str, num_results: int = 5) -> List[Dict]:
             logger.info(f'DuckDuckGo 搜索 "{query}" 到 {len(results)} 条结果')
             return results
     except ImportError:
-        logger.error("duckduckgo_search 库未安装")
+        logger.error("ddgs 库未安装，请运行: pip install ddgs")
     except Exception as e:
         logger.error(f"DuckDuckGo搜索失败: {e}")
         
