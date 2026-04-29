@@ -34,14 +34,14 @@ def search_bing(query: str, num_results: int = 5) -> List[Dict]:
         
         with DDGS() as ddgs:
             results = []
-            # 使用brave后端作为Bing的替代
-            for r in ddgs.text(query, max_results=num_results, backend='brave'):
+            # 使用bing后端
+            for r in ddgs.text(query, max_results=num_results, backend='bing'):
                 results.append({
                     'title': r.get('title', ''),
                     'url': r.get('href', ''),
                     'content': r.get('body', '')
                 })
-            logger.info(f'Bing/Brave 搜索 "{query}" 到 {len(results)} 条结果')
+            logger.info(f'Bing 搜索 "{query}" 到 {len(results)} 条结果')
             return results
     except Exception as e:
         logger.error(f"Bing搜索失败: {e}")
@@ -66,7 +66,7 @@ def search_duckduckgo(query: str, num_results: int = 5) -> List[Dict]:
         
         with DDGS() as ddgs:
             results = []
-            # 强制使用duckduckgo后端
+            # 使用duckduckgo后端
             for r in ddgs.text(query, max_results=num_results, backend='duckduckgo'):
                 results.append({
                     'title': r.get('title', ''),
