@@ -20,13 +20,6 @@ class SearchError(Exception):
 def search_bing(query: str, num_results: int = 5) -> List[Dict]:
     """
     使用Bing搜索引擎进行搜索
-    
-    参数:
-        query: 搜索查询字符串
-        num_results: 返回结果数量
-        
-    返回:
-        搜索结果列表，每个结果包含 title, url, content
     """
     if not isinstance(query, str) or not query.strip():
         logger.warning("无效的搜索查询: 为空或不是字符串")
@@ -37,20 +30,18 @@ def search_bing(query: str, num_results: int = 5) -> List[Dict]:
         return []
     
     try:
-        # 使用Bing API进行搜索
-        # 这里使用duckduckgo_search库的Bing后端
         from duckduckgo_search import DDGS
         
         with DDGS() as ddgs:
             results = []
-            # 使用Bing后端，设置中文语言
-            for r in ddgs.text(query, max_results=num_results, region='cn-zh', safesearch='off', backend='bing'):
+            # 尝试不同的region设置
+            for r in ddgs.text(query, max_results=num_results, region='wt-wt', safesearch='off', backend='bing'):
                 results.append({
                     'title': r.get('title', ''),
                     'url': r.get('href', ''),
                     'content': r.get('body', '')
                 })
-            logger.info(f"Bing 搜索到 {len(results)} 条结果")
+            logger.info(f"Bing 搜索 "{query}" 到 {len(results)} 条结果")
             return results
     except Exception as e:
         logger.error(f"Bing搜索失败: {e}")
@@ -61,13 +52,6 @@ def search_bing(query: str, num_results: int = 5) -> List[Dict]:
 def search_duckduckgo(query: str, num_results: int = 5) -> List[Dict]:
     """
     使用DuckDuckGo搜索引擎进行搜索
-    
-    参数:
-        query: 搜索查询字符串
-        num_results: 返回结果数量
-        
-    返回:
-        搜索结果列表，每个结果包含 title, url, content
     """
     if not isinstance(query, str) or not query.strip():
         logger.warning("无效的搜索查询: 为空或不是字符串")
@@ -78,68 +62,21 @@ def search_duckduckgo(query: str, num_results: int = 5) -> List[Dict]:
         return []
     
     try:
-        # 尝试使用 duckduckgo_search 库
-        try:
-            from duckduckgo_search import DDGS
-            
-            with DDGS() as ddgs:
-                results = []
-                # 添加语言参数，确保搜索结果为中文
-                for r in ddgs.text(query, max_results=num_results, region='cn-zh', safesearch='off'):
-                    results.append({
-                        'title': r.get('title', ''),
-                        'url': r.get('href', ''),
-                        'content': r.get('body', '')
-                    })
-                logger.info(f"DuckDuckGo 搜索到 {len(results)} 条结果")
-                return results
-        except ImportError:
-            logger.info("未安装 duckduckgo_search 库，使用基础HTTP请求方式")
-            # 回退到基础的 HTML 解析方式
-            url = "https://html.duckduckgo.com/html/"
-            params = {
-                'q': query.strip()
-            }
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            }
-            
-            response = requests.post(url, data=params, headers=headers, timeout=10)
-            
-            if response.status_code == 200:
-                # 简单的HTML解析（这只是一个备选方案，结果可能不如库准确）
-                from html.parser import HTMLParser
-                
-                class DDGParser(HTMLParser):
-                    def __init__(self):
-                        super().__init__()
-                        self.results = []
-                        self.current_result = {}
-                        self.in_result = False
-                        
-                    def handle_starttag(self, tag, attrs):
-                        attrs_dict = dict(attrs)
-                        if tag == 'a' and attrs_dict.get('class') == 'result__a':
-                            self.in_result = True
-                            self.current_result = {'url': attrs_dict.get('href', '')}
-                    
-                    def handle_data(self, data):
-                        if self.in_result and 'title' not in self.current_result:
-                            self.current_result['title'] = data.strip()
-                    
-                    def handle_endtag(self, tag):
-                        if tag == 'a' and self.in_result:
-                            self.in_result = False
-                            if self.current_result and len(self.results) < num_results:
-                                self.current_result['content'] = self.current_result.get('title', '')
-                                self.results.append(self.current_result)
-                            self.current_result = {}
-                
-                parser = DDGParser()
-                parser.feed(response.text)
-                logger.info(f"DuckDuckGo 搜索到 {len(parser.results)} 条结果")
-                return parser.results
-            
+        from duckduckgo_search import DDGS
+        
+        with DDGS() as ddgs:
+            results = []
+            # 使用全球范围，不限制地区
+            for r in ddgs.text(query, max_results=num_results, region='wt-wt', safesearch='off'):
+                results.append({
+                    'title': r.get('title', ''),
+                    'url': r.get('href', ''),
+                    'content': r.get('body', '')
+                })
+            logger.info(f"DuckDuckGo 搜索 "{query}" 到 {len(results)} 条结果")
+            return results
+    except ImportError:
+        logger.error("duckduckgo_search 库未安装")
     except Exception as e:
         logger.error(f"DuckDuckGo搜索失败: {e}")
         
@@ -215,6 +152,7 @@ def search_github(query: str, per_page: int = 30, max_retries: int = 3) -> Tuple
     except:
         year_start, year_end = 2020, 2025
     
+    logger.debug(f"CVE年份过滤范围: {year_start}-{year_end}")
     current_year = datetime.now().year
     re_cve = re.compile(r'(?i)CVE-(\d{4})-(\d{4,7})')
     
