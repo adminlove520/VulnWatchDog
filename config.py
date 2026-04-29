@@ -17,14 +17,8 @@ ENABLE_NOTIFY=True
 # 是否启用GPT功能进行漏洞分析
 ENABLE_GPT=True
 
-# GPT服务提供商，支持：gemini, fastgpt
-GPT_PROVIDER='gemini'
-
-# Gemini模型名称（统一使用gemini-2.0-flash）
-GEMINI_MODEL='gemini-2.0-flash'
-
-# FastGPT配置
-# 相关参数从.env文件中读取
+# GPT服务提供商，支持：minimax, openai, fastgpt
+GPT_PROVIDER='minimax'
 
 # 是否启用漏洞信息搜索功能，需启用GPT分析
 ENABLE_SEARCH=True
@@ -54,10 +48,17 @@ def get_config(key=None):
         # GPT配置
         'ENABLE_GPT': ENABLE_GPT,
         'GPT_PROVIDER': os.environ.get('GPT_PROVIDER', GPT_PROVIDER),
-        # Gemini配置
-        'gemini': {
-            'api_key': os.environ.get('GEMINI_API_KEY') or os.environ.get('GPT_API_KEY'),
-            'model': os.environ.get('GEMINI_MODEL') or GEMINI_MODEL  # gemini-1.5-flash
+        # MiniMax配置（默认）
+        'minimax': {
+            'api_key': os.environ.get('MINIMAX_API_KEY') or os.environ.get('GPT_API_KEY'),
+            'model': os.environ.get('MINIMAX_MODEL', 'MiniMax-M2.7'),
+            'base_url': os.environ.get('MINIMAX_BASE_URL', 'https://api.minimax.chat/v1')
+        },
+        # OpenAI配置
+        'openai': {
+            'api_key': os.environ.get('OPENAI_API_KEY') or os.environ.get('GPT_API_KEY'),
+            'model': os.environ.get('OPENAI_MODEL', 'gpt-4o-mini'),
+            'base_url': os.environ.get('OPENAI_BASE_URL', 'https://api.openai.com/v1')
         },
         # FastGPT配置
         'fastgpt': {
