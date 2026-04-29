@@ -11,9 +11,7 @@ logger = logging.getLogger(__name__)
 
 
 def get_cve_info(cve_id: str) -> Dict[str, Any]:
-    """
-    获取CVE的详细信息，从多个数据源收集数据
-    """
+    """获取CVE的详细信息，从多个数据源收集数据"""
     config = get_config()
     cve_info = {
         "cve_id": cve_id,
@@ -125,7 +123,6 @@ def _parse_json_response(text: str) -> Optional[Dict[str, Any]]:
         if clean_text.endswith('```'):
             clean_text = clean_text[:-3].strip()
         
-        # 移除控制字符
         clean_text = re.sub(r'[\x00-\x1f\x7f-\x9f]', '', clean_text)
         clean_text = re.sub(r'[\u200b-\u200f\ufeff]', '', clean_text)
         clean_text = re.sub(r'\r\n?', '\n', clean_text)
@@ -134,7 +131,6 @@ def _parse_json_response(text: str) -> Optional[Dict[str, Any]]:
         
         return json.loads(clean_text)
     except json.JSONDecodeError:
-        # 尝试提取JSON部分
         json_match = re.search(r'\{[\s\S]*\}', clean_text, re.DOTALL)
         if json_match:
             try:
@@ -147,17 +143,119 @@ def _parse_json_response(text: str) -> Optional[Dict[str, Any]]:
     return None
 
 
+def _call_minimax(prompt: str, config: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+    """
+    调用MiniMax API进行分析
+    
+    MiniMax API endpoint: https://api.minimax.chat/v1/text/chatcompletion_v2
+    必需 headers: group_id
+    """
+    api_key = config.get("api_key")
+    model = config.get("model", "MiniMax-M2.7")
+    group_id = config.get("group_id") or os.getenv("MINIMAX_GROUP_ID")
+    
+    if not api_key:
+        logger.warning("未配置MiniMax API密钥")
+        return None
+    
+    if not group_id:
+        logger.warning("未配置MiniMax GROUP_ID")
+        return None
+    
+    try:
+        import requests
+        
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}",
+            "group_id": group_id
+        }
+        
+        payload = {
+            "model": model,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": "你是一个专业的网络安全分析师，擅长分析CVE漏洞信息。请严格按照要求的JSON格式输出结果。"
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
+            "temperature": 0.7
+        }
+        
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                response = requests.post(
+                    "https://api.minimax.chat/v1/text/chatcompletion_v2",
+                    headers=headers,
+                    json=payload,
+                    timeout=60
+                )
+                
+                if response.status_code == 429:
+                    if attempt < max_retries - 1:
+                        wait_time = (2 ** attempt) * 15
+                        logger.warning(f"MiniMax API速率限制，等待{wait_time}秒后重试...")
+                        time.sleep(wait_time)
+                        continue
+                    else:
+                        logger.error("MiniMax API速率限制：已达最大重试次数")
+                        return None
+                
+                if response.status_code != 200:
+                    logger.error(f"MiniMax API返回错误: {response.status_code} - {response.text[:500]}")
+                    return None
+                
+                response_data = response.json()
+                
+                # MiniMax 返回格式
+                text = ""
+                if response_data.get("choices"):
+                    for choice in response_data.get("choices", []):
+                        msg = choice.get("messages", [{}])
+                        for m in msg:
+                            if m.get("role") == "assistant":
+                                text += m.get("text", "")
+                
+                if not text:
+                    logger.error(f"MiniMax返回的内容为空: {response_data}")
+                    return None
+                
+                return _parse_json_response(text)
+                
+            except requests.exceptions.Timeout:
+                if attempt < max_retries - 1:
+                    wait_time = (2 ** attempt) * 10
+                    logger.warning(f"MiniMax API超时，等待{wait_time}秒后重试...")
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    logger.error("MiniMax API超时：已达最大重试次数")
+                    return None
+            except requests.exceptions.RequestException as e:
+                if attempt < max_retries - 1:
+                    wait_time = (2 ** attempt) * 10
+                    logger.warning(f"MiniMax API请求失败，等待{wait_time}秒后重试...")
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    logger.error(f"MiniMax API调用失败: {str(e)}")
+                    return None
+    
+    except Exception as e:
+        logger.error(f"调用MiniMax API时出错: {str(e)}")
+        logger.debug(traceback.format_exc())
+    
+    return None
+
+
 def _call_openai_compatible(prompt: str, config: Dict[str, Any], provider_name: str) -> Optional[Dict[str, Any]]:
     """
     调用OpenAI兼容的API进行分析
-    
-    参数:
-        prompt: 要发送的提示词
-        config: 配置，包含 api_key, model, base_url
-        provider_name: 提供商名称（用于日志）
-    
-    返回:
-        响应结果（JSON格式解析后的字典）或None
     """
     api_key = config.get("api_key")
     model = config.get("model", "gpt-4o-mini")
@@ -175,15 +273,6 @@ def _call_openai_compatible(prompt: str, config: Dict[str, Any], provider_name: 
             "Authorization": f"Bearer {api_key}"
         }
         
-        # MiniMax 使用 group_id header
-        headers_extra = {}
-        if provider_name.lower() == "minimax":
-            group_id = config.get("group_id") or os.getenv("MINIMAX_GROUP_ID")
-            if group_id:
-                headers_extra["group_id"] = group_id
-        
-        headers.update(headers_extra)
-        
         payload = {
             "model": model,
             "messages": [
@@ -196,12 +285,9 @@ def _call_openai_compatible(prompt: str, config: Dict[str, Any], provider_name: 
                     "content": prompt
                 }
             ],
-            "temperature": 0.7
+            "temperature": 0.7,
+            "response_format": {"type": "json_object"}
         }
-        
-        # MiniMax 不支持 response_format
-        if provider_name.lower() != "minimax":
-            payload["response_format"] = {"type": "json_object"}
         
         max_retries = 3
         for attempt in range(max_retries):
@@ -210,13 +296,12 @@ def _call_openai_compatible(prompt: str, config: Dict[str, Any], provider_name: 
                     f"{base_url}/chat/completions",
                     headers=headers,
                     json=payload,
-                    timeout=30
+                    timeout=60
                 )
                 
                 if response.status_code == 429:
-                    # 速率限制
                     if attempt < max_retries - 1:
-                        wait_time = (2 ** attempt) * 10
+                        wait_time = (2 ** attempt) * 15
                         logger.warning(f"{provider_name} API速率限制，等待{wait_time}秒后重试...")
                         time.sleep(wait_time)
                         continue
@@ -255,12 +340,6 @@ def _call_openai_compatible(prompt: str, config: Dict[str, Any], provider_name: 
 def ask_gpt(prompt: str) -> Optional[Dict[str, Any]]:
     """
     调用GPT API进行分析，根据配置选择使用MiniMax、OpenAI或FastGPT
-    
-    参数:
-        prompt: 要发送的提示词
-    
-    返回:
-        GPT的响应结果（JSON格式解析后的字典）或None
     """
     config = get_config()
     provider = config.get("GPT_PROVIDER", "minimax").lower()
@@ -268,7 +347,7 @@ def ask_gpt(prompt: str) -> Optional[Dict[str, Any]]:
     logger.info(f"使用{provider}进行GPT分析")
     
     if provider == "minimax":
-        return _call_openai_compatible(prompt, config.get("minimax", {}), "MiniMax")
+        return _call_minimax(prompt, config.get("minimax", {}))
     elif provider == "openai":
         return _call_openai_compatible(prompt, config.get("openai", {}), "OpenAI")
     elif provider == "fastgpt":
