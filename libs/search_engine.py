@@ -30,7 +30,7 @@ def search_bing(query: str, num_results: int = 5) -> List[Dict]:
         return []
     
     try:
-        from duckduckgo_search import DDGS
+        from ddgs import DDGS
         
         with DDGS() as ddgs:
             results = []
@@ -62,7 +62,7 @@ def search_duckduckgo(query: str, num_results: int = 5) -> List[Dict]:
         return []
     
     try:
-        from duckduckgo_search import DDGS
+        from ddgs import DDGS
         
         with DDGS() as ddgs:
             results = []
