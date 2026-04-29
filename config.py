@@ -76,6 +76,7 @@ def get_config(key=None):
         },
         # 搜索配置
         'ENABLE_SEARCH': _str_to_bool(os.environ.get('ENABLE_SEARCH', ENABLE_SEARCH)),
+        'ENABLE_EXTENDED': _str_to_bool(os.environ.get('ENABLE_EXTENDED', ENABLE_EXTENDED)),
         # 搜索引擎选择，支持：duckduckgo, bing, all
         'SEARCH_ENGINE': os.environ.get('SEARCH_ENGINE', 'all').lower(),
         # CVE配置

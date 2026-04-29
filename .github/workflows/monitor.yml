@@ -71,6 +71,8 @@ jobs:
           FASTGPT_API_URL: ${{ secrets.FASTGPT_API_URL }}
           FASTGPT_MODEL: ${{ secrets.FASTGPT_MODEL || 'gpt-3.5-turbo' }}
           ENABLE_GPT: ${{ inputs.enable_gpt || 'true' }}
+          ENABLE_SEARCH: ${{ inputs.enable_search || 'true' }}
+          ENABLE_EXTENDED: ${{ inputs.enable_extended || 'false' }}
           
           # CVE配置
           CVE_YEAR_RANGE: ${{ inputs.cve_year_range || secrets.CVE_YEAR_RANGE || '2025-2026' }}
