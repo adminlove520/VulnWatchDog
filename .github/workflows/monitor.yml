@@ -31,8 +31,16 @@ jobs:
           DEBUG: ${{ secrets.DEBUG }}
           NOTIFY_TYPE: ${{ secrets.NOTIFY_TYPE }}
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY || secrets.GPT_API_KEY }}
-          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-1.5-flash' }}
+          # GPT配置（支持 minimax / openai / fastgpt）
+          GPT_PROVIDER: ${{ secrets.GPT_PROVIDER || 'minimax' }}
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          MINIMAX_MODEL: ${{ secrets.MINIMAX_MODEL || 'MiniMax-M2.7' }}
+          MINIMAX_GROUP_ID: ${{ secrets.MINIMAX_GROUP_ID }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+          FASTGPT_API_KEY: ${{ secrets.FASTGPT_API_KEY }}
+          FASTGPT_API_URL: ${{ secrets.FASTGPT_API_URL }}
+          FASTGPT_MODEL: ${{ secrets.FASTGPT_MODEL || 'gpt-3.5-turbo' }}
           CVE_YEAR_RANGE: ${{ secrets.CVE_YEAR_RANGE || '2020-2025' }}
           GIT_URL: https://github.com/${{ github.repository }}
           # 钉钉通知配置
