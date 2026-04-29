@@ -19,7 +19,7 @@ class SearchError(Exception):
 
 def search_bing(query: str, num_results: int = 5) -> List[Dict]:
     """
-    使用Bing搜索引擎进行搜索（使用yandex作为Bing替代）
+    使用Bing搜索引擎进行搜索
     """
     if not isinstance(query, str) or not query.strip():
         logger.warning("无效的搜索查询: 为空或不是字符串")
@@ -34,14 +34,14 @@ def search_bing(query: str, num_results: int = 5) -> List[Dict]:
         
         with DDGS() as ddgs:
             results = []
-            # 使用yandex作为Bing的替代方案
-            for r in ddgs.text(query, max_results=num_results, backend='yandex'):
+            # 使用brave后端作为Bing的替代
+            for r in ddgs.text(query, max_results=num_results, backend='brave'):
                 results.append({
                     'title': r.get('title', ''),
                     'url': r.get('href', ''),
                     'content': r.get('body', '')
                 })
-            logger.info(f'Bing/Yandex 搜索 "{query}" 到 {len(results)} 条结果')
+            logger.info(f'Bing/Brave 搜索 "{query}" 到 {len(results)} 条结果')
             return results
     except Exception as e:
         logger.error(f"Bing搜索失败: {e}")
