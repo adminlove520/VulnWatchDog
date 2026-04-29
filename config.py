@@ -32,11 +32,19 @@ DB_URL='sqlite:///vulns.db'
 if os.environ.get('DEBUG'):
     DEBUG = os.environ.get('DEBUG')
 
+def _str_to_bool(val):
+    """将字符串'True'/'False'转换为布尔值"""
+    if val is None:
+        return None
+    if isinstance(val, bool):
+        return val
+    return val.lower() in ('true', '1', 'yes', 'on')
+
 def get_config(key=None):
     config = {
         "DEBUG": DEBUG == 'true' or DEBUG is True,
         # 通知配置
-        'ENABLE_NOTIFY': ENABLE_NOTIFY,
+        'ENABLE_NOTIFY': _str_to_bool(os.environ.get('ENABLE_NOTIFY', ENABLE_NOTIFY)),
         'NOTIFY_TYPE': os.environ.get('NOTIFY_TYPE', ''),
         'WEBHOOK_URL': os.environ.get('WEBHOOK_URL'),
         # 钉钉通知配置
@@ -46,7 +54,7 @@ def get_config(key=None):
         'FEISHU_WEBHOOK_URL': os.environ.get('FEISHU_WEBHOOK_URL'),
         'FEISHU_SECRET': os.environ.get('FEISHU_SECRET'),
         # GPT配置
-        'ENABLE_GPT': ENABLE_GPT,
+        'ENABLE_GPT': _str_to_bool(os.environ.get('ENABLE_GPT', ENABLE_GPT)),
         'GPT_PROVIDER': os.environ.get('GPT_PROVIDER', GPT_PROVIDER),
         # MiniMax配置（使用Anthropic官方SDK）
         'minimax': {
@@ -67,7 +75,7 @@ def get_config(key=None):
             'model': os.environ.get('FASTGPT_MODEL', 'gpt-3.5-turbo')
         },
         # 搜索配置
-        'ENABLE_SEARCH': ENABLE_SEARCH,
+        'ENABLE_SEARCH': _str_to_bool(os.environ.get('ENABLE_SEARCH', ENABLE_SEARCH)),
         # 搜索引擎选择，支持：duckduckgo, bing, all
         'SEARCH_ENGINE': os.environ.get('SEARCH_ENGINE', 'all').lower(),
         # CVE配置
