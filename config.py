@@ -52,7 +52,7 @@ def get_config(key=None):
         'minimax': {
             'api_key': os.environ.get('MINIMAX_API_KEY') or os.environ.get('GPT_API_KEY'),
             'model': os.environ.get('MINIMAX_MODEL', 'MiniMax-M2.7'),
-            'base_url': os.environ.get('MINIMAX_BASE_URL', 'https://api.minimax.chat/v1')
+            'group_id': os.environ.get('MINIMAX_GROUP_ID')
         },
         # OpenAI配置
         'openai': {

@@ -205,6 +205,16 @@ def search_github(query: str, per_page: int = 30, max_retries: int = 3) -> Tuple
     """
     搜索GitHub仓库中的CVE信息,并验证CVE可用性
     """
+    # 获取CVE年份范围配置
+    year_range = get_config('CVE_YEAR_RANGE') or '2020-2025'
+    try:
+        if '-' in year_range:
+            year_start, year_end = map(int, year_range.split('-'))
+        else:
+            year_start, year_end = 2020, 2025
+    except:
+        year_start, year_end = 2020, 2025
+    
     current_year = datetime.now().year
     re_cve = re.compile(r'(?i)CVE-(\d{4})-(\d{4,7})')
     
@@ -248,7 +258,8 @@ def search_github(query: str, per_page: int = 30, max_retries: int = 3) -> Tuple
                 cve_id = match.group(0).upper()
                 cve_year = int(match.group(1))
                 
-                if cve_year > current_year or cve_year < 1999:
+                # 使用配置的年份范围过滤
+                if cve_year < year_start or cve_year > year_end:
                     continue
                 
                 found_cves.add(cve_id)
