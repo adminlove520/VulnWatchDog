@@ -48,11 +48,11 @@ def get_config(key=None):
         # GPT配置
         'ENABLE_GPT': ENABLE_GPT,
         'GPT_PROVIDER': os.environ.get('GPT_PROVIDER', GPT_PROVIDER),
-        # MiniMax配置（默认）
+        # MiniMax配置（默认，使用Anthropic兼容接口）
         'minimax': {
             'api_key': os.environ.get('MINIMAX_API_KEY') or os.environ.get('GPT_API_KEY'),
             'model': os.environ.get('MINIMAX_MODEL', 'MiniMax-M2.7'),
-            'group_id': os.environ.get('MINIMAX_GROUP_ID')
+            'base_url': os.environ.get('ANTHROPIC_BASE_URL') or 'https://api.minimaxi.com/anthropic/v1'
         },
         # OpenAI配置
         'openai': {

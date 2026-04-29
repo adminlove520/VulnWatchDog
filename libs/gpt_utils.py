@@ -145,43 +145,35 @@ def _parse_json_response(text: str) -> Optional[Dict[str, Any]]:
 
 def _call_minimax(prompt: str, config: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     """
-    调用MiniMax API进行分析
+    调用MiniMax API进行分析（使用Anthropic兼容接口）
     
-    MiniMax API endpoint: https://api.minimax.chat/v1/text/chatcompletion_v2
-    GroupId 通过 URL query parameter 传入，不是 header
+    MiniMax Anthropic API: https://api.minimaxi.com/anthropic/v1/messages
     """
     api_key = config.get("api_key")
     model = config.get("model", "MiniMax-M2.7")
-    group_id = config.get("group_id") or os.getenv("MINIMAX_GROUP_ID")
+    base_url = config.get("base_url") or os.getenv("ANTHROPIC_BASE_URL") or "https://api.minimaxi.com/anthropic/v1"
     
     if not api_key:
         logger.warning("未配置MiniMax API密钥")
         return None
     
-    if not group_id:
-        logger.warning("未配置MiniMax GROUP_ID，MiniMax API可能需要GroupId参数")
-    
     try:
         import requests
         
-        # GroupId 作为 URL query parameter
-        url = "https://api.minimax.chat/v1/text/chatcompletion_v2"
-        if group_id:
-            url = f"{url}?GroupId={group_id}"
+        # 确保URL格式正确
+        url = base_url.rstrip('/')
+        if not url.endswith('/messages'):
+            url = f"{url}/messages"
         
         payload = {
             "model": model,
+            "max_tokens": 2048,
             "messages": [
-                {
-                    "role": "system",
-                    "content": "你是一个专业的网络安全分析师，擅长分析CVE漏洞信息。请严格按照要求的JSON格式输出结果。"
-                },
                 {
                     "role": "user",
                     "content": prompt
                 }
-            ],
-            "temperature": 0.7
+            ]
         }
         
         max_retries = 3
@@ -191,7 +183,8 @@ def _call_minimax(prompt: str, config: Dict[str, Any]) -> Optional[Dict[str, Any
                     url,
                     headers={
                         "Content-Type": "application/json",
-                        "Authorization": f"Bearer {api_key}"
+                        "Authorization": f"Bearer {api_key}",
+                        "anthropic-version": "2023-06-01"
                     },
                     json=payload,
                     timeout=60
@@ -213,12 +206,12 @@ def _call_minimax(prompt: str, config: Dict[str, Any]) -> Optional[Dict[str, Any
                 
                 response_data = response.json()
                 
-                # MiniMax 返回格式：choices[0].message.content
+                # Anthropic 返回格式：content[0].text
                 text = ""
-                if response_data.get("choices"):
-                    for choice in response_data.get("choices", []):
-                        msg = choice.get("message", {})
-                        text += msg.get("content", "")
+                if response_data.get("content") and isinstance(response_data["content"], list):
+                    for block in response_data["content"]:
+                        if block.get("type") == "text":
+                            text += block.get("text", "")
                 
                 if not text:
                     logger.error(f"MiniMax返回的内容为空: {response_data}")

@@ -35,7 +35,7 @@ jobs:
           GPT_PROVIDER: ${{ secrets.GPT_PROVIDER || 'minimax' }}
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           MINIMAX_MODEL: ${{ secrets.MINIMAX_MODEL || 'MiniMax-M2.7' }}
-          MINIMAX_GROUP_ID: ${{ secrets.MINIMAX_GROUP_ID }}
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL || 'https://api.minimaxi.com/anthropic/v1' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
           FASTGPT_API_KEY: ${{ secrets.FASTGPT_API_KEY }}
