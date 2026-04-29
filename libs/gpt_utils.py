@@ -148,7 +148,7 @@ def _call_minimax(prompt: str, config: Dict[str, Any]) -> Optional[Dict[str, Any
     调用MiniMax API进行分析
     
     MiniMax API endpoint: https://api.minimax.chat/v1/text/chatcompletion_v2
-    必需 headers: group_id
+    GroupId 通过 URL query parameter 传入，不是 header
     """
     api_key = config.get("api_key")
     model = config.get("model", "MiniMax-M2.7")
@@ -159,17 +159,15 @@ def _call_minimax(prompt: str, config: Dict[str, Any]) -> Optional[Dict[str, Any
         return None
     
     if not group_id:
-        logger.warning("未配置MiniMax GROUP_ID")
-        return None
+        logger.warning("未配置MiniMax GROUP_ID，MiniMax API可能需要GroupId参数")
     
     try:
         import requests
         
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {api_key}",
-            "group_id": group_id
-        }
+        # GroupId 作为 URL query parameter
+        url = "https://api.minimax.chat/v1/text/chatcompletion_v2"
+        if group_id:
+            url = f"{url}?GroupId={group_id}"
         
         payload = {
             "model": model,
@@ -190,8 +188,11 @@ def _call_minimax(prompt: str, config: Dict[str, Any]) -> Optional[Dict[str, Any
         for attempt in range(max_retries):
             try:
                 response = requests.post(
-                    "https://api.minimax.chat/v1/text/chatcompletion_v2",
-                    headers=headers,
+                    url,
+                    headers={
+                        "Content-Type": "application/json",
+                        "Authorization": f"Bearer {api_key}"
+                    },
                     json=payload,
                     timeout=60
                 )
@@ -212,14 +213,12 @@ def _call_minimax(prompt: str, config: Dict[str, Any]) -> Optional[Dict[str, Any
                 
                 response_data = response.json()
                 
-                # MiniMax 返回格式
+                # MiniMax 返回格式：choices[0].message.content
                 text = ""
                 if response_data.get("choices"):
                     for choice in response_data.get("choices", []):
-                        msg = choice.get("messages", [{}])
-                        for m in msg:
-                            if m.get("role") == "assistant":
-                                text += m.get("text", "")
+                        msg = choice.get("message", {})
+                        text += msg.get("content", "")
                 
                 if not text:
                     logger.error(f"MiniMax返回的内容为空: {response_data}")
