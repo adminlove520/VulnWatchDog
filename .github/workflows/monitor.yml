@@ -4,8 +4,33 @@ on:
   schedule:
     - cron: '0 * * * *'  # Run every hour
   workflow_dispatch:  # Allow manual trigger
+    inputs:
+      cve_year_range:
+        description: 'CVE Year Range (e.g., 2025-2026)'
+        required: false
+        default: '2025-2026'
+        type: string
+      gpt_provider:
+        description: 'GPT Provider (minimax/openai/fastgpt)'
+        required: false
+        default: 'minimax'
+        type: string
+      search_engine:
+        description: 'Search Engine (all/duckduckgo/bing)'
+        required: false
+        default: 'all'
+        type: string
+      enable_gpt:
+        description: 'Enable GPT Analysis'
+        required: false
+        default: 'true'
+        type: boolean
+      enable_notify:
+        description: 'Enable Notifications'
+        required: false
+        default: 'true'
+        type: boolean
 
-# 添加这个权限块
 permissions:
   contents: write
 
@@ -28,11 +53,15 @@ jobs:
           
       - name: Run CVE monitor
         env:
-          DEBUG: ${{ secrets.DEBUG }}
-          NOTIFY_TYPE: ${{ secrets.NOTIFY_TYPE }}
-          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
-          # GPT配置（支持 minimax / openai / fastgpt）
-          GPT_PROVIDER: ${{ secrets.GPT_PROVIDER || 'minimax' }}
+          # 调试开关
+          DEBUG: ${{ secrets.DEBUG || 'false' }}
+          
+          # 通知配置
+          NOTIFY_TYPE: ${{ secrets.NOTIFY_TYPE || 'dingtalk' }}
+          ENABLE_NOTIFY: ${{ inputs.enable_notify || 'true' }}
+          
+          # GPT配置（使用inputs或默认值）
+          GPT_PROVIDER: ${{ inputs.gpt_provider || secrets.GPT_PROVIDER || 'minimax' }}
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           MINIMAX_MODEL: ${{ secrets.MINIMAX_MODEL || 'MiniMax-M2.7' }}
           ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL || 'https://api.minimaxi.com/anthropic' }}
@@ -41,16 +70,23 @@ jobs:
           FASTGPT_API_KEY: ${{ secrets.FASTGPT_API_KEY }}
           FASTGPT_API_URL: ${{ secrets.FASTGPT_API_URL }}
           FASTGPT_MODEL: ${{ secrets.FASTGPT_MODEL || 'gpt-3.5-turbo' }}
-          CVE_YEAR_RANGE: ${{ secrets.CVE_YEAR_RANGE || '2025-2026' }}
+          ENABLE_GPT: ${{ inputs.enable_gpt || 'true' }}
+          
+          # CVE配置
+          CVE_YEAR_RANGE: ${{ inputs.cve_year_range || secrets.CVE_YEAR_RANGE || '2025-2026' }}
           GIT_URL: https://github.com/${{ github.repository }}
+          
+          # 搜索引擎配置
+          SEARCH_ENGINE: ${{ inputs.search_engine || secrets.SEARCH_ENGINE || 'all' }}
+          
           # 钉钉通知配置
           DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
           DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
+          
           # 飞书通知配置
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
-          # 搜索引擎配置
-          SEARCH_ENGINE: ${{ secrets.SEARCH_ENGINE || 'all' }}
+          
         run: python main.py
         
       - name: Commit changes
