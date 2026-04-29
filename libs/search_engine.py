@@ -41,7 +41,7 @@ def search_bing(query: str, num_results: int = 5) -> List[Dict]:
                     'url': r.get('href', ''),
                     'content': r.get('body', '')
                 })
-            logger.info(f"Bing 搜索 "{query}" 到 {len(results)} 条结果")
+            logger.info(f'Bing 搜索 "{query}" 到 {len(results)} 条结果')
             return results
     except Exception as e:
         logger.error(f"Bing搜索失败: {e}")
@@ -73,7 +73,7 @@ def search_duckduckgo(query: str, num_results: int = 5) -> List[Dict]:
                     'url': r.get('href', ''),
                     'content': r.get('body', '')
                 })
-            logger.info(f"DuckDuckGo 搜索 "{query}" 到 {len(results)} 条结果")
+            logger.info(f'DuckDuckGo 搜索 "{query}" 到 {len(results)} 条结果')
             return results
     except ImportError:
         logger.error("duckduckgo_search 库未安装")
