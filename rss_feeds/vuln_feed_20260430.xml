@@ -4,77 +4,42 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-04-30安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Thu, 30 Apr 2026 04:46:43 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 07:44:40 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
+      <title>CVE-2025-29927 - CVE-2025-29927 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Kamal-418/Vulnerable-Lab-NextJS-CVE-2025-29927'&gt;Vulnerable-Lab-NextJS-CVE-2025-29927&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-29927</link>
+      <guid isPermaLink="false">CVE-2025-29927</guid>
+      <pubDate>2026-04-30T07:44:40.834630</pubDate>
+    </item>
+    <item>
       <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/novysodope/copy-fail-CVE-2026-31431-C'&gt;copy-fail-CVE-2026-31431-C&lt;/a&gt;: 交叉编译&lt;br&gt;&lt;a href='https://github.com/adysec/cve-2026-31431'&gt;cve-2026-31431&lt;/a&gt;: CVE-2026-31431: Copy Fail | A minimal exploit for Linux authencesn + AF_ALG + splice() page cache write.</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/tgies/copy-fail-c'&gt;copy-fail-c&lt;/a&gt;: Cross-platform C port of the Copy Fail Linux LPE (CVE-2026-31431). Disclosed 2026-04-29 by Theori / Xint.&lt;br&gt;&lt;a href='https://github.com/arkdev1/check-cve-2026-31431'&gt;check-cve-2026-31431&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/Isw-9/copy-fail-cve-2026-31431-aarch64'&gt;copy-fail-cve-2026-31431-aarch64&lt;/a&gt;: References: https://github.com/theori-io/copy-fail-CVE-2026-31431; https://github.com/bigwario/copy-fail-CVE-2026-31431-C&lt;br&gt;&lt;a href='https://github.com/freelabz/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: POC for CVE-2026-31431&lt;br&gt;&lt;a href='https://github.com/0xShe/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/Aurillium/RootRemover'&gt;RootRemover&lt;/a&gt;: Temporarily removes the root password using CVE-2026-31431&lt;br&gt;&lt;a href='https://github.com/wuzuowei/copy-fail-CVE-2026-31431'&gt;copy-fail-CVE-2026-31431&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/WavesMan/cve-2026-31431-fleet-remediator'&gt;cve-2026-31431-fleet-remediator&lt;/a&gt;: Fleet-scale CVE-2026-31431 audit and remediation orchestrator for Linux hosts via SSH, with strict host-key verification and multi-format reporting.&lt;br&gt;&lt;a href='https://github.com/ryan2929/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: None</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
       <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-04-30T04:46:43.203223</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-24203 - CVE-2025-24203 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/jailbreakdotparty/dirtyZero'&gt;dirtyZero&lt;/a&gt;: Basic customization app using CVE-2025-24203. Patched in iOS 18.4.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-24203</link>
-      <guid isPermaLink="false">CVE-2025-24203</guid>
-      <pubDate>2026-04-30T04:46:43.203232</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-48757 - CVE-2025-48757 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Farenhytee/supabase-sentinel'&gt;supabase-sentinel&lt;/a&gt;: Claude Skill that audits Supabase projects for RLS misconfigurations, exposed keys, auth bypasses, and storage vulnerabilities. 27 anti-patterns sourced from CVE-2025-48757 and 10 security studies. Safe for production.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-48757</link>
-      <guid isPermaLink="false">CVE-2025-48757</guid>
-      <pubDate>2026-04-30T04:46:43.203237</pubDate>
+      <pubDate>2026-04-30T07:44:40.834644</pubDate>
     </item>
     <item>
       <title>CVE-2025-32463 - CVE-2025-32463 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/mihnasdsad/CVE-2025-32463'&gt;CVE-2025-32463&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/ashardev002/CVE-2025-32463_chwoot'&gt;CVE-2025-32463_chwoot&lt;/a&gt;: 🔍 Demonstrate the CVE-2025-32463 privilege-escalation flaw in sudo's chroot feature with this minimal, reproducible proof of concept environment.&lt;br&gt;&lt;a href='https://github.com/yeremeu/CVE-2025-32463_chwoot'&gt;CVE-2025-32463_chwoot&lt;/a&gt;: Demonstrate CVE-2025-32463 with this PoC for sudo's chroot feature. Explore the exploit and its impact on vulnerable sudo versions. 🐱💻🔒</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/mihnasdsad/CVE-2025-32463'&gt;CVE-2025-32463&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/ashardev002/CVE-2025-32463_chwoot'&gt;CVE-2025-32463_chwoot&lt;/a&gt;: 🔍 Demonstrate the CVE-2025-32463 privilege-escalation flaw in sudo's chroot feature with this minimal, reproducible proof of concept environment.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2025-32463</link>
       <guid isPermaLink="false">CVE-2025-32463</guid>
-      <pubDate>2026-04-30T04:46:43.203246</pubDate>
+      <pubDate>2026-04-30T07:44:40.834652</pubDate>
     </item>
     <item>
       <title>CVE-2025-49144 - CVE-2025-49144 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/ammarm0010/CVE-2025-49144_PoC'&gt;CVE-2025-49144_PoC&lt;/a&gt;: None</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2025-49144</link>
       <guid isPermaLink="false">CVE-2025-49144</guid>
-      <pubDate>2026-04-30T04:46:43.203252</pubDate>
+      <pubDate>2026-04-30T07:44:40.834658</pubDate>
     </item>
     <item>
       <title>CVE-2025-31258 - CVE-2025-31258 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/sureshkumarsat/CVE-2025-31258-PoC'&gt;CVE-2025-31258-PoC&lt;/a&gt;: 🔓 Explore CVE-2025-31258 with this PoC demonstrating partial sandbox escape using RemoteViewServices for practical 1-day security practice.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2025-31258</link>
       <guid isPermaLink="false">CVE-2025-31258</guid>
-      <pubDate>2026-04-30T04:46:43.203257</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-54253 - CVE-2025-54253 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/jm7knz/CVE-2025-54253-Exploit-Demo'&gt;CVE-2025-54253-Exploit-Demo&lt;/a&gt;: 🐙 CVE-2025-54253 exploit demo for Adobe AEM Forms on JEE: OGNL injection to RCE with PoC, Python 3.10 exploit code, reproducer and mitigation guidance.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54253</link>
-      <guid isPermaLink="false">CVE-2025-54253</guid>
-      <pubDate>2026-04-30T04:46:43.203262</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-54424 - CVE-2025-54424 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/hophtien/CVE-2025-54424'&gt;CVE-2025-54424&lt;/a&gt;: CVE-2025-54424: 1Panel TLS client cert bypass enables RCE via forged CN 'panel_client' using a bundled scanning and exploitation tool. Affected: &lt;= v2.0.5. 🔐</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54424</link>
-      <guid isPermaLink="false">CVE-2025-54424</guid>
-      <pubDate>2026-04-30T04:46:43.203267</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-59536 - CVE-2025-59536 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Razi-Interactive/claude-project-scanner'&gt;claude-project-scanner&lt;/a&gt;: Read-only safety scanner for Claude Code projects. Catches CVE-2025-59536, statusLine injection, prompt injection, and more.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-59536</link>
-      <guid isPermaLink="false">CVE-2025-59536</guid>
-      <pubDate>2026-04-30T04:46:43.203272</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-33317 - CVE-2026-33317 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/qianfei11/CVE-2026-33317'&gt;CVE-2026-33317&lt;/a&gt;: PoC for CVE-2026-33317 OP-TEE PKCS#11 TA out-of-bounds write</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-33317</link>
-      <guid isPermaLink="false">CVE-2026-33317</guid>
-      <pubDate>2026-04-30T04:46:43.203277</pubDate>
+      <pubDate>2026-04-30T07:44:40.834664</pubDate>
     </item>
   </channel>
 </rss>
