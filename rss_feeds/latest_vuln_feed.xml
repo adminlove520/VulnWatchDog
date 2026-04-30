@@ -4,49 +4,42 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-04-30安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Thu, 30 Apr 2026 12:28:43 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 15:29:24 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
       <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Linux-zs/cve-2026-31431-mitigation'&gt;cve-2026-31431-mitigation&lt;/a&gt;: cve-2026-31431 seccomp mitigation&lt;br&gt;&lt;a href='https://github.com/TikoTikTok/copy-fail-cve-2026-31431'&gt;copy-fail-cve-2026-31431&lt;/a&gt;: Passive detection tooling for CVE-2026-31431 (Copy Fail) — Linux LPE/container escape affecting kernels 4.11+ since 2017&lt;br&gt;&lt;a href='https://github.com/mfloresdacunha/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: PoC exploit for CVE-2026-31431 (Copy Fail) — algif_aead page-cache scratch-write LPE&lt;br&gt;&lt;a href='https://github.com/jmac774/CVE-2026-31431-mitigation-rhel'&gt;CVE-2026-31431-mitigation-rhel&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation'&gt;yc-mk8s-copy-fail-mitigation&lt;/a&gt;: DaemonSet для митигации уязвимости CVE-2026-31431 (Copy Fail)&lt;br&gt;&lt;a href='https://github.com/tgies/copy-fail-c'&gt;copy-fail-c&lt;/a&gt;: Cross-platform C port of the Copy Fail Linux LPE (CVE-2026-31431). Disclosed 2026-04-29 by Theori / Xint.</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/rfxn/copyfail'&gt;copyfail&lt;/a&gt;: Defense-in-depth primitives for CVE-2026-31431 (Copy Fail) — kernel detection probe and LD_PRELOAD AF_ALG block&lt;br&gt;&lt;a href='https://github.com/cozystack/copy-fail-blocker'&gt;copy-fail-blocker&lt;/a&gt;: BPF-LSM mitigation for CVE-2026-31431 (Copy Fail) — denies AF_ALG socket creation cluster-wide&lt;br&gt;&lt;a href='https://github.com/leelong2020/cve-2026-31431'&gt;cve-2026-31431&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/scriptzteam/Paranoid-Copy-Fail-CVE-2026-31431'&gt;Paranoid-Copy-Fail-CVE-2026-31431&lt;/a&gt;: Paranoid disable whole AF_ALG + algif_* modules - Copy Fail (CVE-2026-31431)&lt;br&gt;&lt;a href='https://github.com/Boos4721/copyfail-rs'&gt;copyfail-rs&lt;/a&gt;: CVE-2026-31431&lt;br&gt;&lt;a href='https://github.com/professional-slacker/alg_check'&gt;alg_check&lt;/a&gt;: CVE-2026-31431&lt;br&gt;&lt;a href='https://github.com/SunL0w/PATCH-CVE-2026-31431-Ubuntu_Debian'&gt;PATCH-CVE-2026-31431-Ubuntu_Debian&lt;/a&gt;: Permanent Mitigation Script for CVE-2026-31431&lt;br&gt;&lt;a href='https://github.com/wgnet/wg.copyfail.patch'&gt;wg.copyfail.patch&lt;/a&gt;: CVE-2026-31431 eBPF fix&lt;br&gt;&lt;a href='https://github.com/Crihexe/copy-fail-tiny-elf-CVE-2026-31431'&gt;copy-fail-tiny-elf-CVE-2026-31431&lt;/a&gt;: Minimal no-libc Linux x86_64 ELF PoC build for Copy Fail (CVE-2026-31431)&lt;br&gt;&lt;a href='https://github.com/wesmar/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: CVE-2026-31431 is a bug in the handling of scatter-gather I/O operations and page cache references in the Linux kernel cryptographic subsystem — specifically in the AF_ALG socket implementation for AEAD algorithms (crypto/af_alg.c, crypto/aead.c).</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
       <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-04-30T12:28:43.109974</pubDate>
+      <pubDate>2026-04-30T15:29:24.052994</pubDate>
     </item>
     <item>
-      <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/ilmndwntr/CVE-2026-41940-MASS-EXPLOIT'&gt;CVE-2026-41940-MASS-EXPLOIT&lt;/a&gt;: CVE-2026-41940 SUPPORT SINGLE &amp; MASS SCAN EXPLOIT</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
-      <guid isPermaLink="false">CVE-2026-41940</guid>
-      <pubDate>2026-04-30T12:28:43.109983</pubDate>
+      <title>CVE-2025-54253 - CVE-2025-54253 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/jm7knz/CVE-2025-54253-Exploit-Demo'&gt;CVE-2025-54253-Exploit-Demo&lt;/a&gt;: 🐙 CVE-2025-54253 exploit demo for Adobe AEM Forms on JEE: OGNL injection to RCE with PoC, Python 3.10 exploit code, reproducer and mitigation guidance.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54253</link>
+      <guid isPermaLink="false">CVE-2025-54253</guid>
+      <pubDate>2026-04-30T15:29:24.053004</pubDate>
     </item>
     <item>
-      <title>CVE-2025-5419 - CVE-2025-5419 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Riquelme54322/CVE-2025-5419'&gt;CVE-2025-5419&lt;/a&gt;: 🛡️ Analyze CVE-2025-5419 to exploit an uninitialized read vulnerability in V8 for arbitrary read/write access within the sandbox environment.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-5419</link>
-      <guid isPermaLink="false">CVE-2025-5419</guid>
-      <pubDate>2026-04-30T12:28:43.109990</pubDate>
+      <title>CVE-2025-54424 - CVE-2025-54424 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/hophtien/CVE-2025-54424'&gt;CVE-2025-54424&lt;/a&gt;: CVE-2025-54424: 1Panel TLS client cert bypass enables RCE via forged CN 'panel_client' using a bundled scanning and exploitation tool. Affected: &lt;= v2.0.5. 🔐</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54424</link>
+      <guid isPermaLink="false">CVE-2025-54424</guid>
+      <pubDate>2026-04-30T15:29:24.053011</pubDate>
     </item>
     <item>
-      <title>CVE-2026-24061 - CVE-2026-24061 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/obrunolima1910/CVE-2026-24061'&gt;CVE-2026-24061&lt;/a&gt;: 🚨 Exploit CVE-2026-24061, a critical remote authentication bypass in GNU inetutils-telnetd, for instant root shell access without authentication.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-24061</link>
-      <guid isPermaLink="false">CVE-2026-24061</guid>
-      <pubDate>2026-04-30T12:28:43.109995</pubDate>
+      <title>CVE-2025-32463 - CVE-2025-32463 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/yeremeu/CVE-2025-32463_chwoot'&gt;CVE-2025-32463_chwoot&lt;/a&gt;: Demonstrate CVE-2025-32463 with this PoC for sudo's chroot feature. Explore the exploit and its impact on vulnerable sudo versions. 🐱💻🔒</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-32463</link>
+      <guid isPermaLink="false">CVE-2025-32463</guid>
+      <pubDate>2026-04-30T15:29:24.053017</pubDate>
     </item>
     <item>
-      <title>CVE-2025-36911 - CVE-2025-36911 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/fa1sa1142/wpair-app'&gt;wpair-app&lt;/a&gt;: 🔍 Scan and research CVE-2025-36911 vulnerabilities with WPair, a specialized tool for Android built in Kotlin, ensuring your applications remain secure.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-36911</link>
-      <guid isPermaLink="false">CVE-2025-36911</guid>
-      <pubDate>2026-04-30T12:28:43.110000</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-59287 - CVE-2025-59287 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/salman5230/CVE-2025-59287'&gt;CVE-2025-59287&lt;/a&gt;: 🔍 Analyze WSUS deserialization behavior to enhance security, generate reports, and identify configuration weaknesses in your infrastructure.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-59287</link>
-      <guid isPermaLink="false">CVE-2025-59287</guid>
-      <pubDate>2026-04-30T12:28:43.110004</pubDate>
+      <title>CVE-2026-34475 - CVE-2026-34475 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/bitbcybr/way2poc_cve-2026-34475'&gt;way2poc_cve-2026-34475&lt;/a&gt;: Two-stage Nuclei detection for CVE-2026-34475: fingerprint vulnerable Varnish instances, verify cache-key collision behavior, and confirm exploitability via VCL inspection - unfortunetly without triggering the bug and exploitation</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-34475</link>
+      <guid isPermaLink="false">CVE-2026-34475</guid>
+      <pubDate>2026-04-30T15:29:24.053022</pubDate>
     </item>
   </channel>
 </rss>
