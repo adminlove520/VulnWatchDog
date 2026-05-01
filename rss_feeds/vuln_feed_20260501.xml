@@ -4,14 +4,21 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-01安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Fri, 01 May 2026 13:26:36 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 15:00:04 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/selectel/mks-copy-fail-mitigation'&gt;mks-copy-fail-mitigation&lt;/a&gt;: DaemonSet с реализацией временной меры для митигации уязвимости Copy Fail (CVE-2026-31431)&lt;br&gt;&lt;a href='https://github.com/Silent0x0/Copy-Fail---CVE-2026-31431'&gt;Copy-Fail---CVE-2026-31431&lt;/a&gt;: CVE-2026-31431 &quot;Copy Fail&quot; - Analysis and defensive research for the Linux kernel AF_ALG privilege escalation vulnerability affecting all major distributions since 2017. 100% reliable LPE via authencesn logic flaw&lt;br&gt;&lt;a href='https://github.com/Koke-Seas/CVE-2026-31431-CopyFail'&gt;CVE-2026-31431-CopyFail&lt;/a&gt;: Entender el CVE-2026-31431 y realizar las siguientes tareas&lt;br&gt;&lt;a href='https://github.com/sbeteta42/CVE-2026-31431_je_sappelle_RoOt'&gt;CVE-2026-31431_je_sappelle_RoOt&lt;/a&gt;: CVE-2026-31431 -  Guide de Remédiation et Mesures de Protection</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
-      <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-05-01T13:26:36.592798</pubDate>
+      <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Christian93111/CVE-2026-41940'&gt;CVE-2026-41940&lt;/a&gt;: cPanel/WHM Authentication Bypass PoC</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
+      <guid isPermaLink="false">CVE-2026-41940</guid>
+      <pubDate>2026-05-01T15:00:04.653526</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-48804 - CVE-2025-48804 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/garatc/BitUnlocker'&gt;BitUnlocker&lt;/a&gt;: PoC/downgrade attack for CVE-2025-48804 (found by Microsoft STORM)</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-48804</link>
+      <guid isPermaLink="false">CVE-2025-48804</guid>
+      <pubDate>2026-05-01T15:00:04.653534</pubDate>
     </item>
   </channel>
 </rss>
