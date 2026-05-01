@@ -4,56 +4,14 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-01安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Fri, 01 May 2026 11:18:29 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 13:26:36 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
       <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/FrosterDL/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/kvakirsanov/CVE-2026-31431-live-process-code-injection'&gt;CVE-2026-31431-live-process-code-injection&lt;/a&gt;: CVE-2026-31431 (Copy Fail) — Live Process Code Injection PoC&lt;br&gt;&lt;a href='https://github.com/MarioHY/cve_2026_31431_audit'&gt;cve_2026_31431_audit&lt;/a&gt;: A security auditing toolkit for CVE-2026-31431 vulnerability research</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/selectel/mks-copy-fail-mitigation'&gt;mks-copy-fail-mitigation&lt;/a&gt;: DaemonSet с реализацией временной меры для митигации уязвимости Copy Fail (CVE-2026-31431)&lt;br&gt;&lt;a href='https://github.com/Silent0x0/Copy-Fail---CVE-2026-31431'&gt;Copy-Fail---CVE-2026-31431&lt;/a&gt;: CVE-2026-31431 &quot;Copy Fail&quot; - Analysis and defensive research for the Linux kernel AF_ALG privilege escalation vulnerability affecting all major distributions since 2017. 100% reliable LPE via authencesn logic flaw&lt;br&gt;&lt;a href='https://github.com/Koke-Seas/CVE-2026-31431-CopyFail'&gt;CVE-2026-31431-CopyFail&lt;/a&gt;: Entender el CVE-2026-31431 y realizar las siguientes tareas&lt;br&gt;&lt;a href='https://github.com/sbeteta42/CVE-2026-31431_je_sappelle_RoOt'&gt;CVE-2026-31431_je_sappelle_RoOt&lt;/a&gt;: CVE-2026-31431 -  Guide de Remédiation et Mesures de Protection</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
       <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-05-01T11:18:29.963774</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-2472 - CVE-2026-2472 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/megafart1/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud'&gt;CVE-2026-2472-Vertex-AI-SDK-Google-Cloud&lt;/a&gt;: Expose and detail an unauthenticated stored XSS vulnerability in the Google Cloud Vertex AI Python SDK affecting versions 1.98.0 to 1.130.9.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-2472</link>
-      <guid isPermaLink="false">CVE-2026-2472</guid>
-      <pubDate>2026-05-01T11:18:29.963783</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-25643 - CVE-2026-25643 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/DyniePro/CVE-2026-25643'&gt;CVE-2026-25643&lt;/a&gt;: Exploit Frigate NVR ≤0.16.3 to execute commands remotely by abusing a configuration flaw without needing shell access or output capture.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-25643</link>
-      <guid isPermaLink="false">CVE-2026-25643</guid>
-      <pubDate>2026-05-01T11:18:29.963789</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-69985 - CVE-2025-69985 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/tianarsamm/CVE-2025-69985'&gt;CVE-2025-69985&lt;/a&gt;: Exploit CVE-2025-69985 to bypass authentication and execute remote commands on FUXA versions ≤ 1.2.8 via the /api/runscript endpoint.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-69985</link>
-      <guid isPermaLink="false">CVE-2025-69985</guid>
-      <pubDate>2026-05-01T11:18:29.963795</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-2441 - CVE-2026-2441 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/fartlover37/CVE-2026-2441-PoC'&gt;CVE-2026-2441-PoC&lt;/a&gt;: Demonstrate a proof-of-concept exploit for CVE-2026-2441, a high-risk Chrome use-after-free vulnerability in the Blink CSS engine.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-2441</link>
-      <guid isPermaLink="false">CVE-2026-2441</guid>
-      <pubDate>2026-05-01T11:18:29.963800</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-70795 - CVE-2025-70795 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/wutang700/STProcessMonitorBYOVD'&gt;STProcessMonitorBYOVD&lt;/a&gt;: 🛠 Exploit and control Windows processes using CVE-2025-70795 and CVE-2026-0828 with driver-based termination tools.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-70795</link>
-      <guid isPermaLink="false">CVE-2025-70795</guid>
-      <pubDate>2026-05-01T11:18:29.963805</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-20841 - CVE-2026-20841 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/hamzamalik3461/CVE-2026-20841'&gt;CVE-2026-20841&lt;/a&gt;: 🛠 Demonstrate remote code execution in Windows Notepad via markdown links exploiting unsecured URL protocols.&lt;br&gt;&lt;a href='https://github.com/404godd/CVE-2026-20841-PoC'&gt;CVE-2026-20841-PoC&lt;/a&gt;: 🛠 Demonstrate remote code execution in Windows Notepad versions below 11.2510 using the CVE-2026-20841 proof of concept.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-20841</link>
-      <guid isPermaLink="false">CVE-2026-20841</guid>
-      <pubDate>2026-05-01T11:18:29.963811</pubDate>
+      <pubDate>2026-05-01T13:26:36.592798</pubDate>
     </item>
   </channel>
 </rss>
