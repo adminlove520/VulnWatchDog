@@ -4,21 +4,21 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-02安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sat, 02 May 2026 14:56:28 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 15:52:27 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
       <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/monobrau/copyfailscan'&gt;copyfailscan&lt;/a&gt;: SSH posture helper for CVE-2026-31431 (Copy Fail): kernel and algif_aead inventory&lt;br&gt;&lt;a href='https://github.com/joltcan/ansible-role-cve-2026-31431'&gt;ansible-role-cve-2026-31431&lt;/a&gt;: Ansible role: CVE-2026-31431 (Copy Fail) modprobe.d mitigation — disables algif_aead&lt;br&gt;&lt;a href='https://github.com/Crihexe/copy-fail-tiny-elf-CVE-2026-31431'&gt;copy-fail-tiny-elf-CVE-2026-31431&lt;/a&gt;: Minimal no-libc Linux x86_64 ELF PoC build for Copy Fail (CVE-2026-31431)&lt;br&gt;&lt;a href='https://github.com/2H-K/copyfailRecurrence'&gt;copyfailRecurrence&lt;/a&gt;: Copy Fail (CVE-2026-31431) 内核漏洞复现环境&lt;br&gt;&lt;a href='https://github.com/pulentoski/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: None</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Gr-1m/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: Copyfail (CVE-2026-31431) exp rewrite by Golang</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
       <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-05-02T14:56:28.179089</pubDate>
+      <pubDate>2026-05-02T15:52:27.142644</pubDate>
     </item>
     <item>
-      <title>CVE-2025-48804 - CVE-2025-48804 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/garatc/BitUnlocker'&gt;BitUnlocker&lt;/a&gt;: PoC/downgrade attack for CVE-2025-48804 (found by Microsoft STORM)</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-48804</link>
-      <guid isPermaLink="false">CVE-2025-48804</guid>
-      <pubDate>2026-05-02T14:56:28.179096</pubDate>
+      <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/linko-iheb/cve-2026-41940-scanner'&gt;cve-2026-41940-scanner&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
+      <guid isPermaLink="false">CVE-2026-41940</guid>
+      <pubDate>2026-05-02T15:52:27.142653</pubDate>
     </item>
   </channel>
 </rss>
