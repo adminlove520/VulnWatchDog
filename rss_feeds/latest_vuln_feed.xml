@@ -4,42 +4,42 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-02安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sat, 02 May 2026 11:53:51 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 13:23:59 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Jenderal92/CVE-2026-41940'&gt;CVE-2026-41940&lt;/a&gt;: Bulk scanner and mass exploitation tool for CVE-2026-41940 on cPanel/WHM, built for automated target validation and high-speed multi-threaded execution.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
-      <guid isPermaLink="false">CVE-2026-41940</guid>
-      <pubDate>2026-05-02T11:53:51.939221</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-8088 - CVE-2025-8088 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Markusino488/cve-2025-8088'&gt;cve-2025-8088&lt;/a&gt;: 🛠 Exploit CVE-2025-8088 with this Python tool to generate malicious WinRAR archives that ensure payload persistence in Windows startup folders.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-8088</link>
-      <guid isPermaLink="false">CVE-2025-8088</guid>
-      <pubDate>2026-05-02T11:53:51.939230</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-6554 - CVE-2025-6554 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/juccoblak/CVE-2025-6554'&gt;CVE-2025-6554&lt;/a&gt;: 🔍 Demonstrate and validate the `addressof` and `fakeobj` primitives in the V8 sandbox for advanced security research on CVE-2025-6554.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-6554</link>
-      <guid isPermaLink="false">CVE-2025-6554</guid>
-      <pubDate>2026-05-02T11:53:51.939237</pubDate>
+      <title>CVE-2026-42167 - CVE-2026-42167 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/jimmexploit/CVE-2026-42167-PoC'&gt;CVE-2026-42167-PoC&lt;/a&gt;: ProFTPD SQL injection PoC</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-42167</link>
+      <guid isPermaLink="false">CVE-2026-42167</guid>
+      <pubDate>2026-05-02T13:23:59.105335</pubDate>
     </item>
     <item>
       <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Emmmmllll/copy-fail-zig'&gt;copy-fail-zig&lt;/a&gt;: Zig implementation of the Copy Fail Linux LPE (CVE-2026-31431) https://copy.fail for security-research and defensive-detection purposes</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/suominen/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: Tracking CVE-2026-31431 (Copy Fail)&lt;br&gt;&lt;a href='https://github.com/pulentoski/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: 🔐 Framework profesional modular para auditoría CVE-2026-31431 | Privilege Escalation PoC&lt;br&gt;&lt;a href='https://github.com/Emmmmllll/copy-fail-zig'&gt;copy-fail-zig&lt;/a&gt;: Zig implementation of the Copy Fail Linux LPE (CVE-2026-31431) https://copy.fail for security-research and defensive-detection purposes</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
       <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-05-02T11:53:51.939242</pubDate>
+      <pubDate>2026-05-02T13:23:59.105346</pubDate>
     </item>
     <item>
-      <title>CVE-2026-33017 - CVE-2026-33017 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Jorrit-VM/CVE-2026-33017'&gt;CVE-2026-33017&lt;/a&gt;: None</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-33017</link>
-      <guid isPermaLink="false">CVE-2026-33017</guid>
-      <pubDate>2026-05-02T11:53:51.939248</pubDate>
+      <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/rfxn/cpanel-sessionscribe'&gt;cpanel-sessionscribe&lt;/a&gt;: Detection, mitigation, and reverse-engineering tooling for CVE-2026-41940 (SessionScribe): the cPanel/WHM unauthenticated session-forgery vulnerability disclosed 2026-04-28. Defense-in-depth active mitigation shim, ModSec rule pack, remote probe, on-host IOC scanner, and per-tier RE snapshot collector. GPL v2.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
+      <guid isPermaLink="false">CVE-2026-41940</guid>
+      <pubDate>2026-05-02T13:23:59.105353</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-41044 - CVE-2026-41044 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/mrillicit/CVE-2026-41044'&gt;CVE-2026-41044&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41044</link>
+      <guid isPermaLink="false">CVE-2026-41044</guid>
+      <pubDate>2026-05-02T13:23:59.105365</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-58726 - CVE-2025-58726 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/jonaslejon/ad-autopwn'&gt;ad-autopwn&lt;/a&gt;: AD AutoPwn v4.10.0 — automated AD attack chain, zero-auth to Domain Admin. Discover/Kerberoast/AS-REP/AD CS ESC1-16/Shadow Creds/RBCD+KCD/Ghost-SPN/TGS-rewrite/Dollar-Ticket/WPAD/WSUS/PXE/SCCM/BloodHound auto-action/Loot/DCSync/DPAPI + Synacktiv 2026 reflection (CVE-2025-58726/2026-24294/2026-26128). Authorized pentesting only.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-58726</link>
+      <guid isPermaLink="false">CVE-2025-58726</guid>
+      <pubDate>2026-05-02T13:23:59.105370</pubDate>
     </item>
   </channel>
 </rss>
