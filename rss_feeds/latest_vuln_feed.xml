@@ -4,42 +4,21 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-02安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sat, 02 May 2026 13:23:59 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 14:56:28 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-42167 - CVE-2026-42167 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/jimmexploit/CVE-2026-42167-PoC'&gt;CVE-2026-42167-PoC&lt;/a&gt;: ProFTPD SQL injection PoC</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-42167</link>
-      <guid isPermaLink="false">CVE-2026-42167</guid>
-      <pubDate>2026-05-02T13:23:59.105335</pubDate>
-    </item>
-    <item>
       <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/suominen/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: Tracking CVE-2026-31431 (Copy Fail)&lt;br&gt;&lt;a href='https://github.com/pulentoski/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: 🔐 Framework profesional modular para auditoría CVE-2026-31431 | Privilege Escalation PoC&lt;br&gt;&lt;a href='https://github.com/Emmmmllll/copy-fail-zig'&gt;copy-fail-zig&lt;/a&gt;: Zig implementation of the Copy Fail Linux LPE (CVE-2026-31431) https://copy.fail for security-research and defensive-detection purposes</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/monobrau/copyfailscan'&gt;copyfailscan&lt;/a&gt;: SSH posture helper for CVE-2026-31431 (Copy Fail): kernel and algif_aead inventory&lt;br&gt;&lt;a href='https://github.com/joltcan/ansible-role-cve-2026-31431'&gt;ansible-role-cve-2026-31431&lt;/a&gt;: Ansible role: CVE-2026-31431 (Copy Fail) modprobe.d mitigation — disables algif_aead&lt;br&gt;&lt;a href='https://github.com/Crihexe/copy-fail-tiny-elf-CVE-2026-31431'&gt;copy-fail-tiny-elf-CVE-2026-31431&lt;/a&gt;: Minimal no-libc Linux x86_64 ELF PoC build for Copy Fail (CVE-2026-31431)&lt;br&gt;&lt;a href='https://github.com/2H-K/copyfailRecurrence'&gt;copyfailRecurrence&lt;/a&gt;: Copy Fail (CVE-2026-31431) 内核漏洞复现环境&lt;br&gt;&lt;a href='https://github.com/pulentoski/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: None</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
       <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-05-02T13:23:59.105346</pubDate>
+      <pubDate>2026-05-02T14:56:28.179089</pubDate>
     </item>
     <item>
-      <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/rfxn/cpanel-sessionscribe'&gt;cpanel-sessionscribe&lt;/a&gt;: Detection, mitigation, and reverse-engineering tooling for CVE-2026-41940 (SessionScribe): the cPanel/WHM unauthenticated session-forgery vulnerability disclosed 2026-04-28. Defense-in-depth active mitigation shim, ModSec rule pack, remote probe, on-host IOC scanner, and per-tier RE snapshot collector. GPL v2.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
-      <guid isPermaLink="false">CVE-2026-41940</guid>
-      <pubDate>2026-05-02T13:23:59.105353</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-41044 - CVE-2026-41044 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/mrillicit/CVE-2026-41044'&gt;CVE-2026-41044&lt;/a&gt;: None</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41044</link>
-      <guid isPermaLink="false">CVE-2026-41044</guid>
-      <pubDate>2026-05-02T13:23:59.105365</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-58726 - CVE-2025-58726 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/jonaslejon/ad-autopwn'&gt;ad-autopwn&lt;/a&gt;: AD AutoPwn v4.10.0 — automated AD attack chain, zero-auth to Domain Admin. Discover/Kerberoast/AS-REP/AD CS ESC1-16/Shadow Creds/RBCD+KCD/Ghost-SPN/TGS-rewrite/Dollar-Ticket/WPAD/WSUS/PXE/SCCM/BloodHound auto-action/Loot/DCSync/DPAPI + Synacktiv 2026 reflection (CVE-2025-58726/2026-24294/2026-26128). Authorized pentesting only.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-58726</link>
-      <guid isPermaLink="false">CVE-2025-58726</guid>
-      <pubDate>2026-05-02T13:23:59.105370</pubDate>
+      <title>CVE-2025-48804 - CVE-2025-48804 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/garatc/BitUnlocker'&gt;BitUnlocker&lt;/a&gt;: PoC/downgrade attack for CVE-2025-48804 (found by Microsoft STORM)</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-48804</link>
+      <guid isPermaLink="false">CVE-2025-48804</guid>
+      <pubDate>2026-05-02T14:56:28.179096</pubDate>
     </item>
   </channel>
 </rss>
