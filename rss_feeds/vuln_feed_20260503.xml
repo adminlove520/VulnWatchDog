@@ -4,28 +4,35 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-03安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sun, 03 May 2026 06:30:43 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 08:52:44 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
+      <title>CVE-2025-55182 - CVE-2025-55182 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Ghost121111/Blackash-CVE-2025-55182'&gt;Blackash-CVE-2025-55182&lt;/a&gt;: 🚨 Identify and address CVE-2025-55182, a critical React Server vulnerability allowing remote code execution without authentication.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-55182</link>
+      <guid isPermaLink="false">CVE-2025-55182</guid>
+      <pubDate>2026-05-03T08:52:44.264410</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-8088 - CVE-2025-8088 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Markusino488/cve-2025-8088'&gt;cve-2025-8088&lt;/a&gt;: 🛠 Exploit CVE-2025-8088 with this Python tool to generate malicious WinRAR archives that ensure payload persistence in Windows startup folders.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-8088</link>
+      <guid isPermaLink="false">CVE-2025-8088</guid>
+      <pubDate>2026-05-03T08:52:44.264419</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-6554 - CVE-2025-6554 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/juccoblak/CVE-2025-6554'&gt;CVE-2025-6554&lt;/a&gt;: 🔍 Demonstrate and validate the `addressof` and `fakeobj` primitives in the V8 sandbox for advanced security research on CVE-2025-6554.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-6554</link>
+      <guid isPermaLink="false">CVE-2025-6554</guid>
+      <pubDate>2026-05-03T08:52:44.264425</pubDate>
+    </item>
+    <item>
       <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/attaattaatta/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: CVE-2026-31431 golang hotfix</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/attaattaatta/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: CVE-2026-31431 golang hotfix&lt;br&gt;&lt;a href='https://github.com/vyahello/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: Linux local privilege escalation PoC for CVE-2026-31431</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
       <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-05-03T06:30:43.440325</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/rfxn/cpanel-sessionscribe'&gt;cpanel-sessionscribe&lt;/a&gt;: Detection, mitigation, and reverse-engineering tooling for CVE-2026-41940 (SessionScribe): the cPanel/WHM unauthenticated session-forgery vulnerability disclosed 2026-04-28. Defense-in-depth active mitigation shim, ModSec rule pack, remote probe, on-host IOC scanner, and per-tier RE snapshot collector. GPL v2.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
-      <guid isPermaLink="false">CVE-2026-41940</guid>
-      <pubDate>2026-05-03T06:30:43.440334</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-3494 - CVE-2026-3494 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/KKongTen/CVE-2026-3494'&gt;CVE-2026-3494&lt;/a&gt;: Reproduction and Analysis of CVE-2026-3494</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-3494</link>
-      <guid isPermaLink="false">CVE-2026-3494</guid>
-      <pubDate>2026-05-03T06:30:43.440339</pubDate>
+      <pubDate>2026-05-03T08:52:44.264431</pubDate>
     </item>
   </channel>
 </rss>
