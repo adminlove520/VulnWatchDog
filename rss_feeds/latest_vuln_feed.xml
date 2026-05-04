@@ -4,14 +4,84 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-04安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Mon, 04 May 2026 00:00:43 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 03:36:47 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
+    <item>
+      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/MetaspIoit/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: Fail to copy privilege escalation</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
+      <guid isPermaLink="false">CVE-2026-31431</guid>
+      <pubDate>2026-05-04T03:36:47.242276</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-61591 - CVE-2025-61591 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/studiomeyer-io/mcp-server-attestation'&gt;mcp-server-attestation&lt;/a&gt;: Layer-2 supply-chain hardening for MCP servers — Ed25519-signed tool manifests, runtime spawn-attestation, default-deny argument sanitizer. Defends against marketplace-poisoning + CVE-2025-69256 + CVE-2025-61591.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-61591</link>
+      <guid isPermaLink="false">CVE-2025-61591</guid>
+      <pubDate>2026-05-04T03:36:47.242284</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-69256 - CVE-2025-69256 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/studiomeyer-io/mcp-server-attestation'&gt;mcp-server-attestation&lt;/a&gt;: Layer-2 supply-chain hardening for MCP servers — Ed25519-signed tool manifests, runtime spawn-attestation, default-deny argument sanitizer. Defends against marketplace-poisoning + CVE-2025-69256 + CVE-2025-61591.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-69256</link>
+      <guid isPermaLink="false">CVE-2025-69256</guid>
+      <pubDate>2026-05-04T03:36:47.242290</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-49844 - CVE-2025-49844 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Zain3311/CVE-2025-49844'&gt;CVE-2025-49844&lt;/a&gt;: 🚨 Exploit the CVE-2025-49844 Redis Lua interpreter UAF vulnerability to execute arbitrary shellcode and gain persistent backdoor access.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-49844</link>
+      <guid isPermaLink="false">CVE-2025-49844</guid>
+      <pubDate>2026-05-04T03:36:47.242296</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-61884 - CVE-2025-61884 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884'&gt;CVE-2025-61882-CVE-2025-61884&lt;/a&gt;: 🔍 Detect vulnerabilities CVE-2025-61882 and CVE-2025-61884 in Oracle E-Business Suite to help secure your systems from potential remote code execution threats.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-61884</link>
+      <guid isPermaLink="false">CVE-2025-61884</guid>
+      <pubDate>2026-05-04T03:36:47.242302</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-61882 - CVE-2025-61882 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884'&gt;CVE-2025-61882-CVE-2025-61884&lt;/a&gt;: 🔍 Detect vulnerabilities CVE-2025-61882 and CVE-2025-61884 in Oracle E-Business Suite to help secure your systems from potential remote code execution threats.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-61882</link>
+      <guid isPermaLink="false">CVE-2025-61882</guid>
+      <pubDate>2026-05-04T03:36:47.242308</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-32463 - CVE-2025-32463 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/mihnasdsad/CVE-2025-32463'&gt;CVE-2025-32463&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/ashardev002/CVE-2025-32463_chwoot'&gt;CVE-2025-32463_chwoot&lt;/a&gt;: 🔍 Demonstrate the CVE-2025-32463 privilege-escalation flaw in sudo's chroot feature with this minimal, reproducible proof of concept environment.&lt;br&gt;&lt;a href='https://github.com/yeremeu/CVE-2025-32463_chwoot'&gt;CVE-2025-32463_chwoot&lt;/a&gt;: Demonstrate CVE-2025-32463 with this PoC for sudo's chroot feature. Explore the exploit and its impact on vulnerable sudo versions. 🐱💻🔒</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-32463</link>
+      <guid isPermaLink="false">CVE-2025-32463</guid>
+      <pubDate>2026-05-04T03:36:47.242315</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-49144 - CVE-2025-49144 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/ammarm0010/CVE-2025-49144_PoC'&gt;CVE-2025-49144_PoC&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-49144</link>
+      <guid isPermaLink="false">CVE-2025-49144</guid>
+      <pubDate>2026-05-04T03:36:47.242320</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-31258 - CVE-2025-31258 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/sureshkumarsat/CVE-2025-31258-PoC'&gt;CVE-2025-31258-PoC&lt;/a&gt;: 🔓 Explore CVE-2025-31258 with this PoC demonstrating partial sandbox escape using RemoteViewServices for practical 1-day security practice.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-31258</link>
+      <guid isPermaLink="false">CVE-2025-31258</guid>
+      <pubDate>2026-05-04T03:36:47.242326</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-54253 - CVE-2025-54253 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/jm7knz/CVE-2025-54253-Exploit-Demo'&gt;CVE-2025-54253-Exploit-Demo&lt;/a&gt;: 🐙 CVE-2025-54253 exploit demo for Adobe AEM Forms on JEE: OGNL injection to RCE with PoC, Python 3.10 exploit code, reproducer and mitigation guidance.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54253</link>
+      <guid isPermaLink="false">CVE-2025-54253</guid>
+      <pubDate>2026-05-04T03:36:47.242331</pubDate>
+    </item>
     <item>
       <title>CVE-2025-54424 - CVE-2025-54424 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/hophtien/CVE-2025-54424'&gt;CVE-2025-54424&lt;/a&gt;: CVE-2025-54424: 1Panel TLS client cert bypass enables RCE via forged CN 'panel_client' using a bundled scanning and exploitation tool. Affected: &lt;= v2.0.5. 🔐</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54424</link>
       <guid isPermaLink="false">CVE-2025-54424</guid>
-      <pubDate>2026-05-04T00:00:43.683676</pubDate>
+      <pubDate>2026-05-04T03:36:47.242336</pubDate>
     </item>
   </channel>
 </rss>
