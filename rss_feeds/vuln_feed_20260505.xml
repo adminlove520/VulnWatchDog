@@ -4,28 +4,35 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-05安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Tue, 05 May 2026 08:18:50 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 10:54:54 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-24061 - CVE-2026-24061 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/obrunolima1910/CVE-2026-24061'&gt;CVE-2026-24061&lt;/a&gt;: 🚨 Exploit CVE-2026-24061, a critical remote authentication bypass in GNU inetutils-telnetd, for instant root shell access without authentication.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-24061</link>
-      <guid isPermaLink="false">CVE-2026-24061</guid>
-      <pubDate>2026-05-05T08:18:50.984622</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-59287 - CVE-2025-59287 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/salman5230/CVE-2025-59287'&gt;CVE-2025-59287&lt;/a&gt;: 🔍 Analyze WSUS deserialization behavior to enhance security, generate reports, and identify configuration weaknesses in your infrastructure.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-59287</link>
-      <guid isPermaLink="false">CVE-2025-59287</guid>
-      <pubDate>2026-05-05T08:18:50.984631</pubDate>
-    </item>
-    <item>
       <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/deadRabbit92/mitigate-copy-fail.yml'&gt;mitigate-copy-fail.yml&lt;/a&gt;: Mitigates CVE-2026-31431 (Copy Fail) by unloading and blacklisting algif_aead kernel module if it is loadable and has no active references.&lt;br&gt;&lt;a href='https://github.com/ShahaB108/CVE-2026-31431_Kernel_Checker'&gt;CVE-2026-31431_Kernel_Checker&lt;/a&gt;: checking if kernel is VULNERABLE</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/luca-aurel/vuln-check'&gt;vuln-check&lt;/a&gt;: CVE-2026-31431&lt;br&gt;&lt;a href='https://github.com/MrMixies/Copy-Fail---CVE-2026-31431'&gt;Copy-Fail---CVE-2026-31431&lt;/a&gt;: None</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
       <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-05-05T08:18:50.984637</pubDate>
+      <pubDate>2026-05-05T10:54:54.086139</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-23918 - CVE-2026-23918 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/qassam-315/CVE-2026-23918-Elite-Auditor'&gt;CVE-2026-23918-Elite-Auditor&lt;/a&gt;: Elite reconnaissance script for auditing Apache's HTTP/2 stack against memory corruption (CVE-2026-23918). Features ALPN protocol forcing and monochrome dashboard intelligence. Built for Blue Teams and Security Researchers.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-23918</link>
+      <guid isPermaLink="false">CVE-2026-23918</guid>
+      <pubDate>2026-05-05T10:54:54.086148</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-32463 - CVE-2025-32463 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/ashardev002/CVE-2025-32463_chwoot'&gt;CVE-2025-32463_chwoot&lt;/a&gt;: 🔍 Demonstrate the CVE-2025-32463 privilege-escalation flaw in sudo's chroot feature with this minimal, reproducible proof of concept environment.&lt;br&gt;&lt;a href='https://github.com/mihnasdsad/CVE-2025-32463'&gt;CVE-2025-32463&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-32463</link>
+      <guid isPermaLink="false">CVE-2025-32463</guid>
+      <pubDate>2026-05-05T10:54:54.086155</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-49144 - CVE-2025-49144 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/ammarm0010/CVE-2025-49144_PoC'&gt;CVE-2025-49144_PoC&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-49144</link>
+      <guid isPermaLink="false">CVE-2025-49144</guid>
+      <pubDate>2026-05-05T10:54:54.086160</pubDate>
     </item>
   </channel>
 </rss>
