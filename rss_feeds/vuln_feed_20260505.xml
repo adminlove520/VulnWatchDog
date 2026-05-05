@@ -4,14 +4,21 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-05安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Tue, 05 May 2026 00:01:26 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 03:00:40 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2025-68921 - CVE-2025-68921 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/kikiuuw/CVE-2025-68921'&gt;CVE-2025-68921&lt;/a&gt;: 🔍 Identify and understand the local privilege escalation vulnerability (CVE-2025-68921) in Nahimic audio software, impacting many gaming laptops.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-68921</link>
-      <guid isPermaLink="false">CVE-2025-68921</guid>
-      <pubDate>2026-05-05T00:01:26.613576</pubDate>
+      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/6abc/Copy-Fail-CVE-2026-31431'&gt;Copy-Fail-CVE-2026-31431&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/attaattaatta/CVE-2026-31431'&gt;CVE-2026-31431&lt;/a&gt;: CVE-2026-31431 golang hotfix&lt;br&gt;&lt;a href='https://github.com/Silent4Labs/check-copyfail-cve-2026-31431'&gt;check-copyfail-cve-2026-31431&lt;/a&gt;: It’s a read-only Linux risk assessment script for CVE-2026-31431 (&quot;Copy Fail&quot;).</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
+      <guid isPermaLink="false">CVE-2026-31431</guid>
+      <pubDate>2026-05-05T03:00:40.946662</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-62215 - CVE-2025-62215 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/gowonisgood/CVE-2025-62215-POC'&gt;CVE-2025-62215-POC&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-62215</link>
+      <guid isPermaLink="false">CVE-2025-62215</guid>
+      <pubDate>2026-05-05T03:00:40.946671</pubDate>
     </item>
   </channel>
 </rss>
