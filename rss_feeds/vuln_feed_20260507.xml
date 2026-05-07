@@ -4,49 +4,77 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-07安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Thu, 07 May 2026 00:06:16 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 04:07:31 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2025-0133 - CVE-2025-0133 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/cruxN3T/CVE-2025-0133'&gt;CVE-2025-0133&lt;/a&gt;: Scope-aware bug bounty pipeline for CVE-2025-0133 (Palo Alto PAN-OS GlobalProtect reflected XSS). Shodan → H1/BC scope match → safe canary validation → report drafts.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-0133</link>
-      <guid isPermaLink="false">CVE-2025-0133</guid>
-      <pubDate>2026-05-07T00:06:16.789271</pubDate>
+      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/tgies/copy-fail-c'&gt;copy-fail-c&lt;/a&gt;: Cross-platform C port of the Copy Fail Linux LPE (CVE-2026-31431). Disclosed 2026-04-29 by Theori / Xint.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
+      <guid isPermaLink="false">CVE-2026-31431</guid>
+      <pubDate>2026-05-07T04:07:31.971441</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-66398 - CVE-2025-66398 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/showy-headteacher114/cve-2025-66398'&gt;cve-2025-66398&lt;/a&gt;: Demonstrate exploitation of Signal K Server CVE-2025-66398 allowing unauthenticated attackers to inject backdoor and enable remote code execution.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-66398</link>
+      <guid isPermaLink="false">CVE-2025-66398</guid>
+      <pubDate>2026-05-07T04:07:31.971450</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-2472 - CVE-2026-2472 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/megafart1/CVE-2026-2472-Vertex-AI-SDK-Google-Cloud'&gt;CVE-2026-2472-Vertex-AI-SDK-Google-Cloud&lt;/a&gt;: Expose and detail an unauthenticated stored XSS vulnerability in the Google Cloud Vertex AI Python SDK affecting versions 1.98.0 to 1.130.9.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-2472</link>
+      <guid isPermaLink="false">CVE-2026-2472</guid>
+      <pubDate>2026-05-07T04:07:31.971455</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-25643 - CVE-2026-25643 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/DyniePro/CVE-2026-25643'&gt;CVE-2026-25643&lt;/a&gt;: Exploit Frigate NVR ≤0.16.3 to execute commands remotely by abusing a configuration flaw without needing shell access or output capture.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-25643</link>
+      <guid isPermaLink="false">CVE-2026-25643</guid>
+      <pubDate>2026-05-07T04:07:31.971461</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-69985 - CVE-2025-69985 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/tianarsamm/CVE-2025-69985'&gt;CVE-2025-69985&lt;/a&gt;: Exploit CVE-2025-69985 to bypass authentication and execute remote commands on FUXA versions ≤ 1.2.8 via the /api/runscript endpoint.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-69985</link>
+      <guid isPermaLink="false">CVE-2025-69985</guid>
+      <pubDate>2026-05-07T04:07:31.971467</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-2441 - CVE-2026-2441 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/fartlover37/CVE-2026-2441-PoC'&gt;CVE-2026-2441-PoC&lt;/a&gt;: Demonstrate a proof-of-concept exploit for CVE-2026-2441, a high-risk Chrome use-after-free vulnerability in the Blink CSS engine.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-2441</link>
+      <guid isPermaLink="false">CVE-2026-2441</guid>
+      <pubDate>2026-05-07T04:07:31.971472</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-70795 - CVE-2025-70795 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/wutang700/STProcessMonitorBYOVD'&gt;STProcessMonitorBYOVD&lt;/a&gt;: 🛠 Exploit and control Windows processes using CVE-2025-70795 and CVE-2026-0828 with driver-based termination tools.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-70795</link>
+      <guid isPermaLink="false">CVE-2025-70795</guid>
+      <pubDate>2026-05-07T04:07:31.971477</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-20841 - CVE-2026-20841 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/hamzamalik3461/CVE-2026-20841'&gt;CVE-2026-20841&lt;/a&gt;: 🛠 Demonstrate remote code execution in Windows Notepad via markdown links exploiting unsecured URL protocols.&lt;br&gt;&lt;a href='https://github.com/404godd/CVE-2026-20841-PoC'&gt;CVE-2026-20841-PoC&lt;/a&gt;: 🛠 Demonstrate remote code execution in Windows Notepad versions below 11.2510 using the CVE-2026-20841 proof of concept.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-20841</link>
+      <guid isPermaLink="false">CVE-2026-20841</guid>
+      <pubDate>2026-05-07T04:07:31.971483</pubDate>
     </item>
     <item>
       <title>CVE-2025-5419 - CVE-2025-5419 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Riquelme54322/CVE-2025-5419'&gt;CVE-2025-5419&lt;/a&gt;: 🛡️ Analyze CVE-2025-5419 to exploit an uninitialized read vulnerability in V8 for arbitrary read/write access within the sandbox environment.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2025-5419</link>
       <guid isPermaLink="false">CVE-2025-5419</guid>
-      <pubDate>2026-05-07T00:06:16.789278</pubDate>
+      <pubDate>2026-05-07T04:07:31.971488</pubDate>
     </item>
     <item>
       <title>CVE-2026-24061 - CVE-2026-24061 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/obrunolima1910/CVE-2026-24061'&gt;CVE-2026-24061&lt;/a&gt;: 🚨 Exploit CVE-2026-24061, a critical remote authentication bypass in GNU inetutils-telnetd, for instant root shell access without authentication.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-24061</link>
       <guid isPermaLink="false">CVE-2026-24061</guid>
-      <pubDate>2026-05-07T00:06:16.789283</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-36911 - CVE-2025-36911 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/fa1sa1142/wpair-app'&gt;wpair-app&lt;/a&gt;: 🔍 Scan and research CVE-2025-36911 vulnerabilities with WPair, a specialized tool for Android built in Kotlin, ensuring your applications remain secure.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-36911</link>
-      <guid isPermaLink="false">CVE-2025-36911</guid>
-      <pubDate>2026-05-07T00:06:16.789287</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-59287 - CVE-2025-59287 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/salman5230/CVE-2025-59287'&gt;CVE-2025-59287&lt;/a&gt;: 🔍 Analyze WSUS deserialization behavior to enhance security, generate reports, and identify configuration weaknesses in your infrastructure.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-59287</link>
-      <guid isPermaLink="false">CVE-2025-59287</guid>
-      <pubDate>2026-05-07T00:06:16.789291</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-68921 - CVE-2025-68921 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/kikiuuw/CVE-2025-68921'&gt;CVE-2025-68921&lt;/a&gt;: 🔍 Identify and understand the local privilege escalation vulnerability (CVE-2025-68921) in Nahimic audio software, impacting many gaming laptops.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-68921</link>
-      <guid isPermaLink="false">CVE-2025-68921</guid>
-      <pubDate>2026-05-07T00:06:16.789295</pubDate>
+      <pubDate>2026-05-07T04:07:31.971492</pubDate>
     </item>
   </channel>
 </rss>
