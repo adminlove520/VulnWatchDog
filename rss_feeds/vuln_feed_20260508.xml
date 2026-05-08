@@ -4,28 +4,42 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-08安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Fri, 08 May 2026 11:20:53 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 13:59:10 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-32707 - CVE-2026-32707 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/mbanyamer/CVE-2026-32707-PX4-Autopilot-tattu_can-Stack-Buffer-Overflow-DoS-'&gt;CVE-2026-32707-PX4-Autopilot-tattu_can-Stack-Buffer-Overflow-DoS-&lt;/a&gt;: CVE-2026-32707 PX4-Autopilot tattu_can Stack Buffer Overflow (DoS) Exploit Tool</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-32707</link>
-      <guid isPermaLink="false">CVE-2026-32707</guid>
-      <pubDate>2026-05-08T11:20:53.303679</pubDate>
+      <title>CVE-2025-59528 - CVE-2025-59528 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/mananispiwpiw/CVE-2025-59528-PoC'&gt;CVE-2025-59528-PoC&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-59528</link>
+      <guid isPermaLink="false">CVE-2025-59528</guid>
+      <pubDate>2026-05-08T13:59:10.430614</pubDate>
     </item>
     <item>
-      <title>CVE-2026-42796 - CVE-2026-42796 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/ameerhamza-malik/CVE-2026-42796'&gt;CVE-2026-42796&lt;/a&gt;: None</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-42796</link>
-      <guid isPermaLink="false">CVE-2026-42796</guid>
-      <pubDate>2026-05-08T11:20:53.303687</pubDate>
+      <title>CVE-2026-25589 - CVE-2026-25589 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/mgiay/CVE-2026-25589-25588-25243-23631-23479-REDIS'&gt;CVE-2026-25589-25588-25243-23631-23479-REDIS&lt;/a&gt;: Desc &quot;Fix Redis  CVE ultil 20260508-10h51 GMT+7&quot;</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-25589</link>
+      <guid isPermaLink="false">CVE-2026-25589</guid>
+      <pubDate>2026-05-08T13:59:10.430623</pubDate>
     </item>
     <item>
-      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/yandex-cloud-examples/yc-mk8s-copy-fail-mitigation'&gt;yc-mk8s-copy-fail-mitigation&lt;/a&gt;: DaemonSet для митигации уязвимости CVE-2026-31431 (Copy Fail)</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
-      <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-05-08T11:20:53.303693</pubDate>
+      <title>CVE-2025-24257 - CVE-2025-24257 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Learningdisordercapital35/CVE_2025_24257----NOT-MINE'&gt;CVE_2025_24257----NOT-MINE&lt;/a&gt;: Demonstrate CVE-2025-24257 with a public PoC for IOGPUFamily kernel heap OOB read/write and panic analysis</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-24257</link>
+      <guid isPermaLink="false">CVE-2025-24257</guid>
+      <pubDate>2026-05-08T13:59:10.430629</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-2991 - CVE-2026-2991 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Jumpthereness578/CVE-2026-2991'&gt;CVE-2026-2991&lt;/a&gt;: Explore a PoC for CVE-2026-2991, an auth bypass in KiviCare 4.1.2 and earlier via the patient social-login REST endpoint</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-2991</link>
+      <guid isPermaLink="false">CVE-2026-2991</guid>
+      <pubDate>2026-05-08T13:59:10.430634</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-31802 - CVE-2026-31802 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Recorded-texteditor120/CVE-2026-31802'&gt;CVE-2026-31802&lt;/a&gt;: Demonstrate and analyze the CVE-2026-31802 path traversal vulnerability in npm tar, enabling arbitrary file overwrite via symlink extraction.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31802</link>
+      <guid isPermaLink="false">CVE-2026-31802</guid>
+      <pubDate>2026-05-08T13:59:10.430639</pubDate>
     </item>
   </channel>
 </rss>
