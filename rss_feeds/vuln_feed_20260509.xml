@@ -4,42 +4,70 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-09安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sat, 09 May 2026 13:26:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 15:03:58 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
+      <title>CVE-2026-21510 - CVE-2026-21510 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/EpSiLoNPoInTOrI/EpSiLoNPoInTlnk'&gt;EpSiLoNPoInTlnk&lt;/a&gt;:  CVE-2026-21510 LNK generator PoC</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-21510</link>
+      <guid isPermaLink="false">CVE-2026-21510</guid>
+      <pubDate>2026-05-09T15:03:58.914553</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/haydenjames/CVE-2026-31431-check'&gt;CVE-2026-31431-check&lt;/a&gt;: Read-only checker for CVE-2026-31431 (algif_aead local root). Reports kernel/module state and suggests mitigations.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
+      <guid isPermaLink="false">CVE-2026-31431</guid>
+      <pubDate>2026-05-09T15:03:58.914562</pubDate>
+    </item>
+    <item>
       <title>CVE-2026-43284 - CVE-2026-43284 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/haydenjames/dirty-frag-checker'&gt;dirty-frag-checker&lt;/a&gt;: Read-only checker for CVE-2026-43284 / CVE-2026-43500 (Dirty Frag) Linux kernel local-root vulns</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/haydenjames/dirty-frag-check'&gt;dirty-frag-check&lt;/a&gt;: Read-only checker for CVE-2026-43284 / CVE-2026-43500 (Dirty Frag) Linux kernel local-root vulns</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-43284</link>
       <guid isPermaLink="false">CVE-2026-43284</guid>
-      <pubDate>2026-05-09T13:26:40.649571</pubDate>
+      <pubDate>2026-05-09T15:03:58.914568</pubDate>
     </item>
     <item>
-      <title>CVE-2025-24257 - CVE-2025-24257 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Learningdisordercapital35/CVE_2025_24257----NOT-MINE'&gt;CVE_2025_24257----NOT-MINE&lt;/a&gt;: Demonstrate CVE-2025-24257 with a public PoC for IOGPUFamily kernel heap OOB read/write and panic analysis</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-24257</link>
-      <guid isPermaLink="false">CVE-2025-24257</guid>
-      <pubDate>2026-05-09T13:26:40.649579</pubDate>
+      <title>CVE-2025-49844 - CVE-2025-49844 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Zain3311/CVE-2025-49844'&gt;CVE-2025-49844&lt;/a&gt;: 🚨 Exploit the CVE-2025-49844 Redis Lua interpreter UAF vulnerability to execute arbitrary shellcode and gain persistent backdoor access.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-49844</link>
+      <guid isPermaLink="false">CVE-2025-49844</guid>
+      <pubDate>2026-05-09T15:03:58.914573</pubDate>
     </item>
     <item>
-      <title>CVE-2026-2991 - CVE-2026-2991 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Jumpthereness578/CVE-2026-2991'&gt;CVE-2026-2991&lt;/a&gt;: Explore a PoC for CVE-2026-2991, an auth bypass in KiviCare 4.1.2 and earlier via the patient social-login REST endpoint</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-2991</link>
-      <guid isPermaLink="false">CVE-2026-2991</guid>
-      <pubDate>2026-05-09T13:26:40.649585</pubDate>
+      <title>CVE-2025-61884 - CVE-2025-61884 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884'&gt;CVE-2025-61882-CVE-2025-61884&lt;/a&gt;: 🔍 Detect vulnerabilities CVE-2025-61882 and CVE-2025-61884 in Oracle E-Business Suite to help secure your systems from potential remote code execution threats.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-61884</link>
+      <guid isPermaLink="false">CVE-2025-61884</guid>
+      <pubDate>2026-05-09T15:03:58.914579</pubDate>
     </item>
     <item>
-      <title>CVE-2026-31802 - CVE-2026-31802 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Recorded-texteditor120/CVE-2026-31802'&gt;CVE-2026-31802&lt;/a&gt;: Demonstrate and analyze the CVE-2026-31802 path traversal vulnerability in npm tar, enabling arbitrary file overwrite via symlink extraction.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31802</link>
-      <guid isPermaLink="false">CVE-2026-31802</guid>
-      <pubDate>2026-05-09T13:26:40.649591</pubDate>
+      <title>CVE-2025-61882 - CVE-2025-61882 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/siddu7575/CVE-2025-61882-CVE-2025-61884'&gt;CVE-2025-61882-CVE-2025-61884&lt;/a&gt;: 🔍 Detect vulnerabilities CVE-2025-61882 and CVE-2025-61884 in Oracle E-Business Suite to help secure your systems from potential remote code execution threats.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-61882</link>
+      <guid isPermaLink="false">CVE-2025-61882</guid>
+      <pubDate>2026-05-09T15:03:58.914584</pubDate>
     </item>
     <item>
-      <title>CVE-2025-66398 - CVE-2025-66398 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/showy-headteacher114/cve-2025-66398'&gt;cve-2025-66398&lt;/a&gt;: Demonstrate exploitation of Signal K Server CVE-2025-66398 allowing unauthenticated attackers to inject backdoor and enable remote code execution.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-66398</link>
-      <guid isPermaLink="false">CVE-2025-66398</guid>
-      <pubDate>2026-05-09T13:26:40.649595</pubDate>
+      <title>CVE-2025-49144 - CVE-2025-49144 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/ammarm0010/CVE-2025-49144_PoC'&gt;CVE-2025-49144_PoC&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-49144</link>
+      <guid isPermaLink="false">CVE-2025-49144</guid>
+      <pubDate>2026-05-09T15:03:58.914590</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-32463 - CVE-2025-32463 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/ashardev002/CVE-2025-32463_chwoot'&gt;CVE-2025-32463_chwoot&lt;/a&gt;: 🔍 Demonstrate the CVE-2025-32463 privilege-escalation flaw in sudo's chroot feature with this minimal, reproducible proof of concept environment.&lt;br&gt;&lt;a href='https://github.com/mihnasdsad/CVE-2025-32463'&gt;CVE-2025-32463&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-32463</link>
+      <guid isPermaLink="false">CVE-2025-32463</guid>
+      <pubDate>2026-05-09T15:03:58.914595</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-31258 - CVE-2025-31258 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/sureshkumarsat/CVE-2025-31258-PoC'&gt;CVE-2025-31258-PoC&lt;/a&gt;: 🔓 Explore CVE-2025-31258 with this PoC demonstrating partial sandbox escape using RemoteViewServices for practical 1-day security practice.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-31258</link>
+      <guid isPermaLink="false">CVE-2025-31258</guid>
+      <pubDate>2026-05-09T15:03:58.914600</pubDate>
     </item>
   </channel>
 </rss>
