@@ -4,49 +4,28 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-10安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sun, 10 May 2026 13:33:45 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 15:01:31 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-2441 - CVE-2026-2441 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/fartlover37/CVE-2026-2441-PoC'&gt;CVE-2026-2441-PoC&lt;/a&gt;: Demonstrate a proof-of-concept exploit for CVE-2026-2441, a high-risk Chrome use-after-free vulnerability in the Blink CSS engine.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-2441</link>
-      <guid isPermaLink="false">CVE-2026-2441</guid>
-      <pubDate>2026-05-10T13:33:45.225866</pubDate>
+      <title>CVE-2026-5865 - CVE-2026-5865 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Crihexe/v8-poc-CVE-2026-5865'&gt;v8-poc-CVE-2026-5865&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-5865</link>
+      <guid isPermaLink="false">CVE-2026-5865</guid>
+      <pubDate>2026-05-10T15:01:31.817815</pubDate>
     </item>
     <item>
-      <title>CVE-2025-70795 - CVE-2025-70795 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/wutang700/STProcessMonitorBYOVD'&gt;STProcessMonitorBYOVD&lt;/a&gt;: 🛠 Exploit and control Windows processes using CVE-2025-70795 and CVE-2026-0828 with driver-based termination tools.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-70795</link>
-      <guid isPermaLink="false">CVE-2025-70795</guid>
-      <pubDate>2026-05-10T13:33:45.225875</pubDate>
+      <title>CVE-2026-20131 - CVE-2026-20131 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/0xBlackash/CVE-2026-20131'&gt;CVE-2026-20131&lt;/a&gt;: CVE-2026-20131</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-20131</link>
+      <guid isPermaLink="false">CVE-2026-20131</guid>
+      <pubDate>2026-05-10T15:01:31.817824</pubDate>
     </item>
     <item>
-      <title>CVE-2026-20841 - CVE-2026-20841 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/hamzamalik3461/CVE-2026-20841'&gt;CVE-2026-20841&lt;/a&gt;: 🛠 Demonstrate remote code execution in Windows Notepad via markdown links exploiting unsecured URL protocols.&lt;br&gt;&lt;a href='https://github.com/404godd/CVE-2026-20841-PoC'&gt;CVE-2026-20841-PoC&lt;/a&gt;: 🛠 Demonstrate remote code execution in Windows Notepad versions below 11.2510 using the CVE-2026-20841 proof of concept.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-20841</link>
-      <guid isPermaLink="false">CVE-2026-20841</guid>
-      <pubDate>2026-05-10T13:33:45.225882</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-5419 - CVE-2025-5419 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Riquelme54322/CVE-2025-5419'&gt;CVE-2025-5419&lt;/a&gt;: 🛡️ Analyze CVE-2025-5419 to exploit an uninitialized read vulnerability in V8 for arbitrary read/write access within the sandbox environment.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-5419</link>
-      <guid isPermaLink="false">CVE-2025-5419</guid>
-      <pubDate>2026-05-10T13:33:45.225888</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-24061 - CVE-2026-24061 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/obrunolima1910/CVE-2026-24061'&gt;CVE-2026-24061&lt;/a&gt;: 🚨 Exploit CVE-2026-24061, a critical remote authentication bypass in GNU inetutils-telnetd, for instant root shell access without authentication.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-24061</link>
-      <guid isPermaLink="false">CVE-2026-24061</guid>
-      <pubDate>2026-05-10T13:33:45.225893</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/44pie/cpsniper'&gt;cpsniper&lt;/a&gt;: cPanelSniper STABLE - CVE-2026-41940 optimized for 10M+ targets</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
-      <guid isPermaLink="false">CVE-2026-41940</guid>
-      <pubDate>2026-05-10T13:33:45.225897</pubDate>
+      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail'&gt;CVE-2026-31431-Linux-Copy-Fail&lt;/a&gt;: Exploit CVE-2026-31431 on Linux using a Rust implementation to achieve local privilege escalation via an arbitrary page cache write primitive.&lt;br&gt;&lt;a href='https://github.com/Liverwortenuresis371/copyfail-rs'&gt;copyfail-rs&lt;/a&gt;: Exploit and detect CVE-2026-31431 vulnerabilities using a static binary that monitors system integrity and bypasses PAM authentication.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
+      <guid isPermaLink="false">CVE-2026-31431</guid>
+      <pubDate>2026-05-10T15:01:31.817831</pubDate>
     </item>
   </channel>
 </rss>
