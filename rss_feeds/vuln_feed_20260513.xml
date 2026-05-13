@@ -4,28 +4,63 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-13安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Wed, 13 May 2026 04:49:04 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 08:00:58 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2025-54236 - CVE-2025-54236 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Jenderal92/magento-upload-auto-submit-zoneh'&gt;magento-upload-auto-submit-zoneh&lt;/a&gt;: SessionReaper-CVE-2025-54236</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54236</link>
-      <guid isPermaLink="false">CVE-2025-54236</guid>
-      <pubDate>2026-05-13T04:49:04.247005</pubDate>
+      <title>CVE-2025-26788 - CVE-2025-26788 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/jun2e0/CVE-2025-26788'&gt;CVE-2025-26788&lt;/a&gt;: None</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-26788</link>
+      <guid isPermaLink="false">CVE-2025-26788</guid>
+      <pubDate>2026-05-13T08:00:58.566868</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-34475 - CVE-2026-34475 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/bitbcybr/way2poc_cve-2026-34475'&gt;way2poc_cve-2026-34475&lt;/a&gt;: Two-stage Nuclei detection for CVE-2026-34475: fingerprint vulnerable Varnish instances, verify cache-key collision behavior, and confirm exploitability via VCL inspection - unfortunetly without triggering the bug and exploitation</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-34475</link>
+      <guid isPermaLink="false">CVE-2026-34475</guid>
+      <pubDate>2026-05-13T08:00:58.566876</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-24257 - CVE-2025-24257 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Learningdisordercapital35/CVE_2025_24257----NOT-MINE'&gt;CVE_2025_24257----NOT-MINE&lt;/a&gt;: Demonstrate CVE-2025-24257 with a public PoC for IOGPUFamily kernel heap OOB read/write and panic analysis</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-24257</link>
+      <guid isPermaLink="false">CVE-2025-24257</guid>
+      <pubDate>2026-05-13T08:00:58.566882</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-2991 - CVE-2026-2991 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Jumpthereness578/CVE-2026-2991'&gt;CVE-2026-2991&lt;/a&gt;: Explore a PoC for CVE-2026-2991, an auth bypass in KiviCare 4.1.2 and earlier via the patient social-login REST endpoint</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-2991</link>
+      <guid isPermaLink="false">CVE-2026-2991</guid>
+      <pubDate>2026-05-13T08:00:58.566887</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-31802 - CVE-2026-31802 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Recorded-texteditor120/CVE-2026-31802'&gt;CVE-2026-31802&lt;/a&gt;: Demonstrate and analyze the CVE-2026-31802 path traversal vulnerability in npm tar, enabling arbitrary file overwrite via symlink extraction.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31802</link>
+      <guid isPermaLink="false">CVE-2026-31802</guid>
+      <pubDate>2026-05-13T08:00:58.566891</pubDate>
     </item>
     <item>
       <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/tc4dy/CVE-2026-41940-POC-Exploit'&gt;CVE-2026-41940-POC-Exploit&lt;/a&gt;: 🚀 CVE-2026-41940 cPanel/WHM Auth Bypass Exploit - Best Flow 💥 CRLF injection leads to auth bypass, session hijacking &amp; account leak. ✅ Proxy, custom UA, keep-alive, retries, SSL verify, colored output, file save support. ⚡ Advanced PoC for pentesters. </description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/rfxn/cpanel-sessionscribe'&gt;cpanel-sessionscribe&lt;/a&gt;: Detection, mitigation, and reverse-engineering tooling for CVE-2026-41940 (SessionScribe): the cPanel/WHM unauthenticated session-forgery vulnerability disclosed 2026-04-28. Defense-in-depth active mitigation shim, ModSec rule pack, remote probe, on-host IOC scanner, and per-tier RE snapshot collector. GPL v2.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
       <guid isPermaLink="false">CVE-2026-41940</guid>
-      <pubDate>2026-05-13T04:49:04.247014</pubDate>
+      <pubDate>2026-05-13T08:00:58.566896</pubDate>
     </item>
     <item>
-      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail'&gt;CVE-2026-31431-Linux-Copy-Fail&lt;/a&gt;: Exploit CVE-2026-31431 on Linux using a Rust implementation to achieve local privilege escalation via an arbitrary page cache write primitive.&lt;br&gt;&lt;a href='https://github.com/Liverwortenuresis371/copyfail-rs'&gt;copyfail-rs&lt;/a&gt;: Exploit and detect CVE-2026-31431 vulnerabilities using a static binary that monitors system integrity and bypasses PAM authentication.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
-      <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-05-13T04:49:04.247021</pubDate>
+      <title>CVE-2025-66398 - CVE-2025-66398 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/showy-headteacher114/cve-2025-66398'&gt;cve-2025-66398&lt;/a&gt;: Demonstrate exploitation of Signal K Server CVE-2025-66398 allowing unauthenticated attackers to inject backdoor and enable remote code execution.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-66398</link>
+      <guid isPermaLink="false">CVE-2025-66398</guid>
+      <pubDate>2026-05-13T08:00:58.566900</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-44578 - CVE-2026-44578 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/panchocosil/verify-ghsa-c4j6-fc7j-m34r'&gt;verify-ghsa-c4j6-fc7j-m34r&lt;/a&gt;: OOB verifier for GHSA-c4j6-fc7j-m34r / CVE-2026-44578 (Next.js WebSocket-upgrade SSRF)</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-44578</link>
+      <guid isPermaLink="false">CVE-2026-44578</guid>
+      <pubDate>2026-05-13T08:00:58.566904</pubDate>
     </item>
   </channel>
 </rss>
