@@ -4,21 +4,63 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-15安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Fri, 15 May 2026 04:54:02 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 08:05:54 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
       <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail'&gt;CVE-2026-31431-Linux-Copy-Fail&lt;/a&gt;: Exploit CVE-2026-31431 on Linux using a Rust implementation to achieve local privilege escalation via an arbitrary page cache write primitive.&lt;br&gt;&lt;a href='https://github.com/Liverwortenuresis371/copyfail-rs'&gt;copyfail-rs&lt;/a&gt;: Exploit and detect CVE-2026-31431 vulnerabilities using a static binary that monitors system integrity and bypasses PAM authentication.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
       <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-05-15T04:54:02.621551</pubDate>
+      <pubDate>2026-05-15T08:05:54.287804</pubDate>
     </item>
     <item>
       <title>CVE-2026-42945 - CVE-2026-42945 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/chenqin231/CVE-2026-42945'&gt;CVE-2026-42945&lt;/a&gt;: CVE-2026-42945: nginx-rift vulnerability analysis and detection script</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/iammerrida-source/nginx-rift-detect'&gt;nginx-rift-detect&lt;/a&gt;: Behavioral detection script for CVE-2026-42945 (NGINX Rift) — heap overflow in ngx_http_rewrite_module. No RCE, crash-based detection only.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-42945</link>
       <guid isPermaLink="false">CVE-2026-42945</guid>
-      <pubDate>2026-05-15T04:54:02.621560</pubDate>
+      <pubDate>2026-05-15T08:05:54.287811</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-41096 - CVE-2026-41096 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/mrk336/DNS-Mayhem-CVE-2026-41096-Deep-Dive'&gt;DNS-Mayhem-CVE-2026-41096-Deep-Dive&lt;/a&gt;: In‑depth technical analysis of CVE‑2026‑41096, a critical heap overflow in Windows DNSAPI.dll enabling remote code execution via crafted DNS responses. Includes attack vectors, patch insights, and defensive guidance for security teams.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41096</link>
+      <guid isPermaLink="false">CVE-2026-41096</guid>
+      <pubDate>2026-05-15T08:05:54.287816</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-24257 - CVE-2025-24257 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Learningdisordercapital35/CVE_2025_24257----NOT-MINE'&gt;CVE_2025_24257----NOT-MINE&lt;/a&gt;: Demonstrate CVE-2025-24257 with a public PoC for IOGPUFamily kernel heap OOB read/write and panic analysis</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-24257</link>
+      <guid isPermaLink="false">CVE-2025-24257</guid>
+      <pubDate>2026-05-15T08:05:54.287820</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-2991 - CVE-2026-2991 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Jumpthereness578/CVE-2026-2991'&gt;CVE-2026-2991&lt;/a&gt;: Explore a PoC for CVE-2026-2991, an auth bypass in KiviCare 4.1.2 and earlier via the patient social-login REST endpoint</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-2991</link>
+      <guid isPermaLink="false">CVE-2026-2991</guid>
+      <pubDate>2026-05-15T08:05:54.287824</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-31802 - CVE-2026-31802 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Recorded-texteditor120/CVE-2026-31802'&gt;CVE-2026-31802&lt;/a&gt;: Demonstrate and analyze the CVE-2026-31802 path traversal vulnerability in npm tar, enabling arbitrary file overwrite via symlink extraction.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31802</link>
+      <guid isPermaLink="false">CVE-2026-31802</guid>
+      <pubDate>2026-05-15T08:05:54.287828</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-66398 - CVE-2025-66398 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/showy-headteacher114/cve-2025-66398'&gt;cve-2025-66398&lt;/a&gt;: Demonstrate exploitation of Signal K Server CVE-2025-66398 allowing unauthenticated attackers to inject backdoor and enable remote code execution.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-66398</link>
+      <guid isPermaLink="false">CVE-2025-66398</guid>
+      <pubDate>2026-05-15T08:05:54.287831</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-0745 - CVE-2026-0745 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/HORKimhab/CVE-2026-0745'&gt;CVE-2026-0745&lt;/a&gt;: CVE-2026-0745</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-0745</link>
+      <guid isPermaLink="false">CVE-2026-0745</guid>
+      <pubDate>2026-05-15T08:05:54.287835</pubDate>
     </item>
   </channel>
 </rss>
