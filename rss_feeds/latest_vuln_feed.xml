@@ -4,14 +4,21 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-15安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Fri, 15 May 2026 12:55:53 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 15:18:43 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-42945 - CVE-2026-42945 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/soksofos/wazuh-nginx-cve-2026-42945-sca-lab'&gt;wazuh-nginx-cve-2026-42945-sca-lab&lt;/a&gt;: Centralized Wazuh SCA Assessment for CVE-2026-42945 on NGINX Servers</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-42945</link>
-      <guid isPermaLink="false">CVE-2026-42945</guid>
-      <pubDate>2026-05-15T12:55:53.558577</pubDate>
+      <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/rfxn/cpanel-sessionscribe'&gt;cpanel-sessionscribe&lt;/a&gt;: Detection, mitigation, and reverse-engineering tooling for CVE-2026-41940 (SessionScribe): the cPanel/WHM unauthenticated session-forgery vulnerability disclosed 2026-04-28. Defense-in-depth active mitigation shim, ModSec rule pack, remote probe, on-host IOC scanner, and per-tier RE snapshot collector. GPL v2.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
+      <guid isPermaLink="false">CVE-2026-41940</guid>
+      <pubDate>2026-05-15T15:18:43.528283</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail'&gt;CVE-2026-31431-Linux-Copy-Fail&lt;/a&gt;: Exploit CVE-2026-31431 on Linux using a Rust implementation to achieve local privilege escalation via an arbitrary page cache write primitive.&lt;br&gt;&lt;a href='https://github.com/Liverwortenuresis371/copyfail-rs'&gt;copyfail-rs&lt;/a&gt;: Exploit and detect CVE-2026-31431 vulnerabilities using a static binary that monitors system integrity and bypasses PAM authentication.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
+      <guid isPermaLink="false">CVE-2026-31431</guid>
+      <pubDate>2026-05-15T15:18:43.528292</pubDate>
     </item>
   </channel>
 </rss>
