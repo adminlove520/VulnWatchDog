@@ -4,63 +4,28 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-30安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sat, 30 May 2026 06:50:16 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 09:21:33 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2025-31258 - CVE-2025-31258 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/sureshkumarsat/CVE-2025-31258-PoC'&gt;CVE-2025-31258-PoC&lt;/a&gt;: 🔓 Explore CVE-2025-31258 with this PoC demonstrating partial sandbox escape using RemoteViewServices for practical 1-day security practice.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-31258</link>
-      <guid isPermaLink="false">CVE-2025-31258</guid>
-      <pubDate>2026-05-30T06:50:16.042539</pubDate>
+      <title>CVE-2026-9490 - CVE-2026-9490 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/ugvxb/CVE-2026-9490'&gt;CVE-2026-9490&lt;/a&gt;: The ACCSvc service creates a Named Pipe with a weak Security Descriptor that allows any authenticated user to connect and send messages. When a specially crafted message (message type 0x03) is sent to the pipe, the service crashes with exit code 1067 (ERROR_PROCESS_ABORTED).</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-9490</link>
+      <guid isPermaLink="false">CVE-2026-9490</guid>
+      <pubDate>2026-05-30T09:21:33.234852</pubDate>
     </item>
     <item>
-      <title>CVE-2025-54253 - CVE-2025-54253 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/jm7knz/CVE-2025-54253-Exploit-Demo'&gt;CVE-2025-54253-Exploit-Demo&lt;/a&gt;: 🐙 CVE-2025-54253 exploit demo for Adobe AEM Forms on JEE: OGNL injection to RCE with PoC, Python 3.10 exploit code, reproducer and mitigation guidance.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54253</link>
-      <guid isPermaLink="false">CVE-2025-54253</guid>
-      <pubDate>2026-05-30T06:50:16.042549</pubDate>
+      <title>CVE-2026-0257 - CVE-2026-0257 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/0xBlackash/CVE-2026-0257'&gt;CVE-2026-0257&lt;/a&gt;: CVE-2026-0257</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-0257</link>
+      <guid isPermaLink="false">CVE-2026-0257</guid>
+      <pubDate>2026-05-30T09:21:33.234861</pubDate>
     </item>
     <item>
-      <title>CVE-2026-8732 - CVE-2026-8732 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/zycoder0day/CVE-2026-8732'&gt;CVE-2026-8732&lt;/a&gt;: CVE-2026-8732 | WP Maps Pro &lt;= 6.1.0 | Unauthenticated Privilege Escalation → RCE | CVSS 9.8 | Copyright (c) 2026 XENON1337</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-8732</link>
-      <guid isPermaLink="false">CVE-2026-8732</guid>
-      <pubDate>2026-05-30T06:50:16.042555</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-54424 - CVE-2025-54424 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/hophtien/CVE-2025-54424'&gt;CVE-2025-54424&lt;/a&gt;: CVE-2025-54424: 1Panel TLS client cert bypass enables RCE via forged CN 'panel_client' using a bundled scanning and exploitation tool. Affected: &lt;= v2.0.5. 🔐</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54424</link>
-      <guid isPermaLink="false">CVE-2025-54424</guid>
-      <pubDate>2026-05-30T06:50:16.042561</pubDate>
-    </item>
-    <item>
-      <title>CVE-2025-32463 - CVE-2025-32463 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/yeremeu/CVE-2025-32463_chwoot'&gt;CVE-2025-32463_chwoot&lt;/a&gt;: Demonstrate CVE-2025-32463 with this PoC for sudo's chroot feature. Explore the exploit and its impact on vulnerable sudo versions. 🐱💻🔒</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-32463</link>
-      <guid isPermaLink="false">CVE-2025-32463</guid>
-      <pubDate>2026-05-30T06:50:16.042567</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-9256 - CVE-2026-9256 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/suominen/CVE-2026-9256'&gt;CVE-2026-9256&lt;/a&gt;: Tracking the nginx CVE-2026-9256 rewrite-module heap overflow</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-9256</link>
-      <guid isPermaLink="false">CVE-2026-9256</guid>
-      <pubDate>2026-05-30T06:50:16.042572</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-43284 - CVE-2026-43284 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/suominen/CVE-2026-43284'&gt;CVE-2026-43284&lt;/a&gt;: Tracking CVE-2026-43284</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-43284</link>
-      <guid isPermaLink="false">CVE-2026-43284</guid>
-      <pubDate>2026-05-30T06:50:16.042576</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-42208 - CVE-2026-42208 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/HAERIN-L/poc_cve-2026-42208'&gt;poc_cve-2026-42208&lt;/a&gt;: None</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-42208</link>
-      <guid isPermaLink="false">CVE-2026-42208</guid>
-      <pubDate>2026-05-30T06:50:16.042582</pubDate>
+      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail'&gt;CVE-2026-31431-Linux-Copy-Fail&lt;/a&gt;: Exploit CVE-2026-31431 on Linux using a Rust implementation to achieve local privilege escalation via an arbitrary page cache write primitive.&lt;br&gt;&lt;a href='https://github.com/Liverwortenuresis371/copyfail-rs'&gt;copyfail-rs&lt;/a&gt;: Exploit and detect CVE-2026-31431 vulnerabilities using a static binary that monitors system integrity and bypasses PAM authentication.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
+      <guid isPermaLink="false">CVE-2026-31431</guid>
+      <pubDate>2026-05-30T09:21:33.234867</pubDate>
     </item>
   </channel>
 </rss>
