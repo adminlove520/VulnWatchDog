@@ -4,42 +4,35 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-05-31安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sun, 31 May 2026 05:22:48 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 08:51:23 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2025-68921 - CVE-2025-68921 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/kikiuuw/CVE-2025-68921'&gt;CVE-2025-68921&lt;/a&gt;: 🔍 Identify and understand the local privilege escalation vulnerability (CVE-2025-68921) in Nahimic audio software, impacting many gaming laptops.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-68921</link>
-      <guid isPermaLink="false">CVE-2025-68921</guid>
-      <pubDate>2026-05-31T05:22:48.060572</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-0013 - CVE-2026-0013 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/inforcqb/cve-2026-0013-exploit'&gt;cve-2026-0013-exploit&lt;/a&gt;: None</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-0013</link>
-      <guid isPermaLink="false">CVE-2026-0013</guid>
-      <pubDate>2026-05-31T05:22:48.060582</pubDate>
+      <title>CVE-2026-23744 - CVE-2026-23744 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/w3nch/CVE-2026-23744'&gt;CVE-2026-23744&lt;/a&gt;: CVE-2026-23744 - Versions 1.4.2 and earlier of MCPJam inspector</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-23744</link>
+      <guid isPermaLink="false">CVE-2026-23744</guid>
+      <pubDate>2026-05-31T08:51:23.181586</pubDate>
     </item>
     <item>
       <title>CVE-2025-14847 - CVE-2025-14847 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/sakthivel10q/CVE-2025-14847'&gt;CVE-2025-14847&lt;/a&gt;: 🛠 Exploit the CVE-2025-14847 vulnerability in MongoDB to disclose sensitive heap memory using a Python script that analyzes responses for new leaked data.&lt;br&gt;&lt;a href='https://github.com/pedrocruz2202/mongobleed-scanner'&gt;mongobleed-scanner&lt;/a&gt;: 🔍 Scan for MongoDB vulnerabilities with MongoBleed, a high-performance tool for detecting CVE-2025-14847 across large networks quickly and efficiently.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2025-14847</link>
       <guid isPermaLink="false">CVE-2025-14847</guid>
-      <pubDate>2026-05-31T05:22:48.060589</pubDate>
+      <pubDate>2026-05-31T08:51:23.181597</pubDate>
     </item>
     <item>
       <title>CVE-2025-55182 - CVE-2025-55182 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/captain4554/CVE-2025-55182-Scanner'&gt;CVE-2025-55182-Scanner&lt;/a&gt;: 🛡️ Scan and assess vulnerabilities in Next.js/Waku with the CVE-2025-55182-Scanner, combining static and dynamic analysis for robust security.</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/captain4554/CVE-2025-55182-Scanner'&gt;CVE-2025-55182-Scanner&lt;/a&gt;: 🛡️ Scan and assess vulnerabilities in Next.js/Waku with the CVE-2025-55182-Scanner, combining static and dynamic analysis for robust security.&lt;br&gt;&lt;a href='https://github.com/vick333-peniel/ReactExploitGUI'&gt;ReactExploitGUI&lt;/a&gt;: 🛠️ Exploit CVE-2025-55182 effortlessly with this GUI tool for vulnerability detection, command execution, and Shell reverse connections.&lt;br&gt;&lt;a href='https://github.com/sobuj0007/Nextjs_RCE_Exploit_Tool'&gt;Nextjs_RCE_Exploit_Tool&lt;/a&gt;: 🔍 Exploit CVE-2025-55182 in Next.js with this versatile tool for security research, featuring advanced payloads and WAF bypass techniques.&lt;br&gt;&lt;a href='https://github.com/alyaapm/CVE-2025-55182-shellinteractive'&gt;CVE-2025-55182-shellinteractive&lt;/a&gt;: None&lt;br&gt;&lt;a href='https://github.com/wiixx44/CVE-2025-55182'&gt;CVE-2025-55182&lt;/a&gt;: 🔍 Demonstrate CVE-2025-55182, a critical vulnerability in React Server Components allowing unauthenticated arbitrary code execution.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2025-55182</link>
       <guid isPermaLink="false">CVE-2025-55182</guid>
-      <pubDate>2026-05-31T05:22:48.060594</pubDate>
+      <pubDate>2026-05-31T08:51:23.181607</pubDate>
     </item>
     <item>
       <title>CVE-2025-8110 - CVE-2025-8110 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/freiwi/CVE-2025-8110'&gt;CVE-2025-8110&lt;/a&gt;: 🔍 Detect improper symbolic link handling in Gogs' PutContents API, exposing local code execution risks for versions 0.13.3 and earlier.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2025-8110</link>
       <guid isPermaLink="false">CVE-2025-8110</guid>
-      <pubDate>2026-05-31T05:22:48.060600</pubDate>
+      <pubDate>2026-05-31T08:51:23.181613</pubDate>
     </item>
   </channel>
 </rss>
