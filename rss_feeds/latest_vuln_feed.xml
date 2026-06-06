@@ -4,28 +4,28 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-06-06安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sat, 06 Jun 2026 12:08:06 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 14:47:11 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-31431 - CVE-2026-31431 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Dullpurple-sloop726/CVE-2026-31431-Linux-Copy-Fail'&gt;CVE-2026-31431-Linux-Copy-Fail&lt;/a&gt;: Exploit CVE-2026-31431 on Linux using a Rust implementation to achieve local privilege escalation via an arbitrary page cache write primitive.&lt;br&gt;&lt;a href='https://github.com/Liverwortenuresis371/copyfail-rs'&gt;copyfail-rs&lt;/a&gt;: Exploit and detect CVE-2026-31431 vulnerabilities using a static binary that monitors system integrity and bypasses PAM authentication.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31431</link>
-      <guid isPermaLink="false">CVE-2026-31431</guid>
-      <pubDate>2026-06-06T12:08:06.805802</pubDate>
+      <title>CVE-2025-55182 - CVE-2025-55182 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/sobuj0007/Nextjs_RCE_Exploit_Tool'&gt;Nextjs_RCE_Exploit_Tool&lt;/a&gt;: 🔍 Exploit CVE-2025-55182 in Next.js with this versatile tool for security research, featuring advanced payloads and WAF bypass techniques.&lt;br&gt;&lt;a href='https://github.com/wiixx44/CVE-2025-55182'&gt;CVE-2025-55182&lt;/a&gt;: 🔍 Demonstrate CVE-2025-55182, a critical vulnerability in React Server Components allowing unauthenticated arbitrary code execution.&lt;br&gt;&lt;a href='https://github.com/meneim99/react2shell-scanner'&gt;react2shell-scanner&lt;/a&gt;: 🔍 Detect vulnerabilities CVE-2025-55182 and CVE-2025-66478 in Next.js apps with this reliable command-line scanner.&lt;br&gt;&lt;a href='https://github.com/Farhan9488/CVE-2025-55182-research'&gt;CVE-2025-55182-research&lt;/a&gt;: 🛡️ Explore CVE-2025-55182, a critical RCE vulnerability in React's Flight Protocol, demonstrating exploitation techniques and mitigation strategies.&lt;br&gt;&lt;a href='https://github.com/mayank729/CVE-2025-55182-scanner'&gt;CVE-2025-55182-scanner&lt;/a&gt;: 🔍 Scan for CVE-2025-55182 risks in React Server Components with this non-intrusive tool that helps detect critical vulnerabilities in your applications.&lt;br&gt;&lt;a href='https://github.com/phornnato/CVE-2025-55182'&gt;CVE-2025-55182&lt;/a&gt;: 🚨 Exploit and scan for CVE-2025-55182, a critical React/Next.js vulnerability enabling remote code execution through prototype pollution techniques.&lt;br&gt;&lt;a href='https://github.com/slreaperking/CVE-2025-55182-poc'&gt;CVE-2025-55182-poc&lt;/a&gt;: 🚨 Demonstrate CVE-2025-55182, a critical React vulnerability allowing remote code execution via prototype chain pollution in `react-server-dom-webpack@19.0.0`.&lt;br&gt;&lt;a href='https://github.com/Ghost121111/Blackash-CVE-2025-55182'&gt;Blackash-CVE-2025-55182&lt;/a&gt;: 🚨 Identify and address CVE-2025-55182, a critical React Server vulnerability allowing remote code execution without authentication.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-55182</link>
+      <guid isPermaLink="false">CVE-2025-55182</guid>
+      <pubDate>2026-06-06T14:47:11.246891</pubDate>
     </item>
     <item>
-      <title>CVE-2026-41089 - CVE-2026-41089 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Mapclaregister/CVE-2026-41089-191'&gt;CVE-2026-41089-191&lt;/a&gt;: CVE-2026-41089 PoC — Netlogon CLDAP stack buffer overflow (CVSS 9.8 CRITICAL)</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41089</link>
-      <guid isPermaLink="false">CVE-2026-41089</guid>
-      <pubDate>2026-06-06T12:08:06.805811</pubDate>
+      <title>CVE-2025-8088 - CVE-2025-8088 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Markusino488/cve-2025-8088'&gt;cve-2025-8088&lt;/a&gt;: 🛠 Exploit CVE-2025-8088 with this Python tool to generate malicious WinRAR archives that ensure payload persistence in Windows startup folders.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-8088</link>
+      <guid isPermaLink="false">CVE-2025-8088</guid>
+      <pubDate>2026-06-06T14:47:11.246901</pubDate>
     </item>
     <item>
-      <title>CVE-2025-24257 - CVE-2025-24257 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Learningdisordercapital35/CVE_2025_24257----NOT-MINE'&gt;CVE_2025_24257----NOT-MINE&lt;/a&gt;: Demonstrate CVE-2025-24257 with a public PoC for IOGPUFamily kernel heap OOB read/write and panic analysis</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-24257</link>
-      <guid isPermaLink="false">CVE-2025-24257</guid>
-      <pubDate>2026-06-06T12:08:06.805817</pubDate>
+      <title>CVE-2025-6554 - CVE-2025-6554 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/juccoblak/CVE-2025-6554'&gt;CVE-2025-6554&lt;/a&gt;: 🔍 Demonstrate and validate the `addressof` and `fakeobj` primitives in the V8 sandbox for advanced security research on CVE-2025-6554.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-6554</link>
+      <guid isPermaLink="false">CVE-2025-6554</guid>
+      <pubDate>2026-06-06T14:47:11.246907</pubDate>
     </item>
   </channel>
 </rss>
