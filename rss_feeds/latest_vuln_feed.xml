@@ -4,35 +4,49 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-06-11安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Thu, 11 Jun 2026 10:31:51 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 14:42:39 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-49492 - CVE-2026-49492 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/byte16384/CVE-2026-49492-PoC'&gt;CVE-2026-49492-PoC&lt;/a&gt;: None</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-49492</link>
-      <guid isPermaLink="false">CVE-2026-49492</guid>
-      <pubDate>2026-06-11T10:31:51.955503</pubDate>
+      <title>CVE-2026-48907 - CVE-2026-48907 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/ywh-jfellus/CVE-2026-48907'&gt;CVE-2026-48907&lt;/a&gt;: PoC for CVE-2026-48907 - Joomla! JCE extension &lt; 2.9.99.5 unauthenticated RCE</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-48907</link>
+      <guid isPermaLink="false">CVE-2026-48907</guid>
+      <pubDate>2026-06-11T14:42:39.317425</pubDate>
     </item>
     <item>
-      <title>CVE-2026-10520 - CVE-2026-10520 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/0xBlackash/CVE-2026-10520'&gt;CVE-2026-10520&lt;/a&gt;: CVE-2026-10520</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-10520</link>
-      <guid isPermaLink="false">CVE-2026-10520</guid>
-      <pubDate>2026-06-11T10:31:51.955511</pubDate>
+      <title>CVE-2026-23111 - CVE-2026-23111 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/vignemail1/check-cve-2026-23111'&gt;check-cve-2026-23111&lt;/a&gt;: Script to check if system are vulnable to cve-2026-23111</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-23111</link>
+      <guid isPermaLink="false">CVE-2026-23111</guid>
+      <pubDate>2026-06-11T14:42:39.317434</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-2991 - CVE-2026-2991 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Jumpthereness578/CVE-2026-2991'&gt;CVE-2026-2991&lt;/a&gt;: Explore a PoC for CVE-2026-2991, an auth bypass in KiviCare 4.1.2 and earlier via the patient social-login REST endpoint</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-2991</link>
+      <guid isPermaLink="false">CVE-2026-2991</guid>
+      <pubDate>2026-06-11T14:42:39.317440</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-31802 - CVE-2026-31802 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-31802</link>
+      <guid isPermaLink="false">CVE-2026-31802</guid>
+      <pubDate>2026-06-11T14:42:39.317445</pubDate>
     </item>
     <item>
       <title>CVE-2026-10795 - CVE-2026-10795 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/izxci/CVE-2026-10795'&gt;CVE-2026-10795&lt;/a&gt;: CVE-2026-10795 – UpdraftPlus Authentication Bypass</description>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/webshellseo8/CVE-2026-10795-POC'&gt;CVE-2026-10795-POC&lt;/a&gt;: CVE-2026-10795 The UpdraftPlus POC</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-10795</link>
       <guid isPermaLink="false">CVE-2026-10795</guid>
-      <pubDate>2026-06-11T10:31:51.955517</pubDate>
+      <pubDate>2026-06-11T14:42:39.317450</pubDate>
     </item>
     <item>
-      <title>CVE-2026-6815 - CVE-2026-6815 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/danilo-dellorco/CVE-2026-6815'&gt;CVE-2026-6815&lt;/a&gt;: Proof of Concept (PoC) exploit for CVE-2026-6815: Authenticated Path Traversal &amp; Arbitrary File Write in Casdoor (&lt; 3.54.1) leading to RCE/DoS.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-6815</link>
-      <guid isPermaLink="false">CVE-2026-6815</guid>
-      <pubDate>2026-06-11T10:31:51.955522</pubDate>
+      <title>CVE-2025-66398 - CVE-2025-66398 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/showy-headteacher114/cve-2025-66398'&gt;cve-2025-66398&lt;/a&gt;: Demonstrate exploitation of Signal K Server CVE-2025-66398 allowing unauthenticated attackers to inject backdoor and enable remote code execution.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-66398</link>
+      <guid isPermaLink="false">CVE-2025-66398</guid>
+      <pubDate>2026-06-11T14:42:39.317455</pubDate>
     </item>
   </channel>
 </rss>
