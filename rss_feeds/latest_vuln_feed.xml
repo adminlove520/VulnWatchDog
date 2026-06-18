@@ -4,28 +4,14 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-06-18安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Thu, 18 Jun 2026 09:18:45 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 12:55:33 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-1492 - CVE-2026-1492 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/limo57640-crypto/wp-user-registration-vuln-checker'&gt;wp-user-registration-vuln-checker&lt;/a&gt;: Read-only WordPress User Registration CVE-2026-1492 checker for hidden admins, plugin version, uploads PHP, cron, and compromise IOCs.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-1492</link>
-      <guid isPermaLink="false">CVE-2026-1492</guid>
-      <pubDate>2026-06-18T09:18:45.037542</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-42945 - CVE-2026-42945 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/limo57640-crypto/nginx-rift-detector'&gt;nginx-rift-detector&lt;/a&gt;: Free NGINX Rift CVE-2026-42945 detector for version, rewrite config, ASLR, crash logs, and exploitation indicators.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-42945</link>
-      <guid isPermaLink="false">CVE-2026-42945</guid>
-      <pubDate>2026-06-18T09:18:45.037551</pubDate>
-    </item>
-    <item>
-      <title>CVE-2026-41940 - CVE-2026-41940 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/limo57640-crypto/cpanel-cve-41940-detector'&gt;cpanel-cve-41940-detector&lt;/a&gt;: Read-only cPanel CVE-2026-41940 IOC detector for .sorry ransomware, Mr_Rot13 Filemanager backdoors, C2 callbacks, cron, SSH, and logs.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-41940</link>
-      <guid isPermaLink="false">CVE-2026-41940</guid>
-      <pubDate>2026-06-18T09:18:45.037557</pubDate>
+      <title>CVE-2026-54316 - CVE-2026-54316 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/InertFluid/cve-2026-54316-lab'&gt;cve-2026-54316-lab&lt;/a&gt;: Reproduction lab for CVE-2026-54316 (Claude Code WebFetch huggingface.co bare-hostname permission bypass / exfiltration)</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-54316</link>
+      <guid isPermaLink="false">CVE-2026-54316</guid>
+      <pubDate>2026-06-18T12:55:33.174830</pubDate>
     </item>
   </channel>
 </rss>
