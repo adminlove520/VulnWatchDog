@@ -4,14 +4,28 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-06-19安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Fri, 19 Jun 2026 00:28:48 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 06:24:28 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-42208 - CVE-2026-42208 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/yendpoint/CVE-2026-42208-LAB'&gt;CVE-2026-42208-LAB&lt;/a&gt;: A local lab for studying, reproducing, and verifying the patch for CVE-2026-42208: an unauthenticated SQL injection in LiteLLM's API key authentication path.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-42208</link>
-      <guid isPermaLink="false">CVE-2026-42208</guid>
-      <pubDate>2026-06-19T00:28:48.687260</pubDate>
+      <title>CVE-2026-54316 - CVE-2026-54316 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/InertFluid/cve-2026-54316-lab'&gt;cve-2026-54316-lab&lt;/a&gt;: Reproduction lab for CVE-2026-54316 (Claude Code WebFetch huggingface.co bare-hostname permission bypass / exfiltration)</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-54316</link>
+      <guid isPermaLink="false">CVE-2026-54316</guid>
+      <pubDate>2026-06-19T06:24:28.737559</pubDate>
+    </item>
+    <item>
+      <title>CVE-2025-2304 - CVE-2025-2304 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/0xk4rth1/CVE-2025-2304'&gt;CVE-2025-2304&lt;/a&gt;: A critical mass assignment vulnerability in Camaleon CMS (&lt; 2.9.1) allows authenticated low-privileged users to elevate their privileges to administrator. The flaw exists in the `updated_ajax`</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-2304</link>
+      <guid isPermaLink="false">CVE-2025-2304</guid>
+      <pubDate>2026-06-19T06:24:28.737568</pubDate>
+    </item>
+    <item>
+      <title>CVE-2026-9256 - CVE-2026-9256 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/suominen/CVE-2026-9256'&gt;CVE-2026-9256&lt;/a&gt;: Tracking the nginx CVE-2026-9256 rewrite-module heap overflow</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-9256</link>
+      <guid isPermaLink="false">CVE-2026-9256</guid>
+      <pubDate>2026-06-19T06:24:28.737574</pubDate>
     </item>
   </channel>
 </rss>

