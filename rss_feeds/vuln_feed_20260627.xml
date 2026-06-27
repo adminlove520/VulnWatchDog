@@ -4,35 +4,35 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-06-27安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sat, 27 Jun 2026 07:55:11 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 10:15:10 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
     <item>
-      <title>CVE-2026-40466 - CVE-2026-40466 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Catherines77/ActiveMQ-EXPtools'&gt;ActiveMQ-EXPtools&lt;/a&gt;: Apache ActiveMQ漏洞综合利用工具(CVE-2015-5254，CVE-2016-3088，CVE-2022-41678，CVE-2023-46604，CVE-2024-32114，CVE-2026-34197，CVE-2026-40466， CVE-2026-42588)</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-40466</link>
-      <guid isPermaLink="false">CVE-2026-40466</guid>
-      <pubDate>2026-06-27T07:55:11.139647</pubDate>
+      <title>CVE-2026-48907 - CVE-2026-48907 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/grayxploit/CVE-2026-48907'&gt;CVE-2026-48907&lt;/a&gt;: CVE-2026-48907 is a CVSS 10.0 pre-auth RCE in Joomla Content Editor affecting all versions ≤ 2.9.99.4. The Grayxploit team breaks down the 3-weakness chain — missing auth, no extension validation, and an unsafe upload flag — that lets attackers pop a shell in 3 HTTP requests.</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-48907</link>
+      <guid isPermaLink="false">CVE-2026-48907</guid>
+      <pubDate>2026-06-27T10:15:10.673891</pubDate>
     </item>
     <item>
-      <title>CVE-2026-34197 - CVE-2026-34197 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Catherines77/ActiveMQ-EXPtools'&gt;ActiveMQ-EXPtools&lt;/a&gt;: Apache ActiveMQ漏洞综合利用工具(CVE-2015-5254，CVE-2016-3088，CVE-2022-41678，CVE-2023-46604，CVE-2024-32114，CVE-2026-34197，CVE-2026-40466， CVE-2026-42588)</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-34197</link>
-      <guid isPermaLink="false">CVE-2026-34197</guid>
-      <pubDate>2026-06-27T07:55:11.139656</pubDate>
+      <title>CVE-2025-54424 - CVE-2025-54424 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/hophtien/CVE-2025-54424'&gt;CVE-2025-54424&lt;/a&gt;: CVE-2025-54424: 1Panel TLS client cert bypass enables RCE via forged CN 'panel_client' using a bundled scanning and exploitation tool. Affected: &lt;= v2.0.5. 🔐</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54424</link>
+      <guid isPermaLink="false">CVE-2025-54424</guid>
+      <pubDate>2026-06-27T10:15:10.673901</pubDate>
     </item>
     <item>
-      <title>CVE-2026-42588 - CVE-2026-42588 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Catherines77/ActiveMQ-EXPtools'&gt;ActiveMQ-EXPtools&lt;/a&gt;: Apache ActiveMQ漏洞综合利用工具(CVE-2015-5254，CVE-2016-3088，CVE-2022-41678，CVE-2023-46604，CVE-2024-32114，CVE-2026-34197，CVE-2026-40466， CVE-2026-42588)</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-42588</link>
-      <guid isPermaLink="false">CVE-2026-42588</guid>
-      <pubDate>2026-06-27T07:55:11.139662</pubDate>
+      <title>CVE-2025-32432 - CVE-2025-32432 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Cosm3No1de/htb-orion-writeup'&gt;htb-orion-writeup&lt;/a&gt;: Hack The Box - Orion (Easy) | CVE-2025-32432 &amp; CVE-2026-24061</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-32432</link>
+      <guid isPermaLink="false">CVE-2025-32432</guid>
+      <pubDate>2026-06-27T10:15:10.673907</pubDate>
     </item>
     <item>
-      <title>CVE-2026-45585 - CVE-2026-45585 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Desireeontrial76/yellowkey-bitlocker'&gt;yellowkey-bitlocker&lt;/a&gt;: Manage and recover BitLocker encrypted drives with this tool for Windows 11 recovery key management and educational study of CVE-2026-45585.</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-45585</link>
-      <guid isPermaLink="false">CVE-2026-45585</guid>
-      <pubDate>2026-06-27T07:55:11.139667</pubDate>
+      <title>CVE-2026-24061 - CVE-2026-24061 - 未命名漏洞</title>
+      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Cosm3No1de/htb-orion-writeup'&gt;htb-orion-writeup&lt;/a&gt;: Hack The Box - Orion (Easy) | CVE-2025-32432 &amp; CVE-2026-24061</description>
+      <link>https://nvd.nist.gov/vuln/detail/CVE-2026-24061</link>
+      <guid isPermaLink="false">CVE-2026-24061</guid>
+      <pubDate>2026-06-27T10:15:10.673912</pubDate>
     </item>
   </channel>
 </rss>
