@@ -4,21 +4,14 @@
     <title>VulnWatchdog每日漏洞订阅</title>
     <description>2026-06-28安全漏洞信息</description>
     <link>http://vulnwatchdog.local</link>
-    <lastBuildDate>Sun, 28 Jun 2026 08:56:36 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 11:10:54 +0800</lastBuildDate>
     <generator>VulnWatchdog</generator>
-    <item>
-      <title>CVE-2025-54424 - CVE-2025-54424 - 未命名漏洞</title>
-      <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/hophtien/CVE-2025-54424'&gt;CVE-2025-54424&lt;/a&gt;: CVE-2025-54424: 1Panel TLS client cert bypass enables RCE via forged CN 'panel_client' using a bundled scanning and exploitation tool. Affected: &lt;= v2.0.5. 🔐</description>
-      <link>https://nvd.nist.gov/vuln/detail/CVE-2025-54424</link>
-      <guid isPermaLink="false">CVE-2025-54424</guid>
-      <pubDate>2026-06-28T08:56:36.441886</pubDate>
-    </item>
     <item>
       <title>CVE-2026-45585 - CVE-2026-45585 - 未命名漏洞</title>
       <description>&lt;strong&gt;严重程度:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;发布日期:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;来源:&lt;/strong&gt; Unknown&lt;br&gt;&lt;strong&gt;描述:&lt;/strong&gt; 暂无详细描述&lt;br&gt;&lt;strong&gt;相关PoC:&lt;/strong&gt;&lt;br&gt;&lt;a href='https://github.com/Desireeontrial76/yellowkey-bitlocker'&gt;yellowkey-bitlocker&lt;/a&gt;: Manage and recover BitLocker encrypted drives with this tool for Windows 11 recovery key management and educational study of CVE-2026-45585.</description>
       <link>https://nvd.nist.gov/vuln/detail/CVE-2026-45585</link>
       <guid isPermaLink="false">CVE-2026-45585</guid>
-      <pubDate>2026-06-28T08:56:36.441895</pubDate>
+      <pubDate>2026-06-28T11:10:54.724933</pubDate>
     </item>
   </channel>
 </rss>
